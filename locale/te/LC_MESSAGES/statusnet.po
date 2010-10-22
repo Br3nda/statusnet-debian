@@ -1,0 +1,6027 @@
+# Translation of StatusNet to Telugu
+#
+# Author@translatewiki.net: Brion
+# Author@translatewiki.net: Veeven
+# --
+# This file is distributed under the same license as the StatusNet package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: StatusNet\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-05 09:45+0000\n"
+"PO-Revision-Date: 2010-09-05 09:47:17+0000\n"
+"Language-Team: Telugu\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: MediaWiki 1.17alpha (r72319); Translate extension (2010-08-20)\n"
+"X-Translation-Project: translatewiki.net at http://translatewiki.net\n"
+"X-Language-Code: te\n"
+"X-Message-Group: out-statusnet\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. TRANS: Page title
+#. TRANS: Menu item for site administration
+#: actions/accessadminpanel.php:55 lib/adminpanelaction.php:376
+msgid "Access"
+msgstr "అందుబాటు"
+
+#. TRANS: Page notice
+#: actions/accessadminpanel.php:67
+msgid "Site access settings"
+msgstr "సైటు అందుబాటు అమరికలు"
+
+#. TRANS: Form legend for registration form.
+#: actions/accessadminpanel.php:161
+msgid "Registration"
+msgstr "నమోదు"
+
+#. TRANS: Checkbox instructions for admin setting "Private"
+#: actions/accessadminpanel.php:165
+msgid "Prohibit anonymous users (not logged in) from viewing site?"
+msgstr "అజ్ఞాత (ప్రవేశించని) వాడుకరులని సైటుని చూడకుండా నిషేధించాలా?"
+
+#. TRANS: Checkbox label for prohibiting anonymous users from viewing site.
+#: actions/accessadminpanel.php:167
+msgctxt "LABEL"
+msgid "Private"
+msgstr "అంతరంగికం"
+
+#. TRANS: Checkbox instructions for admin setting "Invite only"
+#: actions/accessadminpanel.php:174
+msgid "Make registration invitation only."
+msgstr "ఆహ్వానితులు మాత్రమే నమోదు అవ్వగలిగేలా చెయ్యి."
+
+#. TRANS: Checkbox label for configuring site as invite only.
+#: actions/accessadminpanel.php:176
+msgid "Invite only"
+msgstr "ఆహ్వానితులకు మాత్రమే"
+
+#. TRANS: Checkbox instructions for admin setting "Closed" (no new registrations)
+#: actions/accessadminpanel.php:183
+msgid "Disable new registrations."
+msgstr "కొత్త నమోదులను అచేతనంచేయి."
+
+#. TRANS: Checkbox label for disabling new user registrations.
+#: actions/accessadminpanel.php:185
+msgid "Closed"
+msgstr "మూసివేయబడింది"
+
+#. TRANS: Title / tooltip for button to save access settings in site admin panel
+#: actions/accessadminpanel.php:202
+msgid "Save access settings"
+msgstr "అందుబాటు అమరికలను భద్రపరచు"
+
+#. TRANS: Button label to save e-mail preferences.
+#. TRANS: Button label to save IM preferences.
+#. TRANS: Button label to save SMS preferences.
+#. TRANS: Button label
+#: actions/accessadminpanel.php:203 actions/emailsettings.php:224
+#: actions/imsettings.php:184 actions/smssettings.php:209
+#: lib/applicationeditform.php:361
+msgctxt "BUTTON"
+msgid "Save"
+msgstr "భద్రపరచు"
+
+#. TRANS: Server error when page not found (404)
+#: actions/all.php:68 actions/public.php:98 actions/replies.php:93
+#: actions/showfavorites.php:138 actions/tag.php:52
+msgid "No such page."
+msgstr "అటువంటి పేజీ లేదు."
+
+#. TRANS: Error text shown when trying to send a direct message to a user that does not exist.
+#: actions/all.php:79 actions/allrss.php:68
+#: actions/apiaccountupdatedeliverydevice.php:114
+#: actions/apiaccountupdateprofile.php:105
+#: actions/apiaccountupdateprofilebackgroundimage.php:116
+#: actions/apiaccountupdateprofileimage.php:105 actions/apiblockcreate.php:97
+#: actions/apiblockdestroy.php:96 actions/apidirectmessage.php:77
+#: actions/apidirectmessagenew.php:74 actions/apigroupcreate.php:113
+#: actions/apigroupismember.php:91 actions/apigroupjoin.php:100
+#: actions/apigroupleave.php:100 actions/apigrouplist.php:73
+#: actions/apistatusesupdate.php:229 actions/apisubscriptions.php:87
+#: actions/apitimelinefavorites.php:72 actions/apitimelinefriends.php:174
+#: actions/apitimelinehome.php:80 actions/apitimelinementions.php:80
+#: actions/apitimelineuser.php:82 actions/avatarbynickname.php:75
+#: actions/favoritesrss.php:74 actions/foaf.php:40 actions/foaf.php:58
+#: actions/hcard.php:67 actions/microsummary.php:62 actions/newmessage.php:116
+#: actions/otp.php:76 actions/remotesubscribe.php:145
+#: actions/remotesubscribe.php:154 actions/replies.php:73
+#: actions/repliesrss.php:38 actions/rsd.php:116 actions/showfavorites.php:105
+#: actions/userbyid.php:74 actions/usergroups.php:93 actions/userrss.php:40
+#: actions/xrds.php:71 lib/command.php:498 lib/galleryaction.php:59
+#: lib/mailbox.php:82 lib/profileaction.php:77
+msgid "No such user."
+msgstr "అటువంటి వాడుకరి లేరు."
+
+#. TRANS: Page title. %1$s is user nickname, %2$d is page number
+#: actions/all.php:90
+#, php-format
+msgid "%1$s and friends, page %2$d"
+msgstr "%1$s మరియు మిత్రులు, పేజీ %2$d"
+
+#. TRANS: Page title. %1$s is user nickname
+#. TRANS: H1 text. %1$s is user nickname
+#. TRANS: Message is used as link title. %s is a user nickname.
+#: actions/all.php:93 actions/all.php:185 actions/allrss.php:116
+#: actions/apitimelinefriends.php:210 actions/apitimelinehome.php:116
+#: lib/personalgroupnav.php:100
+#, php-format
+msgid "%s and friends"
+msgstr "%s మరియు మిత్రులు"
+
+#. TRANS: %1$s is user nickname
+#: actions/all.php:107
+#, php-format
+msgid "Feed for friends of %s (RSS 1.0)"
+msgstr "%s యొక్క మిత్రుల ఫీడు (RSS 1.0)"
+
+#. TRANS: %1$s is user nickname
+#: actions/all.php:116
+#, php-format
+msgid "Feed for friends of %s (RSS 2.0)"
+msgstr "%s యొక్క మిత్రుల ఫీడు (RSS 2.0)"
+
+#. TRANS: %1$s is user nickname
+#: actions/all.php:125
+#, php-format
+msgid "Feed for friends of %s (Atom)"
+msgstr "%s యొక్క మిత్రుల ఫీడు (ఆటమ్)"
+
+#. TRANS: %1$s is user nickname
+#: actions/all.php:138
+#, php-format
+msgid ""
+"This is the timeline for %s and friends but no one has posted anything yet."
+msgstr "ఇది %s మరియు మిత్రుల కాలరేఖ కానీ ఇంకా ఎవరూ ఏమీ రాయలేదు."
+
+#: actions/all.php:143
+#, php-format
+msgid ""
+"Try subscribing to more people, [join a group](%%action.groups%%) or post "
+"something yourself."
+msgstr "ఇతరులకి చందా చేరండి, [ఏదైనా గుంపులో చేరండి](%%action.groups%%) లేదా మీరే ఏదైనా వ్రాయండి."
+
+#. TRANS: H1 text
+#: actions/all.php:182
+msgid "You and friends"
+msgstr "మీరు మరియు మీ స్నేహితులు"
+
+#. TRANS: Message is used as link description. %1$s is a username, %2$s is a site name.
+#. TRANS: Message is used as a subtitle. %1$s is a user nickname, %2$s is a site name.
+#: actions/allrss.php:121 actions/apitimelinefriends.php:216
+#: actions/apitimelinehome.php:122
+#, php-format
+msgid "Updates from %1$s and friends on %2$s!"
+msgstr "%2$sలో %1$s మరియు స్నేహితుల నుండి తాజాకరణలు!"
+
+#: actions/apiaccountupdatedeliverydevice.php:86
+#: actions/apiaccountupdateprofile.php:89
+#: actions/apiaccountupdateprofilebackgroundimage.php:86
+#: actions/apiaccountupdateprofilecolors.php:110
+#: actions/apiaccountupdateprofileimage.php:84 actions/apiblockcreate.php:89
+#: actions/apiblockdestroy.php:88 actions/apidirectmessagenew.php:109
+#: actions/apifavoritecreate.php:91 actions/apifavoritedestroy.php:92
+#: actions/apifriendshipscreate.php:91 actions/apifriendshipsdestroy.php:91
+#: actions/apigroupcreate.php:105 actions/apigroupjoin.php:92
+#: actions/apigroupleave.php:92 actions/apimediaupload.php:67
+#: actions/apistatusesretweet.php:65 actions/apistatusesupdate.php:198
+msgid "This method requires a POST."
+msgstr ""
+
+#: actions/apiaccountupdatedeliverydevice.php:106
+msgid ""
+"You must specify a parameter named 'device' with a value of one of: sms, im, "
+"none."
+msgstr ""
+
+#: actions/apiaccountupdateprofile.php:112
+#: actions/apiaccountupdateprofilebackgroundimage.php:194
+#: actions/apiaccountupdateprofilecolors.php:185
+#: actions/apiaccountupdateprofileimage.php:130 actions/apiusershow.php:108
+#: actions/avatarbynickname.php:80 actions/foaf.php:65 actions/hcard.php:74
+#: actions/replies.php:80 actions/usergroups.php:100 lib/galleryaction.php:66
+#: lib/profileaction.php:84
+msgid "User has no profile."
+msgstr "వాడుకరికి ప్రొఫైలు లేదు."
+
+#: actions/apiaccountupdateprofilebackgroundimage.php:108
+#: actions/apiaccountupdateprofileimage.php:97 actions/apimediaupload.php:80
+#: actions/apistatusesupdate.php:212 actions/avatarsettings.php:257
+#: actions/designadminpanel.php:123 actions/editapplication.php:118
+#: actions/newapplication.php:101 actions/newnotice.php:94
+#: lib/designsettings.php:283
+#, php-format
+msgid ""
+"The server was unable to handle that much POST data (%s bytes) due to its "
+"current configuration."
+msgstr ""
+
+#: actions/apiaccountupdateprofilebackgroundimage.php:136
+#: actions/apiaccountupdateprofilebackgroundimage.php:146
+#: actions/apiaccountupdateprofilecolors.php:164
+#: actions/apiaccountupdateprofilecolors.php:174
+#: actions/groupdesignsettings.php:290 actions/groupdesignsettings.php:300
+#: actions/userdesignsettings.php:210 actions/userdesignsettings.php:220
+#: actions/userdesignsettings.php:263 actions/userdesignsettings.php:273
+msgid "Unable to save your design settings."
+msgstr "మీ రూపురేఖల అమరికలని భద్రపరచలేకున్నాం."
+
+#: actions/apiblockcreate.php:105
+msgid "You cannot block yourself!"
+msgstr "మిమ్మల్ని మీరే నిరోధించుకోలేరు!"
+
+#: actions/apiblockcreate.php:126
+msgid "Block user failed."
+msgstr "వాడుకరి నిరోధం విఫలమైంది."
+
+#: actions/apidirectmessage.php:89
+#, php-format
+msgid "Direct messages from %s"
+msgstr "%s నుండి నేరు సందేశాలు"
+
+#: actions/apidirectmessage.php:93
+#, php-format
+msgid "All the direct messages sent from %s"
+msgstr "%s నుండి పంపిన అన్ని నేరు సందేశాలు"
+
+#: actions/apidirectmessage.php:101
+#, php-format
+msgid "Direct messages to %s"
+msgstr "%s కి నేరు సందేశాలు"
+
+#: actions/apidirectmessage.php:105
+#, php-format
+msgid "All the direct messages sent to %s"
+msgstr "%sకి పంపిన అన్ని నేరు సందేశాలు"
+
+#: actions/apidirectmessagenew.php:118
+msgid "No message text!"
+msgstr "సందేశపు పాఠ్యం లేదు!"
+
+#: actions/apidirectmessagenew.php:127 actions/newmessage.php:150
+#, php-format
+msgid "That's too long. Max message size is %d chars."
+msgstr "చాలా పొడవుంది. గరిష్ఠ సందేశ పరిమాణం %d అక్షరాలు."
+
+#: actions/apidirectmessagenew.php:138
+msgid "Recipient user not found."
+msgstr "అందుకోవాల్సిన వాడుకరి కనబడలేదు."
+
+#: actions/apidirectmessagenew.php:142
+msgid "Can't send direct messages to users who aren't your friend."
+msgstr "మీ స్నేహితులు కాని వాడుకరులకి నేరు సందేశాలు పంపించలేరు."
+
+#: actions/apifavoritecreate.php:109 actions/apifavoritedestroy.php:110
+#: actions/apistatusesdestroy.php:121
+msgid "No status found with that ID."
+msgstr "ఆ IDతో ఏ నోటీసూ కనబడలేదు."
+
+#: actions/apifavoritecreate.php:120
+msgid "This status is already a favorite."
+msgstr "ఈ నోటీసు ఇప్పటికే మీ ఇష్టాంశం."
+
+#. TRANS: Error message text shown when a favorite could not be set.
+#: actions/apifavoritecreate.php:131 actions/favor.php:84 lib/command.php:296
+msgid "Could not create favorite."
+msgstr "ఇష్టాంశాన్ని సృష్టించలేకపోయాం."
+
+#: actions/apifavoritedestroy.php:123
+msgid "That status is not a favorite."
+msgstr "ఆ నోటీసు ఇష్టాంశం కాదు."
+
+#: actions/apifavoritedestroy.php:135 actions/disfavor.php:87
+msgid "Could not delete favorite."
+msgstr "ఇష్టాంశాన్ని తొలగించలేకపోయాం."
+
+#: actions/apifriendshipscreate.php:109
+msgid "Could not follow user: profile not found."
+msgstr "వాడుకరిని అనుసరించలేకపోయాం: %s ఇప్పటికే మీ జాబితాలో ఉన్నారు."
+
+#: actions/apifriendshipscreate.php:118
+#, php-format
+msgid "Could not follow user: %s is already on your list."
+msgstr "వాడుకరిని అనుసరించలేకపోయాం: %s ఇప్పటికే మీ జాబితాలో ఉన్నారు."
+
+#: actions/apifriendshipsdestroy.php:109
+msgid "Could not unfollow user: User not found."
+msgstr "వాడుకరిని అనుసరించలేకపోయాం: %s ఇప్పటికే మీ జాబితాలో ఉన్నారు."
+
+#: actions/apifriendshipsdestroy.php:120
+msgid "You cannot unfollow yourself."
+msgstr "మిమ్మల్ని మీరే అననుసరించలేరు."
+
+#: actions/apifriendshipsexists.php:91
+msgid "Two valid IDs or screen_names must be supplied."
+msgstr ""
+
+#: actions/apifriendshipsshow.php:134
+msgid "Could not determine source user."
+msgstr "లక్ష్యిత వాడుకరిని కనుగొనలేకపోయాం."
+
+#: actions/apifriendshipsshow.php:142
+msgid "Could not find target user."
+msgstr "లక్ష్యిత వాడుకరిని కనుగొనలేకపోయాం."
+
+#: actions/apigroupcreate.php:167 actions/editgroup.php:186
+#: actions/newgroup.php:126 actions/profilesettings.php:215
+#: actions/register.php:212
+msgid "Nickname must have only lowercase letters and numbers and no spaces."
+msgstr "పేరులో చిన్నబడి అక్షరాలు మరియు అంకెలు మాత్రమే ఖాళీలు లేకుండా ఉండాలి."
+
+#: actions/apigroupcreate.php:176 actions/editgroup.php:190
+#: actions/newgroup.php:130 actions/profilesettings.php:238
+#: actions/register.php:215
+msgid "Nickname already in use. Try another one."
+msgstr "ఆ పేరుని ఇప్పటికే వాడుతున్నారు. మరోటి ప్రయత్నించండి."
+
+#: actions/apigroupcreate.php:183 actions/editgroup.php:193
+#: actions/newgroup.php:133 actions/profilesettings.php:218
+#: actions/register.php:217
+msgid "Not a valid nickname."
+msgstr "సరైన పేరు కాదు."
+
+#: actions/apigroupcreate.php:199 actions/editapplication.php:215
+#: actions/editgroup.php:199 actions/newapplication.php:203
+#: actions/newgroup.php:139 actions/profilesettings.php:222
+#: actions/register.php:224
+msgid "Homepage is not a valid URL."
+msgstr "హోమ్ పేజీ URL సరైనది కాదు."
+
+#: actions/apigroupcreate.php:208 actions/editgroup.php:202
+#: actions/newgroup.php:142 actions/profilesettings.php:225
+#: actions/register.php:227
+msgid "Full name is too long (max 255 chars)."
+msgstr "పూర్తి పేరు చాలా పెద్దగా ఉంది (గరిష్ఠంగా 255 అక్షరాలు)."
+
+#: actions/apigroupcreate.php:216 actions/editapplication.php:190
+#: actions/newapplication.php:172
+#, php-format
+msgid "Description is too long (max %d chars)."
+msgstr "వివరణ చాలా పెద్దగా ఉంది (%d అక్షరాలు గరిష్ఠం)."
+
+#: actions/apigroupcreate.php:227 actions/editgroup.php:208
+#: actions/newgroup.php:148 actions/profilesettings.php:232
+#: actions/register.php:234
+msgid "Location is too long (max 255 chars)."
+msgstr "ప్రాంతం పేరు మరీ పెద్దగా ఉంది (255 అక్షరాలు గరిష్ఠం)."
+
+#: actions/apigroupcreate.php:246 actions/editgroup.php:219
+#: actions/newgroup.php:159
+#, php-format
+msgid "Too many aliases! Maximum %d."
+msgstr "చాలా మారుపేర్లు! %d గరిష్ఠం."
+
+#: actions/apigroupcreate.php:267
+#, php-format
+msgid "Invalid alias: \"%s\"."
+msgstr "తప్పుడు మారుపేరు: \"%s\"."
+
+#: actions/apigroupcreate.php:276 actions/editgroup.php:232
+#: actions/newgroup.php:172
+#, php-format
+msgid "Alias \"%s\" already in use. Try another one."
+msgstr "\"%s\" అన్న మారుపేరుని ఇప్పటికే వాడుతున్నారు. మరొకటి ప్రయత్నించండి."
+
+#: actions/apigroupcreate.php:289 actions/editgroup.php:238
+#: actions/newgroup.php:178
+msgid "Alias can't be the same as nickname."
+msgstr "మారుపేరు పేరుతో సమానంగా ఉండకూడదు."
+
+#: actions/apigroupismember.php:96 actions/apigroupjoin.php:105
+#: actions/apigroupleave.php:105 actions/apigroupmembership.php:92
+#: actions/apigroupshow.php:83 actions/apitimelinegroup.php:92
+msgid "Group not found."
+msgstr "గుంపు దొరకలేదు."
+
+#. TRANS: Error text shown a user tries to join a group they already are a member of.
+#: actions/apigroupjoin.php:111 actions/joingroup.php:100 lib/command.php:336
+msgid "You are already a member of that group."
+msgstr "మీరు ఇప్పటికే ఆ గుంపులో సభ్యులు."
+
+#. TRANS: Error text shown when a user tries to join a group they are blocked from joining.
+#: actions/apigroupjoin.php:120 actions/joingroup.php:105 lib/command.php:341
+msgid "You have been blocked from that group by the admin."
+msgstr "నిర్వాహకులు ఆ గుంపు నుండి మిమ్మల్ని నిరోధించారు."
+
+#. TRANS: Message given having failed to add a user to a group.
+#. TRANS: %1$s is the nickname of the user, %2$s is the nickname of the group.
+#: actions/apigroupjoin.php:139 actions/joingroup.php:134 lib/command.php:353
+#, php-format
+msgid "Could not join user %1$s to group %2$s."
+msgstr "వాడుకరి %1$sని %2$s గుంపులో చేర్చలేకపోయాం"
+
+#: actions/apigroupleave.php:115
+msgid "You are not a member of this group."
+msgstr "మీరు ఈ గుంపులో సభ్యులు కాదు."
+
+#. TRANS: Message given having failed to remove a user from a group.
+#. TRANS: %1$s is the nickname of the user, %2$s is the nickname of the group.
+#: actions/apigroupleave.php:125 actions/leavegroup.php:129
+#: lib/command.php:401
+#, php-format
+msgid "Could not remove user %1$s from group %2$s."
+msgstr "వాడుకరి %1$sని %2$s గుంపు నుండి తొలగించలేకపోయాం."
+
+#. TRANS: %s is a user name
+#: actions/apigrouplist.php:98
+#, php-format
+msgid "%s's groups"
+msgstr "%s యొక్క గుంపులు"
+
+#. TRANS: Meant to convey the user %2$s is a member of each of the groups listed on site %1$s
+#: actions/apigrouplist.php:108
+#, php-format
+msgid "%1$s groups %2$s is a member of."
+msgstr "%2$s సభ్యులుగా ఉన్న %2$s గుంపులు."
+
+#. TRANS: Message is used as a title. %s is a site name.
+#. TRANS: Message is used as a page title. %s is a nick name.
+#: actions/apigrouplistall.php:92 actions/usergroups.php:63
+#, php-format
+msgid "%s groups"
+msgstr "%s గుంపులు"
+
+#: actions/apigrouplistall.php:96
+#, php-format
+msgid "groups on %s"
+msgstr "%s పై గుంపులు"
+
+#: actions/apimediaupload.php:99
+msgid "Upload failed."
+msgstr "ఎక్కింపు విఫలమైంది."
+
+#: actions/apioauthauthorize.php:101
+msgid "No oauth_token parameter provided."
+msgstr ""
+
+#: actions/apioauthauthorize.php:106
+msgid "Invalid token."
+msgstr "తప్పుడు పాత్ర."
+
+#: actions/apioauthauthorize.php:123 actions/avatarsettings.php:268
+#: actions/deletenotice.php:169 actions/disfavor.php:74
+#: actions/emailsettings.php:267 actions/favor.php:75 actions/geocode.php:55
+#: actions/groupblock.php:66 actions/grouplogo.php:312
+#: actions/groupunblock.php:66 actions/imsettings.php:227
+#: actions/invite.php:56 actions/login.php:137 actions/makeadmin.php:66
+#: actions/newmessage.php:135 actions/newnotice.php:103 actions/nudge.php:80
+#: actions/oauthappssettings.php:159 actions/oauthconnectionssettings.php:135
+#: actions/othersettings.php:145 actions/passwordsettings.php:138
+#: actions/profilesettings.php:194 actions/recoverpassword.php:350
+#: actions/register.php:172 actions/remotesubscribe.php:77
+#: actions/repeat.php:83 actions/smssettings.php:256 actions/subedit.php:38
+#: actions/subscribe.php:86 actions/tagother.php:166
+#: actions/unsubscribe.php:69 actions/userauthorization.php:52
+#: lib/designsettings.php:294
+msgid "There was a problem with your session token. Try again, please."
+msgstr ""
+
+#: actions/apioauthauthorize.php:135
+msgid "Invalid nickname / password!"
+msgstr "తప్పుడు పేరు / సంకేతపదం!"
+
+#: actions/apioauthauthorize.php:159
+msgid "Database error deleting OAuth application user."
+msgstr "ఈ ఉపకరణాన్ని తొలగించకు"
+
+#: actions/apioauthauthorize.php:214
+#, php-format
+msgid ""
+"The request token %s has been authorized. Please exchange it for an access "
+"token."
+msgstr ""
+
+#: actions/apioauthauthorize.php:227
+#, php-format
+msgid "The request token %s has been denied and revoked."
+msgstr ""
+
+#. TRANS: Message given submitting a form with an unknown action in e-mail settings.
+#. TRANS: Message given submitting a form with an unknown action in IM settings.
+#. TRANS: Message given submitting a form with an unknown action in SMS settings.
+#: actions/apioauthauthorize.php:232 actions/avatarsettings.php:281
+#: actions/designadminpanel.php:104 actions/editapplication.php:139
+#: actions/emailsettings.php:286 actions/grouplogo.php:322
+#: actions/imsettings.php:242 actions/newapplication.php:121
+#: actions/oauthconnectionssettings.php:147 actions/recoverpassword.php:44
+#: actions/smssettings.php:277 lib/designsettings.php:304
+msgid "Unexpected form submission."
+msgstr ""
+
+#: actions/apioauthauthorize.php:259
+msgid "An application would like to connect to your account"
+msgstr "ఒక ఉపకరణం మీ ఖాతాకి అనుసంధానమవ్వాలనుకుంటూంది."
+
+#: actions/apioauthauthorize.php:276
+msgid "Allow or deny access"
+msgstr "అనుమతిని ఇవ్వండి లేదా తిరస్కరించండి"
+
+#: actions/apioauthauthorize.php:292
+#, php-format
+msgid ""
+"The application <strong>%1$s</strong> by <strong>%2$s</strong> would like "
+"the ability to <strong>%3$s</strong> your %4$s account data. You should only "
+"give access to your %4$s account to third parties you trust."
+msgstr ""
+
+#. TRANS: Main menu option when logged in for access to user settings
+#: actions/apioauthauthorize.php:310 lib/action.php:463
+msgid "Account"
+msgstr "ఖాతా"
+
+#: actions/apioauthauthorize.php:313 actions/login.php:252
+#: actions/profilesettings.php:106 actions/register.php:431
+#: actions/showgroup.php:245 actions/tagother.php:94
+#: actions/userauthorization.php:145 lib/groupeditform.php:152
+#: lib/userprofile.php:132
+msgid "Nickname"
+msgstr "పేరు"
+
+#. TRANS: Link description in user account settings menu.
+#: actions/apioauthauthorize.php:316 actions/login.php:255
+#: actions/register.php:436 lib/accountsettingsaction.php:125
+msgid "Password"
+msgstr "సంకేతపదం"
+
+#: actions/apioauthauthorize.php:328
+msgid "Deny"
+msgstr "తిరస్కరించు"
+
+#: actions/apioauthauthorize.php:334
+msgid "Allow"
+msgstr "అనుమతించు"
+
+#: actions/apioauthauthorize.php:351
+msgid "Allow or deny access to your account information."
+msgstr "మీ ఖాతా సమాచారాన్ని సంప్రాపించడానికి అనుమతించండి లేదా నిరాకరించండి."
+
+#: actions/apistatusesdestroy.php:112
+msgid "This method requires a POST or DELETE."
+msgstr ""
+
+#: actions/apistatusesdestroy.php:135
+msgid "You may not delete another user's status."
+msgstr "ఇతర వాడుకరుల స్థితిని మీరు తొలగించలేరు."
+
+#: actions/apistatusesretweet.php:75 actions/apistatusesretweets.php:72
+#: actions/deletenotice.php:52 actions/shownotice.php:92
+msgid "No such notice."
+msgstr "అటువంటి సందేశమేమీ లేదు."
+
+#. TRANS: Error text shown when trying to repeat an own notice.
+#: actions/apistatusesretweet.php:83 lib/command.php:538
+msgid "Cannot repeat your own notice."
+msgstr "మీ నోటీసుని మీరే పునరావృతించలేరు."
+
+#. TRANS: Error text shown when trying to repeat an notice that was already repeated by the user.
+#: actions/apistatusesretweet.php:91 lib/command.php:544
+msgid "Already repeated that notice."
+msgstr "ఇప్పటికే ఆ నోటీసుని పునరావృతించారు."
+
+#: actions/apistatusesshow.php:139
+msgid "Status deleted."
+msgstr "స్థితిని తొలగించాం."
+
+#: actions/apistatusesshow.php:145
+msgid "No status with that ID found."
+msgstr "ఆ IDతో ఏ నోటీసు కనబడలేదు."
+
+#: actions/apistatusesupdate.php:221
+msgid "Client must provide a 'status' parameter with a value."
+msgstr ""
+
+#: actions/apistatusesupdate.php:242 actions/newnotice.php:157
+#: lib/mailhandler.php:60
+#, php-format
+msgid "That's too long. Max notice size is %d chars."
+msgstr "అది చాలా పొడవుంది. గరిష్ఠ నోటీసు పరిమాణం %d అక్షరాలు."
+
+#: actions/apistatusesupdate.php:283 actions/apiusershow.php:96
+msgid "Not found."
+msgstr "కనబడలేదు."
+
+#: actions/apistatusesupdate.php:306 actions/newnotice.php:181
+#, php-format
+msgid "Max notice size is %d chars, including attachment URL."
+msgstr "గరిష్ఠ నోటీసు పొడవు %d అక్షరాలు, జోడింపు URLని కలుపుకుని."
+
+#: actions/apisubscriptions.php:232 actions/apisubscriptions.php:262
+msgid "Unsupported format."
+msgstr ""
+
+#: actions/apitimelinementions.php:118
+#, php-format
+msgid "%1$s / Updates mentioning %2$s"
+msgstr "%1$s / %2$sని పేర్కొన్న నోటీసులు"
+
+#: actions/apitimelinementions.php:131
+#, php-format
+msgid "%1$s updates that reply to updates from %2$s / %3$s."
+msgstr ""
+
+#: actions/apitimelinepublic.php:197 actions/publicrss.php:103
+#, php-format
+msgid "%s public timeline"
+msgstr "%s బహిరంగ కాలరేఖ"
+
+#: actions/apitimelinepublic.php:202 actions/publicrss.php:105
+#, php-format
+msgid "%s updates from everyone!"
+msgstr "అందరి నుండి %s తాజాకరణలు!"
+
+#: actions/apitimelineretweetedtome.php:111
+#, php-format
+msgid "Repeated to %s"
+msgstr "%s యొక్క పునరావృతం"
+
+#: actions/apitimelineretweetsofme.php:114
+#, php-format
+msgid "Repeats of %s"
+msgstr "%s యొక్క పునరావృతాలు"
+
+#: actions/apitimelinetag.php:107 actions/tagrss.php:65
+#, php-format
+msgid "Updates tagged with %1$s on %2$s!"
+msgstr "%2$sలో %1$s అనే ట్యాగుతో ఉన్న నోటీసులు!"
+
+#: actions/attachment.php:73
+msgid "No such attachment."
+msgstr "అటువంటి జోడింపు లేదు."
+
+#: actions/avatarbynickname.php:59 actions/blockedfromgroup.php:73
+#: actions/editgroup.php:84 actions/groupdesignsettings.php:84
+#: actions/grouplogo.php:86 actions/groupmembers.php:76
+#: actions/grouprss.php:91 actions/showgroup.php:121
+msgid "No nickname."
+msgstr "పేరు"
+
+#: actions/avatarbynickname.php:64
+msgid "No size."
+msgstr "పరిమాణం లేదు."
+
+#: actions/avatarbynickname.php:69
+msgid "Invalid size."
+msgstr "తప్పుడు పరిమాణం."
+
+#. TRANS: Link description in user account settings menu.
+#: actions/avatarsettings.php:67 actions/showgroup.php:230
+#: lib/accountsettingsaction.php:118
+msgid "Avatar"
+msgstr "అవతారం"
+
+#: actions/avatarsettings.php:78
+#, php-format
+msgid "You can upload your personal avatar. The maximum file size is %s."
+msgstr "మీ వ్యక్తిగత అవతారాన్ని మీరు ఎక్కించవచ్చు. గరిష్ఠ ఫైలు పరిమాణం %s."
+
+#: actions/avatarsettings.php:119 actions/avatarsettings.php:197
+#: actions/grouplogo.php:254
+msgid "Avatar settings"
+msgstr "అవతారపు అమరికలు"
+
+#: actions/avatarsettings.php:127 actions/avatarsettings.php:205
+#: actions/grouplogo.php:202 actions/grouplogo.php:262
+msgid "Original"
+msgstr "అసలు"
+
+#: actions/avatarsettings.php:142 actions/avatarsettings.php:217
+#: actions/grouplogo.php:213 actions/grouplogo.php:274
+msgid "Preview"
+msgstr "మునుజూపు"
+
+#: actions/avatarsettings.php:149 actions/showapplication.php:252
+#: lib/deleteuserform.php:66 lib/noticelist.php:657
+msgid "Delete"
+msgstr "తొలగించు"
+
+#: actions/avatarsettings.php:166 actions/grouplogo.php:236
+msgid "Upload"
+msgstr "ఎగుమతించు"
+
+#: actions/avatarsettings.php:231 actions/grouplogo.php:289
+msgid "Crop"
+msgstr "కత్తిరించు"
+
+#: actions/avatarsettings.php:305
+msgid "No file uploaded."
+msgstr "ఏ దస్త్రమూ ఎక్కింపబడలేదు."
+
+#: actions/avatarsettings.php:332
+msgid "Pick a square area of the image to be your avatar"
+msgstr "మీ అవతారానికి గానూ ఈ చిత్రం నుండి ఒక చతురస్రపు ప్రదేశాన్ని ఎంచుకోండి"
+
+#: actions/avatarsettings.php:370
+msgid "Avatar updated."
+msgstr "అవతారాన్ని తాజాకరించాం."
+
+#: actions/avatarsettings.php:373
+msgid "Failed updating avatar."
+msgstr "అవతారపు తాజాకరణ విఫలమైంది."
+
+#: actions/avatarsettings.php:397
+msgid "Avatar deleted."
+msgstr "అవతారాన్ని తొలగించాం."
+
+#: actions/block.php:69
+msgid "You already blocked that user."
+msgstr "మీరు ఇప్పటికే ఆ వాడుకరిని నిరోధించారు."
+
+#: actions/block.php:107 actions/block.php:136 actions/groupblock.php:158
+msgid "Block user"
+msgstr "వాడుకరిని నిరోధించు"
+
+#: actions/block.php:138
+msgid ""
+"Are you sure you want to block this user? Afterwards, they will be "
+"unsubscribed from you, unable to subscribe to you in the future, and you "
+"will not be notified of any @-replies from them."
+msgstr ""
+"మీరు ఈ వాడుకరిని నిజంగానే నిరోధించాలనుకుంటున్నారా? ఆ తర్వాత, వారు మీ నుండి చందా విరమింపబడతారు, "
+"భవిష్యత్తులో మీకు చందా చేరలేరు, మరియు వారి నుండి @-స్పందనలని మీకు తెలియజేయము."
+
+#. TRANS: Button label on the user block form.
+#. TRANS: Button label on the delete application form.
+#. TRANS: Button label on the delete notice form.
+#. TRANS: Button label on the delete user form.
+#. TRANS: Button label on the form to block a user from a group.
+#: actions/block.php:153 actions/deleteapplication.php:154
+#: actions/deletenotice.php:147 actions/deleteuser.php:152
+#: actions/groupblock.php:178
+msgctxt "BUTTON"
+msgid "No"
+msgstr "కాదు"
+
+#. TRANS: Submit button title for 'No' when blocking a user.
+#. TRANS: Submit button title for 'No' when deleting a user.
+#: actions/block.php:157 actions/deleteuser.php:156
+msgid "Do not block this user"
+msgstr "ఈ వాడుకరిని నిరోధించకు"
+
+#. TRANS: Button label on the user block form.
+#. TRANS: Button label on the delete application form.
+#. TRANS: Button label on the delete notice form.
+#. TRANS: Button label on the delete user form.
+#. TRANS: Button label on the form to block a user from a group.
+#: actions/block.php:160 actions/deleteapplication.php:161
+#: actions/deletenotice.php:154 actions/deleteuser.php:159
+#: actions/groupblock.php:185
+msgctxt "BUTTON"
+msgid "Yes"
+msgstr "అవును"
+
+#. TRANS: Submit button title for 'Yes' when blocking a user.
+#: actions/block.php:164 actions/groupmembers.php:392 lib/blockform.php:80
+msgid "Block this user"
+msgstr "ఈ వాడుకరిని నిరోధించు"
+
+#: actions/block.php:187
+msgid "Failed to save block information."
+msgstr "నిరోధపు సమాచారాన్ని భద్రపరచడంలో విఫలమయ్యాం."
+
+#. TRANS: Command exception text shown when a group is requested that does not exist.
+#. TRANS: Error text shown when trying to leave a group that does not exist.
+#: actions/blockedfromgroup.php:80 actions/blockedfromgroup.php:87
+#: actions/editgroup.php:100 actions/foafgroup.php:44 actions/foafgroup.php:62
+#: actions/foafgroup.php:69 actions/groupblock.php:86 actions/groupbyid.php:83
+#: actions/groupdesignsettings.php:100 actions/grouplogo.php:102
+#: actions/groupmembers.php:83 actions/groupmembers.php:90
+#: actions/grouprss.php:98 actions/grouprss.php:105
+#: actions/groupunblock.php:86 actions/joingroup.php:82
+#: actions/joingroup.php:93 actions/leavegroup.php:82
+#: actions/leavegroup.php:93 actions/makeadmin.php:86
+#: actions/showgroup.php:138 actions/showgroup.php:146 lib/command.php:170
+#: lib/command.php:383
+msgid "No such group."
+msgstr "అటువంటి గుంపు లేదు."
+
+#: actions/blockedfromgroup.php:97
+#, php-format
+msgid "%s blocked profiles"
+msgstr "%s నిరోధిత వాడుకరులు"
+
+#: actions/blockedfromgroup.php:100
+#, php-format
+msgid "%1$s blocked profiles, page %2$d"
+msgstr "%1$s మరియు మిత్రులు, పేజీ %2$d"
+
+#: actions/blockedfromgroup.php:115
+msgid "A list of the users blocked from joining this group."
+msgstr "ఈ గుంపు లోనికి చేరకుండా నిరోధించిన వాడుకరుల యొక్క జాబితా."
+
+#: actions/blockedfromgroup.php:288
+msgid "Unblock user from group"
+msgstr "వాడుకరిని గుంపు నుండి నిరోధించు"
+
+#: actions/blockedfromgroup.php:320 lib/unblockform.php:80
+msgid "Unblock this user"
+msgstr "ఈ వాడుకరిని నిరోధించు"
+
+#. TRANS: Title for mini-posting window loaded from bookmarklet.
+#: actions/bookmarklet.php:51
+#, php-format
+msgid "Post to %s"
+msgstr "%sకి టపాచెయ్యి"
+
+#: actions/confirmaddress.php:75
+msgid "No confirmation code."
+msgstr "నిర్ధారణ సంకేతం లేదు."
+
+#: actions/confirmaddress.php:80
+msgid "Confirmation code not found."
+msgstr "నిర్ధారణ సంకేతం కనబడలేదు."
+
+#: actions/confirmaddress.php:85
+msgid "That confirmation code is not for you!"
+msgstr "ఆ నిర్ధారణా సంకేతం మీది కాదు!"
+
+#. TRANS: Server error for an unknow address type, which can be 'email', 'jabber', or 'sms'.
+#: actions/confirmaddress.php:91
+#, php-format
+msgid "Unrecognized address type %s."
+msgstr "గుర్తుతెలియని చిరునామా రకం %s."
+
+#. TRANS: Client error for an already confirmed email/jabbel/sms address.
+#: actions/confirmaddress.php:96
+msgid "That address has already been confirmed."
+msgstr "ఆ చిరునామా ఇప్పటికే నిర్ధారితమైంది."
+
+#. TRANS: Server error thrown on database error updating e-mail preferences.
+#. TRANS: Server error thrown on database error removing a registered e-mail address.
+#. TRANS: Server error thrown on database error updating IM preferences.
+#. TRANS: Server error thrown on database error removing a registered IM address.
+#. TRANS: Server error thrown on database error updating SMS preferences.
+#. TRANS: Server error thrown on database error removing a registered SMS phone number.
+#: actions/confirmaddress.php:116 actions/emailsettings.php:327
+#: actions/emailsettings.php:473 actions/imsettings.php:280
+#: actions/imsettings.php:439 actions/othersettings.php:174
+#: actions/profilesettings.php:283 actions/smssettings.php:308
+#: actions/smssettings.php:464
+msgid "Couldn't update user."
+msgstr "వాడుకరిని తాజాకరించలేకున్నాం."
+
+#. TRANS: Server error thrown on database error canceling e-mail address confirmation.
+#. TRANS: Server error thrown on database error canceling SMS phone number confirmation.
+#: actions/confirmaddress.php:128 actions/emailsettings.php:433
+#: actions/smssettings.php:422
+msgid "Couldn't delete email confirmation."
+msgstr "ఈమెయిల్ నిర్ధారణని తొలగించలేకున్నాం."
+
+#: actions/confirmaddress.php:146
+msgid "Confirm address"
+msgstr "చిరునామాని నిర్ధారించు"
+
+#: actions/confirmaddress.php:161
+#, php-format
+msgid "The address \"%s\" has been confirmed for your account."
+msgstr "\"%s\" అనే చిరునామా మీ ఖాతాకి నిర్ధారితమైంది."
+
+#: actions/conversation.php:99
+msgid "Conversation"
+msgstr "సంభాషణ"
+
+#: actions/conversation.php:154 lib/mailbox.php:116 lib/noticelist.php:87
+#: lib/profileaction.php:229 lib/searchgroupnav.php:82
+msgid "Notices"
+msgstr "సందేశాలు"
+
+#: actions/deleteapplication.php:63
+msgid "You must be logged in to delete an application."
+msgstr "ఉపకరణాలని తొలగించడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#: actions/deleteapplication.php:71
+msgid "Application not found."
+msgstr "ఉపకరణం కనబడలేదు."
+
+#: actions/deleteapplication.php:78 actions/editapplication.php:77
+#: actions/showapplication.php:94
+msgid "You are not the owner of this application."
+msgstr "మీరు ఈ ఉపకరణం యొక్క యజమాని కాదు."
+
+#: actions/deleteapplication.php:102 actions/editapplication.php:127
+#: actions/newapplication.php:110 actions/showapplication.php:118
+#: lib/action.php:1307
+msgid "There was a problem with your session token."
+msgstr ""
+
+#: actions/deleteapplication.php:123 actions/deleteapplication.php:147
+msgid "Delete application"
+msgstr "ఉపకరణ తొలగింపు"
+
+#: actions/deleteapplication.php:149
+msgid ""
+"Are you sure you want to delete this application? This will clear all data "
+"about the application from the database, including all existing user "
+"connections."
+msgstr ""
+"మీరు నిజంగానే ఈ ఉపకరణాన్ని తొలగించాలనుకుంటున్నారా? ఇది ఆ ఉపకరణం గురించి భోగట్టాని, ప్రస్తుత "
+"వాడుకరుల అనుసంధానాలతో సహా, డాటాబేసు నుండి తొలగిస్తుంది."
+
+#. TRANS: Submit button title for 'No' when deleting an application.
+#: actions/deleteapplication.php:158
+msgid "Do not delete this application"
+msgstr "ఈ ఉపకరణాన్ని తొలగించకు"
+
+#. TRANS: Submit button title for 'Yes' when deleting an application.
+#: actions/deleteapplication.php:164
+msgid "Delete this application"
+msgstr "ఈ ఉపకరణాన్ని తొలగించు"
+
+#. TRANS: Client error message thrown when trying to access the admin panel while not logged in.
+#: actions/deletenotice.php:67 actions/disfavor.php:61 actions/favor.php:62
+#: actions/groupblock.php:61 actions/groupunblock.php:61 actions/logout.php:69
+#: actions/makeadmin.php:61 actions/newmessage.php:87 actions/newnotice.php:89
+#: actions/nudge.php:63 actions/subedit.php:31 actions/subscribe.php:96
+#: actions/tagother.php:33 actions/unsubscribe.php:52
+#: lib/adminpanelaction.php:73 lib/profileformaction.php:64
+#: lib/settingsaction.php:72
+msgid "Not logged in."
+msgstr "లోనికి ప్రవేశించలేదు."
+
+#: actions/deletenotice.php:71
+msgid "Can't delete this notice."
+msgstr "ఈ నోటీసుని తొలగించలేము."
+
+#: actions/deletenotice.php:103
+msgid ""
+"You are about to permanently delete a notice. Once this is done, it cannot "
+"be undone."
+msgstr "మీరు ఒక నోటీసుని శాశ్వతంగా తొలగించబోతున్నారు. ఇది ఒక్కసారి పూర్తయితే, దాన్నిక వెనక్కి తేలేరు."
+
+#: actions/deletenotice.php:109 actions/deletenotice.php:141
+msgid "Delete notice"
+msgstr "నోటీసుని తొలగించు"
+
+#: actions/deletenotice.php:144
+msgid "Are you sure you want to delete this notice?"
+msgstr "మీరు నిజంగానే ఈ నోటీసుని తొలగించాలనుకుంటున్నారా?"
+
+#. TRANS: Submit button title for 'No' when deleting a notice.
+#: actions/deletenotice.php:151
+msgid "Do not delete this notice"
+msgstr "ఈ నోటీసుని తొలగించకు"
+
+#. TRANS: Submit button title for 'Yes' when deleting a notice.
+#: actions/deletenotice.php:158 lib/noticelist.php:657
+msgid "Delete this notice"
+msgstr "ఈ నోటీసుని తొలగించు"
+
+#: actions/deleteuser.php:67
+msgid "You cannot delete users."
+msgstr "మీరు వాడుకరులని తొలగించలేరు."
+
+#: actions/deleteuser.php:74
+msgid "You can only delete local users."
+msgstr "మీరు స్థానిక వాడుకరులను మాత్రమే తొలగించగలరు."
+
+#: actions/deleteuser.php:110 actions/deleteuser.php:133
+msgid "Delete user"
+msgstr "వాడుకరిని తొలగించు"
+
+#: actions/deleteuser.php:136
+msgid ""
+"Are you sure you want to delete this user? This will clear all data about "
+"the user from the database, without a backup."
+msgstr ""
+"మీరు నిజంగానే ఈ వాడుకరిని తొలగించాలనుకుంటున్నారా? ఇది ఆ వాడుకరి భోగట్టాని డాటాబేసు నుండి తొలగిస్తుంది, "
+"వెనక్కి తేలేకుండా."
+
+#. TRANS: Submit button title for 'Yes' when deleting a user.
+#: actions/deleteuser.php:163 lib/deleteuserform.php:77
+msgid "Delete this user"
+msgstr "ఈ వాడుకరిని తొలగించు"
+
+#. TRANS: Message used as title for design settings for the site.
+#. TRANS: Link description in user account settings menu.
+#: actions/designadminpanel.php:63 lib/accountsettingsaction.php:139
+#: lib/groupnav.php:119
+msgid "Design"
+msgstr "రూపురేఖలు"
+
+#: actions/designadminpanel.php:74
+msgid "Design settings for this StatusNet site."
+msgstr "ఈ స్టేటస్&zwnj;నెట్ సైటుకి రూపురేఖల అమరికలు."
+
+#: actions/designadminpanel.php:318
+msgid "Invalid logo URL."
+msgstr "చిహ్నపు URL చెల్లదు."
+
+#: actions/designadminpanel.php:322
+#, php-format
+msgid "Theme not available: %s."
+msgstr "అలంకారం అందుబాటులో లేదు: %s."
+
+#: actions/designadminpanel.php:426
+msgid "Change logo"
+msgstr "చిహ్నాన్ని మార్చు"
+
+#: actions/designadminpanel.php:431
+msgid "Site logo"
+msgstr "సైటు చిహ్నం"
+
+#: actions/designadminpanel.php:443
+msgid "Change theme"
+msgstr "అలంకారాన్ని మార్చు"
+
+#: actions/designadminpanel.php:460
+msgid "Site theme"
+msgstr "సైటు అలంకారం"
+
+#: actions/designadminpanel.php:461
+msgid "Theme for the site."
+msgstr "సైటుకి అలంకారం."
+
+#: actions/designadminpanel.php:471
+msgid "You can upload a custom StatusNet theme as a .ZIP archive."
+msgstr ""
+
+#: actions/designadminpanel.php:486 lib/designsettings.php:101
+msgid "Change background image"
+msgstr "నేపథ్య చిత్రాన్ని మార్చు"
+
+#: actions/designadminpanel.php:491 actions/designadminpanel.php:574
+#: lib/designsettings.php:178
+msgid "Background"
+msgstr "నేపథ్యం"
+
+#: actions/designadminpanel.php:496
+#, php-format
+msgid ""
+"You can upload a background image for the site. The maximum file size is %1"
+"$s."
+msgstr "సైటుకి మీరు నేపథ్యపు చిత్రాన్ని ఎక్కించవచ్చు. గరిష్ఠ ఫైలు పరిమాణం %1$s."
+
+#. TRANS: Used as radio button label to add a background image.
+#: actions/designadminpanel.php:527 lib/designsettings.php:139
+msgid "On"
+msgstr ""
+
+#. TRANS: Used as radio button label to not add a background image.
+#: actions/designadminpanel.php:544 lib/designsettings.php:155
+msgid "Off"
+msgstr ""
+
+#: actions/designadminpanel.php:564 lib/designsettings.php:170
+msgid "Change colours"
+msgstr "రంగులను మార్చు"
+
+#: actions/designadminpanel.php:587 lib/designsettings.php:191
+msgid "Content"
+msgstr "విషయం"
+
+#: actions/designadminpanel.php:600 lib/designsettings.php:204
+msgid "Sidebar"
+msgstr "పక్కపట్టీ"
+
+#: actions/designadminpanel.php:613 lib/designsettings.php:217
+msgid "Text"
+msgstr "పాఠ్యం"
+
+#: actions/designadminpanel.php:626 lib/designsettings.php:230
+msgid "Links"
+msgstr "లంకెలు"
+
+#: actions/designadminpanel.php:651
+msgid "Advanced"
+msgstr "ఉన్నత"
+
+#: actions/designadminpanel.php:655
+msgid "Custom CSS"
+msgstr ""
+
+#: actions/designadminpanel.php:676 lib/designsettings.php:247
+msgid "Use defaults"
+msgstr "అప్రమేయాలని ఉపయోగించు"
+
+#. TRANS: Submit button title
+#: actions/designadminpanel.php:685 actions/othersettings.php:126
+#: actions/pathsadminpanel.php:351 actions/profilesettings.php:174
+#: actions/sessionsadminpanel.php:199 actions/siteadminpanel.php:292
+#: actions/sitenoticeadminpanel.php:195 actions/snapshotadminpanel.php:245
+#: actions/subscriptions.php:226 actions/tagother.php:154
+#: actions/useradminpanel.php:294 lib/applicationeditform.php:363
+#: lib/designsettings.php:256 lib/groupeditform.php:202
+msgid "Save"
+msgstr "భద్రపరచు"
+
+#: actions/designadminpanel.php:686 lib/designsettings.php:257
+msgid "Save design"
+msgstr "రూపురేఖలని భద్రపరచు"
+
+#: actions/disfavor.php:81
+msgid "This notice is not a favorite!"
+msgstr "ఈ నోటీసు ఇష్టాంశం కాదు!"
+
+#: actions/disfavor.php:94
+msgid "Add to favorites"
+msgstr "ఇష్టాంశాలకు చేర్చు"
+
+#: actions/doc.php:158
+#, php-format
+msgid "No such document \"%s\""
+msgstr "అటువంటి జోడింపు లేదు."
+
+#: actions/editapplication.php:54
+msgid "Edit Application"
+msgstr "ఉపకరణాన్ని మార్చు"
+
+#: actions/editapplication.php:66
+msgid "You must be logged in to edit an application."
+msgstr "ఉపకరణాలని మార్చడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#: actions/editapplication.php:81 actions/oauthconnectionssettings.php:166
+#: actions/showapplication.php:87
+msgid "No such application."
+msgstr "అటువంటి ఉపకరణం లేదు."
+
+#: actions/editapplication.php:161
+msgid "Use this form to edit your application."
+msgstr "మీ ఉపకరణాన్ని మార్చడానికి ఈ ఫారాన్ని ఉపయోగించండి."
+
+#: actions/editapplication.php:177 actions/newapplication.php:159
+msgid "Name is required."
+msgstr "పేరు తప్పనిసరి."
+
+#: actions/editapplication.php:180 actions/newapplication.php:165
+msgid "Name is too long (max 255 chars)."
+msgstr "పేరు చాలా పెద్దగా ఉంది (గరిష్ఠంగా 255 అక్షరాలు)."
+
+#: actions/editapplication.php:183 actions/newapplication.php:162
+msgid "Name already in use. Try another one."
+msgstr "ఆ పేరుని ఇప్పటికే వాడుతున్నారు. మరోటి ప్రయత్నించండి."
+
+#: actions/editapplication.php:186 actions/newapplication.php:168
+msgid "Description is required."
+msgstr "వివరణ తప్పనిసరి."
+
+#: actions/editapplication.php:194
+msgid "Source URL is too long."
+msgstr ""
+
+#: actions/editapplication.php:203 actions/newapplication.php:188
+msgid "Organization is required."
+msgstr "సంస్థ తప్పనిసరి."
+
+#: actions/editapplication.php:206 actions/newapplication.php:191
+msgid "Organization is too long (max 255 chars)."
+msgstr "సంస్థ పేరు మరీ పెద్దగా ఉంది (255 అక్షరాలు గరిష్ఠం)."
+
+#: actions/editapplication.php:218 actions/newapplication.php:206
+msgid "Callback is too long."
+msgstr ""
+
+#: actions/editapplication.php:225 actions/newapplication.php:215
+msgid "Callback URL is not valid."
+msgstr ""
+
+#: actions/editapplication.php:258
+msgid "Could not update application."
+msgstr "ఉపకరణాన్ని తాజాకరించలేకున్నాం."
+
+#: actions/editgroup.php:56
+#, php-format
+msgid "Edit %s group"
+msgstr "%s గుంపుని మార్చు"
+
+#: actions/editgroup.php:68 actions/grouplogo.php:70 actions/newgroup.php:65
+msgid "You must be logged in to create a group."
+msgstr "గుంపుని సృష్టించడానికి మీరు లోనికి ప్రవేశించాలి."
+
+#: actions/editgroup.php:107 actions/editgroup.php:172
+#: actions/groupdesignsettings.php:107 actions/grouplogo.php:109
+msgid "You must be an admin to edit the group."
+msgstr "గుంపుని మార్చడానికి మీరు నిర్వాహకులయి ఉండాలి."
+
+#: actions/editgroup.php:158
+msgid "Use this form to edit the group."
+msgstr "గుంపుని మార్చడానికి ఈ ఫారాన్ని ఉపయోగించండి."
+
+#: actions/editgroup.php:205 actions/newgroup.php:145
+#, php-format
+msgid "description is too long (max %d chars)."
+msgstr "వివరణ చాలా పెద్దదిగా ఉంది (140 అక్షరాలు గరిష్ఠం)."
+
+#: actions/editgroup.php:228 actions/newgroup.php:168
+#, php-format
+msgid "Invalid alias: \"%s\""
+msgstr "తప్పుడు మారుపేరు: \"%s\""
+
+#: actions/editgroup.php:258
+msgid "Could not update group."
+msgstr "గుంపుని తాజాకరించలేకున్నాం."
+
+#. TRANS: Server exception thrown when creating group aliases failed.
+#: actions/editgroup.php:264 classes/User_group.php:514
+msgid "Could not create aliases."
+msgstr "మారుపేర్లని సృష్టించలేకపోయాం."
+
+#: actions/editgroup.php:280
+msgid "Options saved."
+msgstr "ఎంపికలు భద్రమయ్యాయి."
+
+#. TRANS: Title for e-mail settings.
+#: actions/emailsettings.php:61
+msgid "Email settings"
+msgstr "ఈమెయిల్ అమరికలు"
+
+#. TRANS: E-mail settings page instructions.
+#. TRANS: %%site.name%% is the name of the site.
+#: actions/emailsettings.php:76
+#, php-format
+msgid "Manage how you get email from %%site.name%%."
+msgstr "%%site.name%% నుండి మీకు ఎలా మెయిల్ వస్తూంతో సంభాళించుకోండి."
+
+#. TRANS: Form legend for e-mail settings form.
+#. TRANS: Field label for e-mail address input in e-mail settings form.
+#: actions/emailsettings.php:106 actions/emailsettings.php:132
+msgid "Email address"
+msgstr "ఈమెయిలు చిరునామా"
+
+#. TRANS: Form note in e-mail settings form.
+#: actions/emailsettings.php:112
+msgid "Current confirmed email address."
+msgstr "ప్రస్తుత నిర్ధారిత ఈమెయిలు చిరునామా."
+
+#. TRANS: Button label to remove a confirmed e-mail address.
+#. TRANS: Button label for removing a set sender e-mail address to post notices from.
+#. TRANS: Button label to remove a confirmed IM address.
+#. TRANS: Button label to remove a confirmed SMS address.
+#. TRANS: Button label for removing a set sender SMS e-mail address to post notices from.
+#: actions/emailsettings.php:115 actions/emailsettings.php:158
+#: actions/imsettings.php:116 actions/smssettings.php:124
+#: actions/smssettings.php:180
+msgctxt "BUTTON"
+msgid "Remove"
+msgstr "తొలగించు"
+
+#: actions/emailsettings.php:122
+msgid ""
+"Awaiting confirmation on this address. Check your inbox (and spam box!) for "
+"a message with further instructions."
+msgstr ""
+"ఈ చిరునామా నిర్ధారణకై వేచివున్నాం. తదుపరి సూచనలతో ఉన్న సందేశానికై మీ ఇన్‌బాక్స్‌లో (స్పామ్ బాక్సులో కూడా!) "
+"చూడండి."
+
+#. TRANS: Button label to cancel an e-mail address confirmation procedure.
+#. TRANS: Button label to cancel an IM address confirmation procedure.
+#. TRANS: Button label to cancel a SMS address confirmation procedure.
+#. TRANS: Button label
+#: actions/emailsettings.php:127 actions/imsettings.php:131
+#: actions/smssettings.php:137 lib/applicationeditform.php:357
+msgctxt "BUTTON"
+msgid "Cancel"
+msgstr "రద్దుచేయి"
+
+#. TRANS: Instructions for e-mail address input form.
+#: actions/emailsettings.php:135
+msgid "Email address, like \"UserName@example.org\""
+msgstr "ఈమెయిల్ చిరునామా, \"username@example.org\" వలె"
+
+#. TRANS: Button label for adding an e-mail address in e-mail settings form.
+#. TRANS: Button label for adding an IM address in IM settings form.
+#. TRANS: Button label for adding a SMS phone number in SMS settings form.
+#: actions/emailsettings.php:139 actions/imsettings.php:148
+#: actions/smssettings.php:162
+msgctxt "BUTTON"
+msgid "Add"
+msgstr "చేర్చు"
+
+#. TRANS: Form legend for incoming e-mail settings form.
+#. TRANS: Form legend for incoming SMS settings form.
+#: actions/emailsettings.php:147 actions/smssettings.php:171
+msgid "Incoming email"
+msgstr ""
+
+#. TRANS: Button label for adding an e-mail address to send notices from.
+#. TRANS: Button label for adding an SMS e-mail address to send notices from.
+#: actions/emailsettings.php:168 actions/smssettings.php:189
+msgctxt "BUTTON"
+msgid "New"
+msgstr "కొత్తది"
+
+#. TRANS: Form legend for e-mail preferences form.
+#: actions/emailsettings.php:174
+msgid "Email preferences"
+msgstr "ఈమెయిలు అభిరుచులు"
+
+#. TRANS: Checkbox label in e-mail preferences form.
+#: actions/emailsettings.php:180
+msgid "Send me notices of new subscriptions through email."
+msgstr ""
+
+#. TRANS: Checkbox label in e-mail preferences form.
+#: actions/emailsettings.php:193
+msgid "Send me email when someone sends me a private message."
+msgstr ""
+
+#. TRANS: Checkbox label in e-mail preferences form.
+#: actions/emailsettings.php:199
+msgid "Send me email when someone sends me an \"@-reply\"."
+msgstr ""
+
+#. TRANS: Checkbox label in e-mail preferences form.
+#: actions/emailsettings.php:205
+msgid "Allow friends to nudge me and send me an email."
+msgstr ""
+
+#. TRANS: Checkbox label in e-mail preferences form.
+#: actions/emailsettings.php:212
+msgid "I want to post notices by email."
+msgstr "నేను ఈమెయిలు ద్వారా నోటీసులు పంపాలనుకుంటున్నాను."
+
+#. TRANS: Confirmation message for successful e-mail preferences save.
+#: actions/emailsettings.php:334
+msgid "Email preferences saved."
+msgstr "ఈమెయిలు అభిరుచులు భద్రమయ్యాయి."
+
+#. TRANS: Message given saving e-mail address without having provided one.
+#: actions/emailsettings.php:353
+msgid "No email address."
+msgstr "ఈమెయిలు చిరునామా లేదు."
+
+#. TRANS: Message given saving e-mail address that not valid.
+#: actions/emailsettings.php:366 actions/register.php:208
+#: actions/siteadminpanel.php:144
+msgid "Not a valid email address."
+msgstr "సరైన ఈమెయిల్ చిరునామా కాదు:"
+
+#. TRANS: Message given saving e-mail address that is already set.
+#: actions/emailsettings.php:370
+msgid "That is already your email address."
+msgstr "అది ఇప్పటికే మీ ఈమెయిల్ చిరునామా."
+
+#. TRANS: Message given saving e-mail address that is already set for another user.
+#: actions/emailsettings.php:374
+msgid "That email address already belongs to another user."
+msgstr "ఆ ఈమెయిల్ చిరునామా ఇప్పటేకే ఇతర వాడుకరికి సంబంధించినది."
+
+#. TRANS: Server error thrown on database error adding e-mail confirmation code.
+#. TRANS: Server error thrown on database error adding IM confirmation code.
+#. TRANS: Server error thrown on database error adding SMS confirmation code.
+#: actions/emailsettings.php:391 actions/imsettings.php:348
+#: actions/smssettings.php:373
+msgid "Couldn't insert confirmation code."
+msgstr "నిర్ధారణ సంకేతాన్ని చేర్చలేకపోయాం."
+
+#. TRANS: Message given canceling e-mail address confirmation that is not pending.
+#. TRANS: Message given canceling IM address confirmation that is not pending.
+#. TRANS: Message given canceling SMS phone number confirmation that is not pending.
+#: actions/emailsettings.php:419 actions/imsettings.php:383
+#: actions/smssettings.php:408
+msgid "No pending confirmation to cancel."
+msgstr "రద్దుచేయడానికి వేచివున్న నిర్ధారణలేమీ లేవు."
+
+#. TRANS: Message given canceling e-mail address confirmation for the wrong e-mail address.
+#: actions/emailsettings.php:424
+msgid "That is the wrong email address."
+msgstr "ఆ ఈమెయిలు చిరునామా సరైనది కాదు."
+
+#. TRANS: Message given after successfully canceling e-mail address confirmation.
+#: actions/emailsettings.php:438
+msgid "Email confirmation cancelled."
+msgstr "ఈమెయిలు నిర్ధారణ రద్దయింది."
+
+#. TRANS: Message given trying to remove an e-mail address that is not
+#. TRANS: registered for the active user.
+#: actions/emailsettings.php:458
+msgid "That is not your email address."
+msgstr "అది మీ ఈమెయిలు చిరునామా కాదు."
+
+#. TRANS: Message given after successfully removing a registered e-mail address.
+#: actions/emailsettings.php:479
+msgid "The email address was removed."
+msgstr "ఆ ఈమెయిలు చిరునామాని తొలగించాం."
+
+#: actions/favor.php:79
+msgid "This notice is already a favorite!"
+msgstr "ఈ నోటీసు ఇప్పటికే మీ ఇష్టాంశం!"
+
+#: actions/favorited.php:65 lib/popularnoticesection.php:91
+#: lib/publicgroupnav.php:93
+msgid "Popular notices"
+msgstr "ప్రాచుర్య నోటీసులు"
+
+#: actions/favorited.php:67
+#, php-format
+msgid "Popular notices, page %d"
+msgstr "ప్రాచుర్య నోటీసులు, పేజీ %d"
+
+#: actions/favorited.php:79
+msgid "The most popular notices on the site right now."
+msgstr "ప్రస్తుతం ఈ సైటులో అత్యంత ప్రాచుర్య నోటీసులు."
+
+#: actions/favorited.php:150
+msgid "Favorite notices appear on this page but no one has favorited one yet."
+msgstr ""
+
+#: actions/favorited.php:153
+msgid ""
+"Be the first to add a notice to your favorites by clicking the fave button "
+"next to any notice you like."
+msgstr ""
+
+#: actions/favoritesrss.php:111 actions/showfavorites.php:77
+#: lib/personalgroupnav.php:115
+#, php-format
+msgid "%s's favorite notices"
+msgstr "%sకి ఇష్టమైన నోటీసులు"
+
+#: actions/favoritesrss.php:115
+#, php-format
+msgid "Updates favored by %1$s on %2$s!"
+msgstr "%2$sలో %1$s అనే ట్యాగుతో ఉన్న నోటీసులు!"
+
+#: actions/featured.php:69 lib/featureduserssection.php:87
+#: lib/publicgroupnav.php:89
+msgid "Featured users"
+msgstr "విశేష వాడుకరులు"
+
+#: actions/featured.php:71
+#, php-format
+msgid "Featured users, page %d"
+msgstr "విశేష వాడుకరులు, పేజీ %d"
+
+#: actions/featured.php:99
+#, php-format
+msgid "A selection of some great users on %s"
+msgstr "%sలో కొందరు గొప్ప వాడుకరుల యొక్క ఎంపిక"
+
+#: actions/file.php:34
+msgid "No notice ID."
+msgstr "సందేశం లేదు."
+
+#: actions/file.php:38
+msgid "No notice."
+msgstr "సందేశం లేదు."
+
+#: actions/file.php:42
+msgid "No attachments."
+msgstr "జోడింపులు లేవు."
+
+#: actions/file.php:51
+msgid "No uploaded attachments."
+msgstr "ఎక్కించిన జోడింపులేమీ లేవు."
+
+#: actions/finishremotesubscribe.php:69
+msgid "Not expecting this response!"
+msgstr ""
+
+#: actions/finishremotesubscribe.php:80
+msgid "User being listened to does not exist."
+msgstr ""
+
+#: actions/finishremotesubscribe.php:87 actions/remotesubscribe.php:59
+msgid "You can use the local subscription!"
+msgstr "మీరు స్థానిక చందాని ఉపయోగించవచ్చు!"
+
+#: actions/finishremotesubscribe.php:99
+msgid "That user has blocked you from subscribing."
+msgstr "ఆ వాడుకరి మిమ్మల్ని చందాచేరకుండా నిరోధించారు."
+
+#: actions/finishremotesubscribe.php:110
+msgid "You are not authorized."
+msgstr "మీకు అధీకరణ లేదు."
+
+#: actions/finishremotesubscribe.php:113
+msgid "Could not convert request token to access token."
+msgstr ""
+
+#: actions/finishremotesubscribe.php:118
+msgid "Remote service uses unknown version of OMB protocol."
+msgstr ""
+
+#: actions/getfile.php:79
+msgid "No such file."
+msgstr "అటువంటి ఫైలు లేదు."
+
+#: actions/getfile.php:83
+msgid "Cannot read file."
+msgstr "ఫైలుని చదవలేకపోతున్నాం."
+
+#: actions/grantrole.php:62 actions/revokerole.php:62
+msgid "Invalid role."
+msgstr "తప్పుడు పాత్ర."
+
+#: actions/grantrole.php:66 actions/revokerole.php:66
+msgid "This role is reserved and cannot be set."
+msgstr ""
+
+#: actions/grantrole.php:75
+msgid "You cannot grant user roles on this site."
+msgstr "ఈ సైటులో మీరు వాడుకరలకి పాత్రలను ఇవ్వలేరు."
+
+#: actions/grantrole.php:82
+msgid "User already has this role."
+msgstr "వాడుకరికి ఇప్పటికే ఈ పాత్ర ఉంది."
+
+#: actions/groupblock.php:81 actions/groupunblock.php:81
+#: actions/makeadmin.php:81
+msgid "No group specified."
+msgstr "గుంపు ఏమీ పేర్కొనలేదు."
+
+#: actions/groupblock.php:91
+msgid "Only an admin can block group members."
+msgstr "నిర్వాహకులు మాత్రమే గుంపు సభ్యులను నిరోధించగలరు."
+
+#: actions/groupblock.php:95
+msgid "User is already blocked from group."
+msgstr "వాడుకరిని ఇప్పటికే గుంపునుండి నిరోధించారు."
+
+#: actions/groupblock.php:100
+msgid "User is not a member of group."
+msgstr "వాడుకరి ఈ గుంపులో సభ్యులు కాదు."
+
+#: actions/groupblock.php:134 actions/groupmembers.php:360
+msgid "Block user from group"
+msgstr "వాడుకరిని గుంపు నుండి నిరోధించు"
+
+#: actions/groupblock.php:160
+#, php-format
+msgid ""
+"Are you sure you want to block user \"%1$s\" from the group \"%2$s\"? They "
+"will be removed from the group, unable to post, and unable to subscribe to "
+"the group in the future."
+msgstr ""
+"నిజంగానే వాడుకరి \"%1$s\"ని \"%2$s\" గుంపు నుండి నిరోధించాలనుకుంటున్నారా? వారిని గుంపు నుండి "
+"తొలగిస్తాం, ఇక భవిష్యత్తులో వారు గుంపులో ప్రచురించలేరు, మరియు గుంపుకి చందాచేరలేరు."
+
+#. TRANS: Submit button title for 'No' when blocking a user from a group.
+#: actions/groupblock.php:182
+msgid "Do not block this user from this group"
+msgstr "ఈ వాడుకరిని ఈ గుంపు నుండి నిరోధించకు"
+
+#. TRANS: Submit button title for 'Yes' when blocking a user from a group.
+#: actions/groupblock.php:189
+msgid "Block this user from this group"
+msgstr "ఈ గుంపునుండి ఈ వాడుకరిని నిరోధించు"
+
+#: actions/groupbyid.php:74 actions/userbyid.php:70
+msgid "No ID."
+msgstr "ఐడీ లేదు."
+
+#: actions/groupdesignsettings.php:68
+msgid "You must be logged in to edit a group."
+msgstr "గుంపుని మార్చడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#: actions/groupdesignsettings.php:144
+msgid "Group design"
+msgstr "గుంపు అలంకారం"
+
+#: actions/groupdesignsettings.php:155
+msgid ""
+"Customize the way your group looks with a background image and a colour "
+"palette of your choice."
+msgstr "నేపథ్య చిత్రం మరియు రంగుల ఎంపికతో మీ గుంపు ఎలా కనిపించాలో మలచుకోండి."
+
+#: actions/groupdesignsettings.php:266 actions/userdesignsettings.php:186
+#: lib/designsettings.php:391 lib/designsettings.php:413
+msgid "Couldn't update your design."
+msgstr "మీ రూపురేఖలని తాజాకరించలేకపోయాం."
+
+#: actions/groupdesignsettings.php:311 actions/userdesignsettings.php:231
+msgid "Design preferences saved."
+msgstr "ఈమెయిలు అభిరుచులు భద్రమయ్యాయి."
+
+#: actions/grouplogo.php:142 actions/grouplogo.php:195
+msgid "Group logo"
+msgstr "గుంపు చిహ్నం"
+
+#: actions/grouplogo.php:153
+#, php-format
+msgid ""
+"You can upload a logo image for your group. The maximum file size is %s."
+msgstr "మీ గుంపుకి మీరు ఒక చిహ్నాన్ని ఎక్కించవచ్చు. ఆ ఫైలు యొక్క గరిష్ఠ పరిమాణం %s."
+
+#: actions/grouplogo.php:365
+msgid "Pick a square area of the image to be the logo."
+msgstr "చిహ్నంగా ఉండాల్సిన చతురస్త్ర ప్రదేశాన్ని బొమ్మ నుండి ఎంచుకోండి."
+
+#: actions/grouplogo.php:399
+msgid "Logo updated."
+msgstr "చిహ్నాన్ని తాజాకరించాం."
+
+#: actions/grouplogo.php:401
+msgid "Failed updating logo."
+msgstr "చిహ్నపు తాజాకరణ విఫలమైంది."
+
+#: actions/groupmembers.php:100 lib/groupnav.php:92
+#, php-format
+msgid "%s group members"
+msgstr "%s గుంపు సభ్యులు"
+
+#: actions/groupmembers.php:103
+#, php-format
+msgid "%1$s group members, page %2$d"
+msgstr "%1$s గుంపు సభ్యులు, పేజీ %2$d"
+
+#: actions/groupmembers.php:118
+msgid "A list of the users in this group."
+msgstr "ఈ గుంపులో వాడుకరులు జాబితా."
+
+#: actions/groupmembers.php:182 lib/groupnav.php:107
+msgid "Admin"
+msgstr "నిర్వాహకులు"
+
+#: actions/groupmembers.php:392 lib/blockform.php:69
+msgid "Block"
+msgstr "నిరోధించు"
+
+#: actions/groupmembers.php:487
+msgid "Make user an admin of the group"
+msgstr "వాడుకరిని గుంపుకి ఒక నిర్వాహకునిగా చేయి"
+
+#: actions/groupmembers.php:519
+msgid "Make Admin"
+msgstr "నిర్వాహకున్ని చేయి"
+
+#: actions/groupmembers.php:519
+msgid "Make this user an admin"
+msgstr "ఈ వాడుకరిని నిర్వాహకున్ని చేయి"
+
+#. TRANS: Message is used as link title. %s is a user nickname.
+#. TRANS: Title in atom group notice feed. %s is a group name.
+#. TRANS: Title in atom user notice feed. %s is a user name.
+#: actions/grouprss.php:139 actions/userrss.php:94
+#: lib/atomgroupnoticefeed.php:63 lib/atomusernoticefeed.php:69
+#, php-format
+msgid "%s timeline"
+msgstr "%s కాలరేఖ"
+
+#. TRANS: Message is used as link description. %1$s is a username, %2$s is a site name.
+#: actions/grouprss.php:142
+#, php-format
+msgid "Updates from members of %1$s on %2$s!"
+msgstr "%2$sలో %1$s మరియు స్నేహితుల నుండి తాజాకరణలు!"
+
+#: actions/groups.php:62 lib/profileaction.php:223 lib/profileaction.php:249
+#: lib/publicgroupnav.php:81 lib/searchgroupnav.php:84 lib/subgroupnav.php:98
+msgid "Groups"
+msgstr "గుంపులు"
+
+#: actions/groups.php:64
+#, php-format
+msgid "Groups, page %d"
+msgstr "గుంపులు, పేజీ %d"
+
+#: actions/groups.php:90
+#, php-format
+msgid ""
+"%%%%site.name%%%% groups let you find and talk with people of similar "
+"interests. After you join a group you can send messages to all other members "
+"using the syntax \"!groupname\". Don't see a group you like? Try [searching "
+"for one](%%%%action.groupsearch%%%%) or [start your own!](%%%%action.newgroup"
+"%%%%)"
+msgstr ""
+"ఒకే రకమైన ఆసక్తులు ఉన్న వ్యక్తులు కలుసుకోడానికి మరియు మాట్లాడుకోడానికి %%%%site.name%%%% "
+"గుంపులు వీలుకల్పిస్తాయి. ఒక గుంపులో చేరిన తర్వాత మీరు \"!groupname\" అన్న సంకేతం ద్వారా ఆ "
+"గుంపు లోని సభ్యులందరికీ సందేశాలని పంపించవచ్చు. మీకు నచ్చిన గుంపు కనబడలేదా? [దాని కోసం వెతకండి](%%"
+"%%action.groupsearch%%%%) లేదా [మీరే కొత్తది సృష్టించండి!](%%%%action.newgroup%%%%)"
+
+#: actions/groups.php:107 actions/usergroups.php:126 lib/groupeditform.php:122
+msgid "Create a new group"
+msgstr "కొత్త గుంపుని సృష్టించు"
+
+#: actions/groupsearch.php:52
+#, php-format
+msgid ""
+"Search for groups on %%site.name%% by their name, location, or description. "
+"Separate the terms by spaces; they must be 3 characters or more."
+msgstr ""
+"%%site.name%%లో గుంపులను వాటి పేరు, ప్రాంతం, లేదా వివరణని బట్టి వెతకండి. అన్వేషించే పదాలను ఖాళీలతో "
+"వేరుచేయండి; ఒక్కో పదంలో 3 లేదా అంతకంటే ఎక్కువ అక్షరాలు ఉండాలి."
+
+#: actions/groupsearch.php:58
+msgid "Group search"
+msgstr "గుంపుల అన్వేషణ"
+
+#: actions/groupsearch.php:79 actions/noticesearch.php:117
+#: actions/peoplesearch.php:83
+msgid "No results."
+msgstr "ఫలితాలేమీ లేవు."
+
+#: actions/groupsearch.php:82
+#, php-format
+msgid ""
+"If you can't find the group you're looking for, you can [create it](%%action."
+"newgroup%%) yourself."
+msgstr ""
+"మీరు వెతుకున్న గుంపు మీకు కనబడకపోతే, మీరే [దాన్ని సృష్టించవచ్చు](%%action.newgroup%%)."
+
+#: actions/groupsearch.php:85
+#, php-format
+msgid ""
+"Why not [register an account](%%action.register%%) and [create the group](%%"
+"action.newgroup%%) yourself!"
+msgstr ""
+"[ఒక ఖాతాని నమోదుచేసుకుని](%%action.register%%) మీరే ఎందుకు [ఆ గుంపుని సృష్టించ](%%"
+"action.newgroup%%)కూడదు!"
+
+#: actions/groupunblock.php:91
+msgid "Only an admin can unblock group members."
+msgstr "నిర్వాహకులు మాత్రమే గుంపు సభ్యులపై నిరోధాన్ని ఎత్తివేయగలరు."
+
+#: actions/groupunblock.php:95
+msgid "User is not blocked from group."
+msgstr "వాడుకరిని గుంపు నుండి నిరోధించలేదు."
+
+#: actions/groupunblock.php:128 actions/unblock.php:86
+msgid "Error removing the block."
+msgstr "నిరోధాన్ని తొలగించడంలో పొరపాటు."
+
+#. TRANS: Title for instance messaging settings.
+#: actions/imsettings.php:60
+msgid "IM settings"
+msgstr "IM అమరికలు"
+
+#. TRANS: Instant messaging settings page instructions.
+#. TRANS: [instant messages] is link text, "(%%doc.im%%)" is the link.
+#. TRANS: the order and formatting of link text and link should remain unchanged.
+#: actions/imsettings.php:74
+#, php-format
+msgid ""
+"You can send and receive notices through Jabber/GTalk [instant messages](%%"
+"doc.im%%). Configure your address and settings below."
+msgstr ""
+
+#. TRANS: Message given in the IM settings if XMPP is not enabled on the site.
+#: actions/imsettings.php:94
+msgid "IM is not available."
+msgstr "IM అందుబాటులో లేదు."
+
+#. TRANS: Form legend for IM settings form.
+#. TRANS: Field label for IM address input in IM settings form.
+#: actions/imsettings.php:106 actions/imsettings.php:136
+msgid "IM address"
+msgstr "IM చిరునామా"
+
+#: actions/imsettings.php:113
+msgid "Current confirmed Jabber/GTalk address."
+msgstr "ప్రస్తుతం నిర్ధారించిన Jabber/GTalk చిరునామా"
+
+#. TRANS: IM address input field instructions in IM settings form.
+#. TRANS: %s is the IM address set for the site.
+#: actions/imsettings.php:140
+#, php-format
+msgid ""
+"Jabber or GTalk address, like \"UserName@example.org\". First, make sure to "
+"add %s to your buddy list in your IM client or on GTalk."
+msgstr ""
+
+#. TRANS: Form legend for IM preferences form.
+#: actions/imsettings.php:155
+msgid "IM preferences"
+msgstr "IM అభిరుచులు"
+
+#. TRANS: Checkbox label in IM preferences form.
+#: actions/imsettings.php:160
+msgid "Send me notices through Jabber/GTalk."
+msgstr ""
+
+#. TRANS: Checkbox label in IM preferences form.
+#: actions/imsettings.php:166
+msgid "Post a notice when my Jabber/GTalk status changes."
+msgstr ""
+
+#. TRANS: Checkbox label in IM preferences form.
+#: actions/imsettings.php:172
+msgid "Send me replies through Jabber/GTalk from people I'm not subscribed to."
+msgstr ""
+
+#. TRANS: Confirmation message for successful IM preferences save.
+#: actions/imsettings.php:287 actions/othersettings.php:180
+msgid "Preferences saved."
+msgstr "అభిరుచులు భద్రమయ్యాయి."
+
+#. TRANS: Message given saving IM address without having provided one.
+#: actions/imsettings.php:309
+msgid "No Jabber ID."
+msgstr "Jabber ID లేదు."
+
+#. TRANS: Message given saving IM address that not valid.
+#: actions/imsettings.php:322
+msgid "Not a valid Jabber ID"
+msgstr "సరైన Jabber ఐడీ కాదు"
+
+#. TRANS: Message given saving IM address that is already set.
+#: actions/imsettings.php:326
+msgid "That is already your Jabber ID."
+msgstr "ఈ Jabber ID మీకు ఇప్పటికే ఉంది"
+
+#. TRANS: Message given saving IM address that is already set for another user.
+#: actions/imsettings.php:330
+msgid "Jabber ID already belongs to another user."
+msgstr "Jabber ID ఇప్పటికే వేరొకరికి ఉంది."
+
+#. TRANS: Message given saving valid IM address that is to be confirmed.
+#. TRANS: %s is the IM address set for the site.
+#: actions/imsettings.php:358
+#, php-format
+msgid ""
+"A confirmation code was sent to the IM address you added. You must approve %"
+"s for sending messages to you."
+msgstr ""
+
+#. TRANS: Message given canceling IM address confirmation for the wrong IM address.
+#: actions/imsettings.php:388
+msgid "That is the wrong IM address."
+msgstr "ఆ IM చిరునామా సరైనది కాదు."
+
+#. TRANS: Message given after successfully canceling IM address confirmation.
+#: actions/imsettings.php:402
+msgid "IM confirmation cancelled."
+msgstr "IM నిర్ధారణ రద్దయింది."
+
+#. TRANS: Message given trying to remove an IM address that is not
+#. TRANS: registered for the active user.
+#: actions/imsettings.php:424
+msgid "That is not your Jabber ID."
+msgstr "ఇది మీ Jabber ID కాదు"
+
+#. TRANS: Message given after successfully removing a registered IM address.
+#: actions/imsettings.php:447
+msgid "The IM address was removed."
+msgstr "ఆ IM చిరునామాని తొలగించాం."
+
+#: actions/inbox.php:59
+#, php-format
+msgid "Inbox for %1$s - page %2$d"
+msgstr "%1$sకి వచ్చినవి - %2$dవ పేజీ"
+
+#: actions/inbox.php:62
+#, php-format
+msgid "Inbox for %s"
+msgstr "%sకి వచ్చినవి"
+
+#: actions/inbox.php:115
+msgid "This is your inbox, which lists your incoming private messages."
+msgstr "ఇవి మీకు వచ్చిన అంతరంగిక సందేశాలు."
+
+#: actions/invite.php:39
+msgid "Invites have been disabled."
+msgstr "ఆహ్వానాలని అచేతనం చేసారు."
+
+#: actions/invite.php:41
+#, php-format
+msgid "You must be logged in to invite other users to use %s."
+msgstr "sని ఉపయోగించమని ఇతర వాడుకరులని ఆహ్వానించడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#: actions/invite.php:72
+#, php-format
+msgid "Invalid email address: %s"
+msgstr "తప్పుడు ఈమెయిలు చిరునామా: %s"
+
+#: actions/invite.php:110
+msgid "Invitation(s) sent"
+msgstr "ఆహ్వానము(ల)ని పంపించాం"
+
+#: actions/invite.php:112
+msgid "Invite new users"
+msgstr "కొత్త వాడుకరులని ఆహ్వానించండి"
+
+#: actions/invite.php:128
+msgid "You are already subscribed to these users:"
+msgstr "మీరు ఇప్పటికే ఈ వాడుకరులకు చందాచేరి ఉన్నారు:"
+
+#. TRANS: Whois output.
+#. TRANS: %1$s nickname of the queried user, %2$s is their profile URL.
+#: actions/invite.php:131 actions/invite.php:139 lib/command.php:430
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr "%1$s (%2$s)"
+
+#: actions/invite.php:136
+msgid ""
+"These people are already users and you were automatically subscribed to them:"
+msgstr "ఈ వ్యక్తులు ఇప్పటికే ఇక్కడ వాడుకరులు మరియు మిమ్మల్ని వారికి చందాదార్లుగా చేర్చేసాం:"
+
+#: actions/invite.php:144
+msgid "Invitation(s) sent to the following people:"
+msgstr "క్రింది ప్రజలకి ఆహ్వానము(ల)ని పంపించాం:"
+
+#: actions/invite.php:150
+msgid ""
+"You will be notified when your invitees accept the invitation and register "
+"on the site. Thanks for growing the community!"
+msgstr ""
+"ఆహ్వానితులు మీ ఆహ్వానాన్ని అంగీకరించి సైటులో నమోదైనప్పుడు మీకు తెలియజేస్తాము. ఇక్కడి ప్రజని "
+"పెంచుతున్నందుకు ధన్యవాదాలు!"
+
+#: actions/invite.php:162
+msgid ""
+"Use this form to invite your friends and colleagues to use this service."
+msgstr "ఈ ఫారాన్ని ఉపయోగించి మీ స్నేహితులను మరియు సహోద్యోగులను ఈ సేవను వినియోగించుకోమని ఆహ్వానించండి."
+
+#: actions/invite.php:187
+msgid "Email addresses"
+msgstr "ఈమెయిలు చిరునామాలు"
+
+#: actions/invite.php:189
+msgid "Addresses of friends to invite (one per line)"
+msgstr "ఆహ్వానించాల్సిన మిత్రుల చిరునామాలు (లైనుకి ఒకటి చొప్పున)"
+
+#: actions/invite.php:192
+msgid "Personal message"
+msgstr "వ్యక్తిగత సందేశం"
+
+#: actions/invite.php:194
+msgid "Optionally add a personal message to the invitation."
+msgstr "ఐచ్ఛికంగా ఆహ్వానానికి వ్యక్తిగత సందేశం చేర్చండి."
+
+#. TRANS: Send button for inviting friends
+#: actions/invite.php:198
+msgctxt "BUTTON"
+msgid "Send"
+msgstr "పంపించు"
+
+#. TRANS: Subject for invitation email. Note that 'them' is correct as a gender-neutral singular 3rd-person pronoun in English.
+#: actions/invite.php:228
+#, php-format
+msgid "%1$s has invited you to join them on %2$s"
+msgstr "%2$sలో చేరమని %1$s మిమ్మల్ని ఆహ్వానించారు"
+
+#. TRANS: Body text for invitation email. Note that 'them' is correct as a gender-neutral singular 3rd-person pronoun in English.
+#: actions/invite.php:231
+#, php-format
+msgid ""
+"%1$s has invited you to join them on %2$s (%3$s).\n"
+"\n"
+"%2$s is a micro-blogging service that lets you keep up-to-date with people "
+"you know and people who interest you.\n"
+"\n"
+"You can also share news about yourself, your thoughts, or your life online "
+"with people who know about you. It's also great for meeting new people who "
+"share your interests.\n"
+"\n"
+"%1$s said:\n"
+"\n"
+"%4$s\n"
+"\n"
+"You can see %1$s's profile page on %2$s here:\n"
+"\n"
+"%5$s\n"
+"\n"
+"If you'd like to try the service, click on the link below to accept the "
+"invitation.\n"
+"\n"
+"%6$s\n"
+"\n"
+"If not, you can ignore this message. Thanks for your patience and your "
+"time.\n"
+"\n"
+"Sincerely, %2$s\n"
+msgstr ""
+"%2$s (%3$s) లో వారితో చేరమని %1$s మిమ్మల్ని ఆహ్వానించారు.\n"
+"\n"
+"%2$s అనేది మీకు తెలిసిన మరియు మీకు ఆసక్తి ఉన్న వ్యక్తులతో ఎప్పటికప్పుడు పరిచయంలో ఉండేదుకు "
+"వీలుకల్పించే ఒక సూక్ష్మ-బ్లాగింగు సేవ.\n"
+"\n"
+"మీరు కూడా మీ గురించి, మీ ఆలోచనల గురించి లేదా మీ జీవితం గురించిన విశేషాలను మీకు తెలిసిన వారితో "
+"పంచుకోవచ్చు. అలానే ఇది మీలాంటి ఆసక్తులు కలిగిన కొత్త వ్యక్తులని కలుసుకునేందుకు గొప్ప ప్రదేశం.\n"
+"\n"
+"%1$s అన్నారు:\n"
+"\n"
+"%4$s\n"
+"\n"
+"%2$sలో %1$s యొక్క ప్రొఫైలుని మీరు ఇక్కడ చూడవచ్చు:\n"
+"\n"
+"%5$s\n"
+"\n"
+"మీరు దీన్ని ప్రయత్నించి చూడాలనుకుంటే, ఈ ఆహ్వానాన్ని అంగీకరించడానికి ఈ క్రింద లంకెపై నొక్కండి.\n"
+"\n"
+"%6$s\n"
+"\n"
+"కాదనుకుంటే, ఈ సందేశాన్ని పట్టించుకోకండి. మీ ఓపిక మరియు సమయానికి ధన్యవాదాలు.\n"
+"\n"
+"వినమ్రతతో, %2$s\n"
+
+#: actions/joingroup.php:60
+msgid "You must be logged in to join a group."
+msgstr "గుంపుల్లో చేరడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#: actions/joingroup.php:88 actions/leavegroup.php:88
+msgid "No nickname or ID."
+msgstr "Jabber ID లేదు."
+
+#: actions/joingroup.php:141
+#, php-format
+msgid "%1$s joined group %2$s"
+msgstr "%1$s %2$s గుంపులో చేరారు"
+
+#: actions/leavegroup.php:60
+msgid "You must be logged in to leave a group."
+msgstr "గుంపుని వదిలివెళ్ళడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#. TRANS: Error text shown when trying to leave an existing group the user is not a member of.
+#: actions/leavegroup.php:100 lib/command.php:389
+msgid "You are not a member of that group."
+msgstr "మీరు ఆ గుంపులో సభ్యులు కాదు."
+
+#: actions/leavegroup.php:137
+#, php-format
+msgid "%1$s left group %2$s"
+msgstr "%2$s గుంపు నుండి %1$s వైదొలిగారు"
+
+#: actions/login.php:102 actions/otp.php:62 actions/register.php:144
+msgid "Already logged in."
+msgstr "ఇప్పటికే లోనికి ప్రవేశించారు."
+
+#: actions/login.php:148
+msgid "Incorrect username or password."
+msgstr "వాడుకరిపేరు లేదా సంకేతపదం తప్పు."
+
+#: actions/login.php:154 actions/otp.php:120
+msgid "Error setting user. You are probably not authorized."
+msgstr "వాడుకరిని అమర్చడంలో పొరపాటు. బహుశా మీకు అధీకరణ లేకపోవచ్చు."
+
+#: actions/login.php:210 actions/login.php:263 lib/logingroupnav.php:79
+msgid "Login"
+msgstr "ప్రవేశించండి"
+
+#: actions/login.php:249
+msgid "Login to site"
+msgstr "సైటు లోనికి ప్రవేశించు"
+
+#: actions/login.php:258 actions/register.php:485
+msgid "Remember me"
+msgstr "నన్ను గుర్తుంచుకో"
+
+#: actions/login.php:259 actions/register.php:487
+msgid "Automatically login in the future; not for shared computers!"
+msgstr "భవిష్యత్తులో ఆటోమెటిగ్గా లోనికి ప్రవేశించు; బయటి కంప్యూర్ల కొరకు కాదు!"
+
+#: actions/login.php:269
+msgid "Lost or forgotten password?"
+msgstr "మీ సంకేతపదం మర్చిపోయారా?"
+
+#: actions/login.php:288
+msgid ""
+"For security reasons, please re-enter your user name and password before "
+"changing your settings."
+msgstr ""
+"భద్రతా కారణాల దృష్ట్యా, అమరికలు మార్చే ముందు మీ వాడుకరి పేరుని మరియు సంకేతపదాన్ని మరోసారి ఇవ్వండి."
+
+#: actions/login.php:292
+msgid "Login with your username and password."
+msgstr "మీ వాడుకరిపేరు మరియు సంకేతపదాలతో ప్రవేశించండి."
+
+#: actions/login.php:295
+#, php-format
+msgid ""
+"Don't have a username yet? [Register](%%action.register%%) a new account."
+msgstr "మీకు ఇంకా వాడుకరిపేరు లేదా? కొత్త ఖాతాని [నమోదుచేసుకోండి](%%action.register%%)."
+
+#: actions/makeadmin.php:92
+msgid "Only an admin can make another user an admin."
+msgstr "నిర్వాహకులు మాత్రమే మరొక వాడుకరిని నిర్వాహకునిగా చేయగలరు."
+
+#: actions/makeadmin.php:96
+#, php-format
+msgid "%1$s is already an admin for group \"%2$s\"."
+msgstr "%1$s ఇప్పటికే \"%2$s\" గుంపు యొక్క ఒక నిర్వాకులు."
+
+#: actions/makeadmin.php:133
+#, php-format
+msgid "Can't get membership record for %1$s in group %2$s."
+msgstr "%1$sని %2$s గుంపు యొక్క నిర్వాహకున్ని చేయలేకపోయాం."
+
+#: actions/makeadmin.php:146
+#, php-format
+msgid "Can't make %1$s an admin for group %2$s."
+msgstr "%1$sని %2$s గుంపు యొక్క నిర్వాహకున్ని చేయలేకపోయాం."
+
+#: actions/microsummary.php:69
+msgid "No current status."
+msgstr "ప్రస్తుత స్థితి ఏమీ లేదు."
+
+#: actions/newapplication.php:52
+msgid "New Application"
+msgstr "కొత్త ఉపకరణం"
+
+#: actions/newapplication.php:64
+msgid "You must be logged in to register an application."
+msgstr "ఉపకరణాలని నమోదుచేసుకోడానికి మీరు లోనికి ప్రవేశించి ఉండాలి."
+
+#: actions/newapplication.php:143
+msgid "Use this form to register a new application."
+msgstr "కొత్త ఉపకరణాన్ని నమోదుచేసుకోడానికి ఈ ఫారాన్ని ఉపయోగించండి."
+
+#: actions/newapplication.php:258 actions/newapplication.php:267
+msgid "Could not create application."
+msgstr "ఉపకరణాన్ని సృష్టించలేకపోయాం."
+
+#: actions/newgroup.php:53
+msgid "New group"
+msgstr "కొత్త గుంపు"
+
+#: actions/newgroup.php:110
+msgid "Use this form to create a new group."
+msgstr "కొత్త గుంపుని సృష్టిండానికి ఈ ఫారాన్ని ఉపయోగించండి."
+
+#: actions/newmessage.php:71 actions/newmessage.php:231
+msgid "New message"
+msgstr "కొత్త సందేశం"
+
+#. TRANS: Error text shown when trying to send a direct message to a user without a mutual subscription (each user must be subscribed to the other).
+#: actions/newmessage.php:121 actions/newmessage.php:161 lib/command.php:502
+msgid "You can't send a message to this user."
+msgstr "ఈ వాడుకరికి మీరు సందేశాన్ని పంపించలేరు."
+
+#. TRANS: Command exception text shown when trying to send a direct message to another user without content.
+#. TRANS: Command exception text shown when trying to reply to a notice without providing content for the reply.
+#: actions/newmessage.php:144 actions/newnotice.php:138 lib/command.php:481
+#: lib/command.php:582
+msgid "No content!"
+msgstr "విషయం లేదు!"
+
+#: actions/newmessage.php:158
+msgid "No recipient specified."
+msgstr "ఎవరికి పంపించాలో పేర్కొనలేదు."
+
+#. TRANS: Error text shown when trying to send a direct message to self.
+#: actions/newmessage.php:164 lib/command.php:506
+msgid ""
+"Don't send a message to yourself; just say it to yourself quietly instead."
+msgstr "మీకు మీరే సందేశాన్ని పంపుకోకండి; దాని బదులు మీలో మీరే మెల్లగా చెప్పుకోండి."
+
+#: actions/newmessage.php:181
+msgid "Message sent"
+msgstr "సందేశాన్ని పంపించాం"
+
+#. TRANS: Message given have sent a direct message to another user.
+#. TRANS: %s is the name of the other user.
+#: actions/newmessage.php:185 lib/command.php:514
+#, php-format
+msgid "Direct message to %s sent."
+msgstr "%sకి నేరు సందేశాన్ని పంపించాం."
+
+#: actions/newmessage.php:210 actions/newnotice.php:261 lib/channel.php:189
+msgid "Ajax Error"
+msgstr "అజాక్స్ పొరపాటు"
+
+#: actions/newnotice.php:69
+msgid "New notice"
+msgstr "కొత్త సందేశం"
+
+#: actions/newnotice.php:227
+msgid "Notice posted"
+msgstr "నోటీసుని పునరావృతించారు"
+
+#: actions/noticesearch.php:68
+#, php-format
+msgid ""
+"Search for notices on %%site.name%% by their contents. Separate search terms "
+"by spaces; they must be 3 characters or more."
+msgstr ""
+"%%site.name%%లోని సందేశాలను వెతకండి. అన్వేషణ పదాలను ఖాళీలతో వేరుచేయండి; ఒక్కో పదంలో 3 లేదా "
+"అంతకంటే ఎక్కువ అక్షరాలు ఉండాలి."
+
+#: actions/noticesearch.php:78
+msgid "Text search"
+msgstr "పాఠ్య అన్వేషణ"
+
+#: actions/noticesearch.php:91
+#, php-format
+msgid "Search results for \"%1$s\" on %2$s"
+msgstr "%2$sలో \"%1$s\"కై అన్వేషణ ఫలితాలు"
+
+#: actions/noticesearch.php:121
+#, php-format
+msgid ""
+"Be the first to [post on this topic](%%%%action.newnotice%%%%?"
+"status_textarea=%s)!"
+msgstr ""
+"[ఈ విషయంపై](%%%%action.newnotice%%%%?status_textarea=%s) వ్రాసే మొదటివారు మీరే అవ్వండి!"
+
+#: actions/noticesearch.php:124
+#, php-format
+msgid ""
+"Why not [register an account](%%%%action.register%%%%) and be the first to "
+"[post on this topic](%%%%action.newnotice%%%%?status_textarea=%s)!"
+msgstr ""
+"మీరు [ఒక ఖాతా నమోదు చేసుకుని](%%%%action.register%%%%) [ఈ విషయంపై వ్రాసే](%%%%action."
+"newnotice%%%%?status_textarea=%s) మొదటివారు ఎందుకుకాకూడదు!"
+
+#: actions/noticesearchrss.php:96
+#, php-format
+msgid "Updates with \"%s\""
+msgstr "%2$sలో %1$s అనే ట్యాగుతో ఉన్న నోటీసులు!"
+
+#: actions/noticesearchrss.php:98
+#, php-format
+msgid "Updates matching search term \"%1$s\" on %2$s!"
+msgstr "%2$sలో %1$s అనే ట్యాగుతో ఉన్న నోటీసులు!"
+
+#: actions/nudge.php:85
+msgid ""
+"This user doesn't allow nudges or hasn't confirmed or set their email yet."
+msgstr ""
+
+#: actions/oauthappssettings.php:59
+msgid "You must be logged in to list your applications."
+msgstr "మీ ఉపకరణాలను చూడడానికి మీరు ప్రవేశించి ఉండాలి."
+
+#: actions/oauthappssettings.php:74
+msgid "OAuth applications"
+msgstr "OAuth ఉపకరణాలు"
+
+#: actions/oauthappssettings.php:85
+msgid "Applications you have registered"
+msgstr "మీరు నమోదు చేసివున్న ఉపకరణాలు"
+
+#: actions/oauthappssettings.php:135
+#, php-format
+msgid "You have not registered any applications yet."
+msgstr "మీరు ఇంకా ఏ ఉపకరణాన్నీ నమోదు చేసుకోలేదు."
+
+#: actions/oauthconnectionssettings.php:72
+msgid "Connected applications"
+msgstr "సంధానిత ఉపకరణాలు"
+
+#: actions/oauthconnectionssettings.php:83
+msgid "You have allowed the following applications to access you account."
+msgstr "మీ ఖాతాని ప్రాపించడానికి మీరు ఈ క్రింది ఉపకరణాలకి అనుమతినిచ్చారు."
+
+#: actions/oauthconnectionssettings.php:175
+msgid "You are not a user of that application."
+msgstr "మీరు ఆ ఉపకరణం యొక్క వాడుకరి కాదు."
+
+#: actions/oauthconnectionssettings.php:186
+#, php-format
+msgid "Unable to revoke access for app: %s."
+msgstr ""
+
+#: actions/oauthconnectionssettings.php:198
+msgid "You have not authorized any applications to use your account."
+msgstr "మీ ఖాతాని ఉపయోగించుకోడానికి మీరు ఏ ఉపకరణాన్నీ అధీకరించలేదు."
+
+#: actions/oauthconnectionssettings.php:211
+msgid "Developers can edit the registration settings for their applications "
+msgstr ""
+
+#: actions/oembed.php:80 actions/shownotice.php:100
+msgid "Notice has no profile."
+msgstr "నోటీసుకి ప్రొఫైలు లేదు."
+
+#: actions/oembed.php:87 actions/shownotice.php:175
+#, php-format
+msgid "%1$s's status on %2$s"
+msgstr "%2$sలో %1$s యొక్క స్థితి"
+
+#. TRANS: Error message displaying attachments. %s is a raw MIME type (eg 'image/png')
+#: actions/oembed.php:159
+#, php-format
+msgid "Content type %s not supported."
+msgstr ""
+
+#. TRANS: Error message displaying attachments. %s is the site's base URL.
+#: actions/oembed.php:163
+#, php-format
+msgid "Only %s URLs over plain HTTP please."
+msgstr ""
+
+#. TRANS: Client error on an API request with an unsupported data format.
+#: actions/oembed.php:184 actions/oembed.php:203 lib/apiaction.php:1209
+#: lib/apiaction.php:1237 lib/apiaction.php:1360
+msgid "Not a supported data format."
+msgstr ""
+
+#: actions/opensearch.php:64
+msgid "People Search"
+msgstr "ప్రజల అన్వేషణ"
+
+#: actions/opensearch.php:67
+msgid "Notice Search"
+msgstr "నోటీసుల అన్వేషణ"
+
+#: actions/othersettings.php:60
+msgid "Other settings"
+msgstr "ఇతర అమరికలు"
+
+#: actions/othersettings.php:71
+msgid "Manage various other options."
+msgstr "వేరే ఇతర ఎంపికలని సంభాళించండి."
+
+#: actions/othersettings.php:108
+msgid " (free service)"
+msgstr " (స్వేచ్ఛా సేవ)"
+
+#: actions/othersettings.php:116
+msgid "Shorten URLs with"
+msgstr "URL కుదింపు సేవ"
+
+#: actions/othersettings.php:117
+msgid "Automatic shortening service to use."
+msgstr "ఉపయోగించాల్సిన యాంత్రిక కుదింపు సేవ."
+
+#: actions/othersettings.php:122
+msgid "View profile designs"
+msgstr "ఫ్రొఫైలు రూపురేఖలు"
+
+#: actions/othersettings.php:153
+msgid "URL shortening service is too long (max 50 chars)."
+msgstr "URL కుదింపు సేవ మరీ పెద్దగా ఉంది (50 అక్షరాలు గరిష్ఠం)."
+
+#: actions/otp.php:69
+msgid "No user ID specified."
+msgstr "గుంపు ఏమీ పేర్కొనలేదు."
+
+#: actions/otp.php:83
+msgid "No login token specified."
+msgstr "గుంపు ఏమీ పేర్కొనలేదు."
+
+#: actions/outbox.php:116
+msgid "This is your outbox, which lists private messages you have sent."
+msgstr "ఇవి మీరు పంపివున్న అంతరంగిక సందేశాలు."
+
+#: actions/passwordsettings.php:58
+msgid "Change password"
+msgstr "సంకేతపదం మార్చుకోండి"
+
+#: actions/passwordsettings.php:69
+msgid "Change your password."
+msgstr "మీ సంకేతపదం మార్చుకోండి."
+
+#: actions/passwordsettings.php:96 actions/recoverpassword.php:231
+msgid "Password change"
+msgstr "సంకేతపదం మార్పు"
+
+#: actions/passwordsettings.php:104
+msgid "Old password"
+msgstr "పాత సంకేతపదం"
+
+#: actions/passwordsettings.php:108 actions/recoverpassword.php:235
+msgid "New password"
+msgstr "కొత్త సంకేతపదం"
+
+#: actions/passwordsettings.php:109
+msgid "6 or more characters"
+msgstr "6 లేదా అంతకంటే ఎక్కువ అక్షరాలు"
+
+#: actions/passwordsettings.php:112 actions/recoverpassword.php:239
+#: actions/register.php:440
+msgid "Confirm"
+msgstr "నిర్థారించు"
+
+#: actions/passwordsettings.php:113 actions/recoverpassword.php:240
+msgid "Same as password above"
+msgstr "పై సంకేతపదం వలెనే"
+
+#: actions/passwordsettings.php:117
+msgid "Change"
+msgstr "మార్చు"
+
+#: actions/passwordsettings.php:154 actions/register.php:237
+msgid "Password must be 6 or more characters."
+msgstr "సంకేతపదం తప్పనిసరిగా 6 లేదా అంతకంటే ఎక్కువ అక్షరాలుండాలి."
+
+#: actions/passwordsettings.php:157 actions/register.php:240
+msgid "Passwords don't match."
+msgstr "సంకేతపదాలు సరిపోలలేదు."
+
+#: actions/passwordsettings.php:165
+msgid "Incorrect old password"
+msgstr "పాత సంకేతపదం తప్పు"
+
+#: actions/passwordsettings.php:181
+msgid "Error saving user; invalid."
+msgstr "వాడుకరిని భద్రపరచడంలో పొరపాటు: సరికాదు."
+
+#: actions/passwordsettings.php:186 actions/recoverpassword.php:381
+msgid "Can't save new password."
+msgstr "కొత్త సంకేతపదాన్ని భద్రపరచలేము."
+
+#: actions/passwordsettings.php:192 actions/recoverpassword.php:211
+msgid "Password saved."
+msgstr "సంకేతపదం భద్రమయ్యింది."
+
+#. TRANS: Menu item for site administration
+#: actions/pathsadminpanel.php:59 lib/adminpanelaction.php:384
+msgid "Paths"
+msgstr "త్రోవలు"
+
+#: actions/pathsadminpanel.php:157
+#, php-format
+msgid "Theme directory not readable: %s."
+msgstr "అలంకారం అందుబాటులో లేదు: %s."
+
+#: actions/pathsadminpanel.php:163
+#, php-format
+msgid "Avatar directory not writable: %s."
+msgstr "అవతారాల సంచయం"
+
+#: actions/pathsadminpanel.php:234 actions/siteadminpanel.php:58
+msgid "Site"
+msgstr "సైటు"
+
+#: actions/pathsadminpanel.php:238
+msgid "Server"
+msgstr "సేవకి"
+
+#: actions/pathsadminpanel.php:238
+msgid "Site's server hostname."
+msgstr ""
+
+#: actions/pathsadminpanel.php:242
+msgid "Site path"
+msgstr "సైటు అలంకారం"
+
+#: actions/pathsadminpanel.php:246
+msgid "Path to locales"
+msgstr ""
+
+#: actions/pathsadminpanel.php:246
+msgid "Directory path to locales"
+msgstr ""
+
+#: actions/pathsadminpanel.php:250
+msgid "Fancy URLs"
+msgstr ""
+
+#: actions/pathsadminpanel.php:252
+msgid "Use fancy (more readable and memorable) URLs?"
+msgstr ""
+
+#: actions/pathsadminpanel.php:259
+msgid "Theme"
+msgstr "అలంకారం"
+
+#: actions/pathsadminpanel.php:264
+msgid "Theme server"
+msgstr "అలంకారాల సేవకి"
+
+#: actions/pathsadminpanel.php:272
+msgid "Theme directory"
+msgstr "అలంకార సంచయం"
+
+#: actions/pathsadminpanel.php:279
+msgid "Avatars"
+msgstr "అవతారాలు"
+
+#: actions/pathsadminpanel.php:284
+msgid "Avatar server"
+msgstr "అవతారాల సేవకి"
+
+#: actions/pathsadminpanel.php:292
+msgid "Avatar directory"
+msgstr "అవతారాల సంచయం"
+
+#: actions/pathsadminpanel.php:301
+msgid "Backgrounds"
+msgstr "నేపథ్యాలు"
+
+#: actions/pathsadminpanel.php:305
+msgid "Background server"
+msgstr "నేపథ్యాల సేవకి"
+
+#: actions/pathsadminpanel.php:313
+msgid "Background directory"
+msgstr "నేపథ్యాల సంచయం"
+
+#: actions/pathsadminpanel.php:323 actions/snapshotadminpanel.php:202
+msgid "Never"
+msgstr "సేవకి"
+
+#: actions/pathsadminpanel.php:324
+msgid "Sometimes"
+msgstr "కొన్నిసార్లు"
+
+#: actions/pathsadminpanel.php:325
+msgid "Always"
+msgstr "ఎల్లప్పుడూ"
+
+#: actions/pathsadminpanel.php:329
+msgid "Use SSL"
+msgstr "SSLని ఉపయోగించు"
+
+#: actions/pathsadminpanel.php:330
+msgid "When to use SSL"
+msgstr "SSLని ఎప్పుడు ఉపయోగించాలి"
+
+#: actions/pathsadminpanel.php:335
+msgid "SSL server"
+msgstr "సేవకి"
+
+#: actions/pathsadminpanel.php:336
+msgid "Server to direct SSL requests to"
+msgstr ""
+
+#: actions/peoplesearch.php:52
+#, php-format
+msgid ""
+"Search for people on %%site.name%% by their name, location, or interests. "
+"Separate the terms by spaces; they must be 3 characters or more."
+msgstr ""
+"%%site.name%%లో వ్యక్తులను వారి పేరు, ప్రాంతం, లేదా ఆసక్తులను బట్టి వెతకండి. అన్వేషించే పదాలను "
+"ఖాళీలతో వేరుచేయండి; ఒక్కో పదంలో 3 లేదా అంతకంటే ఎక్కువ అక్షరాలు ఉండాలి."
+
+#: actions/peoplesearch.php:58
+msgid "People search"
+msgstr "వ్యక్తుల అన్వేషణ"
+
+#: actions/peopletag.php:142
+#, php-format
+msgid "Users self-tagged with %1$s - page %2$d"
+msgstr "%2$sలో %1$s అనే ట్యాగుతో ఉన్న నోటీసులు!"
+
+#: actions/postnotice.php:95
+msgid "Invalid notice content."
+msgstr "తప్పుడు దస్త్రపుపేరు.."
+
+#: actions/postnotice.php:101
+#, php-format
+msgid "Notice license ‘%1$s’ is not compatible with site license ‘%2$s’."
+msgstr ""
+
+#: actions/profilesettings.php:60
+msgid "Profile settings"
+msgstr "ఫ్రొఫైలు అమరికలు"
+
+#: actions/profilesettings.php:71
+msgid ""
+"You can update your personal profile info here so people know more about you."
+msgstr ""
+"మీ వ్యక్తిగత ప్రవర సమాచారాన్ని ఇక్కడ తాజాకరించండి, అప్పుడు మీ గురించి ప్రజలు ఎక్కువ "
+"తెలుసుకోగలుగుతారు."
+
+#: actions/profilesettings.php:99
+msgid "Profile information"
+msgstr "ప్రొఫైలు సమాచారం"
+
+#: actions/profilesettings.php:108 lib/groupeditform.php:154
+msgid "1-64 lowercase letters or numbers, no punctuation or spaces"
+msgstr "1-64 చిన్నబడి అక్షరాలు లేదా అంకెలు, విరామచిహ్నాలు మరియు ఖాళీలు తప్ప"
+
+#: actions/profilesettings.php:111 actions/register.php:455
+#: actions/showgroup.php:256 actions/tagother.php:104
+#: lib/groupeditform.php:157 lib/userprofile.php:150
+msgid "Full name"
+msgstr "పూర్తి పేరు"
+
+#. TRANS: Form input field label.
+#: actions/profilesettings.php:115 actions/register.php:460
+#: lib/applicationeditform.php:244 lib/groupeditform.php:161
+msgid "Homepage"
+msgstr "హోమ్ పేజీ"
+
+#: actions/profilesettings.php:117 actions/register.php:462
+msgid "URL of your homepage, blog, or profile on another site"
+msgstr "మీ హోమ్ పేజీ, బ్లాగు, లేదా వేరే సేటులోని మీ ప్రొఫైలు యొక్క చిరునామా"
+
+#: actions/profilesettings.php:122 actions/register.php:468
+#, php-format
+msgid "Describe yourself and your interests in %d chars"
+msgstr "మీ గురించి మరియు మీ ఆసక్తుల గురించి %d అక్షరాల్లో చెప్పండి"
+
+#: actions/profilesettings.php:125 actions/register.php:471
+msgid "Describe yourself and your interests"
+msgstr "మీ గురించి మరియు మీ ఆసక్తుల గురించి చెప్పండి"
+
+#: actions/profilesettings.php:127 actions/register.php:473
+msgid "Bio"
+msgstr "స్వపరిచయం"
+
+#: actions/profilesettings.php:132 actions/register.php:478
+#: actions/showgroup.php:265 actions/tagother.php:112
+#: actions/userauthorization.php:166 lib/groupeditform.php:177
+#: lib/userprofile.php:165
+msgid "Location"
+msgstr "ప్రాంతం"
+
+#: actions/profilesettings.php:134 actions/register.php:480
+msgid "Where you are, like \"City, State (or Region), Country\""
+msgstr "మీరు ఎక్కడ నుండి, \"నగరం, రాష్ట్రం (లేదా ప్రాంతం), దేశం\""
+
+#: actions/profilesettings.php:138
+msgid "Share my current location when posting notices"
+msgstr ""
+
+#: actions/profilesettings.php:145 actions/tagother.php:149
+#: actions/tagother.php:209 lib/subscriptionlist.php:106
+#: lib/subscriptionlist.php:108 lib/userprofile.php:210
+msgid "Tags"
+msgstr "ట్యాగులు"
+
+#: actions/profilesettings.php:147
+msgid ""
+"Tags for yourself (letters, numbers, -, ., and _), comma- or space- separated"
+msgstr ""
+
+#: actions/profilesettings.php:151
+msgid "Language"
+msgstr "భాష"
+
+#: actions/profilesettings.php:152
+msgid "Preferred language"
+msgstr "ప్రాథాన్యతా భాష"
+
+#: actions/profilesettings.php:161
+msgid "Timezone"
+msgstr "కాలమండలం"
+
+#: actions/profilesettings.php:162
+msgid "What timezone are you normally in?"
+msgstr "మీరు సామాన్యంగా ఉండే కాలమండలం ఏది?"
+
+#: actions/profilesettings.php:167
+msgid ""
+"Automatically subscribe to whoever subscribes to me (best for non-humans)"
+msgstr ""
+
+#: actions/profilesettings.php:228 actions/register.php:230
+#, php-format
+msgid "Bio is too long (max %d chars)."
+msgstr "స్వపరిచయం చాలా పెద్దగా ఉంది (%d అక్షరాలు గరిష్ఠం)."
+
+#: actions/profilesettings.php:235 actions/siteadminpanel.php:151
+msgid "Timezone not selected."
+msgstr "కాలమండలాన్ని ఎంచుకోలేదు."
+
+#: actions/profilesettings.php:241
+msgid "Language is too long (max 50 chars)."
+msgstr "భాష మరీ పెద్దగా ఉంది (50 అక్షరాలు గరిష్ఠం)."
+
+#: actions/profilesettings.php:253 actions/tagother.php:178
+#, php-format
+msgid "Invalid tag: \"%s\""
+msgstr "తప్పుడు మారుపేరు: \"%s\""
+
+#: actions/profilesettings.php:375
+msgid "Couldn't save profile."
+msgstr "ప్రొఫైలుని భద్రపరచలేకున్నాం."
+
+#: actions/profilesettings.php:383
+msgid "Couldn't save tags."
+msgstr "ట్యాగులని భద్రపరచలేకున్నాం."
+
+#. TRANS: Message after successful saving of administrative settings.
+#: actions/profilesettings.php:391 lib/adminpanelaction.php:141
+msgid "Settings saved."
+msgstr "అమరికలు భద్రమయ్యాయి."
+
+#: actions/public.php:83
+#, php-format
+msgid "Beyond the page limit (%s)."
+msgstr ""
+
+#: actions/public.php:130
+#, php-format
+msgid "Public timeline, page %d"
+msgstr "ప్రజా కాలరేఖ, పేజీ %d"
+
+#: actions/public.php:132 lib/publicgroupnav.php:79
+msgid "Public timeline"
+msgstr "ప్రజా కాలరేఖ"
+
+#: actions/public.php:160
+msgid "Public Stream Feed (RSS 1.0)"
+msgstr "ప్రజా వాహిని ఫీడు (RSS 1.0)"
+
+#: actions/public.php:164
+msgid "Public Stream Feed (RSS 2.0)"
+msgstr "ప్రజా వాహిని ఫీడు (RSS 2.0)"
+
+#: actions/public.php:168
+msgid "Public Stream Feed (Atom)"
+msgstr "ప్రజా వాహిని ఫీడు (ఆటమ్)"
+
+#: actions/public.php:191
+msgid "Be the first to post!"
+msgstr ""
+
+#: actions/public.php:195
+#, php-format
+msgid ""
+"Why not [register an account](%%action.register%%) and be the first to post!"
+msgstr "[ఖాతా నమోదు చేసుకుని](%%action.register%%) మొదటగా వ్రాసేది మీరే ఎందుకు కాకూడదు!"
+
+#: actions/public.php:247
+#, php-format
+msgid ""
+"This is %%site.name%%, a [micro-blogging](http://en.wikipedia.org/wiki/Micro-"
+"blogging) service based on the Free Software [StatusNet](http://status.net/) "
+"tool."
+msgstr ""
+"ఇది %%site.name%%, స్వేచ్ఛా మృదూపకరమైన [స్టేటస్‌నెట్](http://status.net/) అనే పనిముట్టుపై "
+"ఆధారపడిన ఒక [మైక్రో-బ్లాగింగు](http://en.wikipedia.org/wiki/Micro-blogging) సేవ."
+
+#: actions/publictagcloud.php:57
+msgid "Public tag cloud"
+msgstr "ట్యాగు మేఘం"
+
+#: actions/publictagcloud.php:63
+#, php-format
+msgid "These are most popular recent tags on %s "
+msgstr ""
+
+#: actions/publictagcloud.php:69
+#, php-format
+msgid "No one has posted a notice with a [hashtag](%%doc.tags%%) yet."
+msgstr ""
+
+#: actions/publictagcloud.php:72
+msgid "Be the first to post one!"
+msgstr ""
+
+#: actions/publictagcloud.php:75
+#, php-format
+msgid ""
+"Why not [register an account](%%action.register%%) and be the first to post "
+"one!"
+msgstr "[ఒక ఖాతాని నమోదుచేసుకుని](%%action.register%%) మీరే మొదట వ్రాసేవారు ఎందుకు కాకూడదు!"
+
+#: actions/publictagcloud.php:134
+msgid "Tag cloud"
+msgstr "ట్యాగు మేఘం"
+
+#: actions/recoverpassword.php:36
+msgid "You are already logged in!"
+msgstr "మీరు ఇప్పటికే లోనికి ప్రవేశించారు!"
+
+#: actions/recoverpassword.php:73
+msgid "Recovery code for unknown user."
+msgstr ""
+
+#: actions/recoverpassword.php:86
+msgid "Error with confirmation code."
+msgstr "నిర్ధారణ సంకేతంలో పొరపాటు."
+
+#: actions/recoverpassword.php:97
+msgid "This confirmation code is too old. Please start again."
+msgstr "ఈ నిర్ధారణ సంకేతం చాలా పాతది. మళ్ళీ మొదలుపెట్టండి."
+
+#: actions/recoverpassword.php:111
+msgid "Could not update user with confirmed email address."
+msgstr "నిర్ధారిత ఈమెయిలు చిరునామాతో వాడుకరిని తాజాకరించలేకపోయాం."
+
+#: actions/recoverpassword.php:152
+msgid ""
+"If you have forgotten or lost your password, you can get a new one sent to "
+"the email address you have stored in your account."
+msgstr ""
+"మీరు మీ సంకేతపదాన్ని మర్చిపోతే, మీ ఖాతాలో నమోదైన ఈమెయిలు చిరునామాకి కొత్త సంకేతపదం వచ్చేలా చేసుకోవచ్చు."
+
+#: actions/recoverpassword.php:158
+msgid "You have been identified. Enter a new password below. "
+msgstr "మిమ్మల్ని గుర్తించాం. మీ కొత్త సంకేతపదాన్ని క్రింత ఇవ్వండి. "
+
+#: actions/recoverpassword.php:191
+msgid "Nickname or email address"
+msgstr "ముద్దుపేరు లేదా ఈమెయిలు చిరునామా"
+
+#: actions/recoverpassword.php:193
+msgid "Your nickname on this server, or your registered email address."
+msgstr "ఈ సర్వరులో మీ పేరు, లేదా నమౌదైన మీ ఈమెయిల్ చిరునామా."
+
+#: actions/recoverpassword.php:210 actions/recoverpassword.php:335
+msgid "Password recovery requested"
+msgstr ""
+
+#: actions/recoverpassword.php:213
+msgid "Unknown action"
+msgstr "తెలియని చర్య"
+
+#: actions/recoverpassword.php:236
+msgid "6 or more characters, and don't forget it!"
+msgstr "6 లేదా అంతకంటే ఎక్కువ అక్షరాలు, మర్చిపోకండి!"
+
+#: actions/recoverpassword.php:252
+msgid "Enter a nickname or email address."
+msgstr "పేరు లేదా ఈమెయిల్ చిరునామా ఇవ్వండి."
+
+#: actions/recoverpassword.php:282
+msgid "No user with that email address or username."
+msgstr "ఆ ఈమెయిలు చిరునామా లేదా వాడుకరిపేరుతో వాడుకరులెవరూ లేరు."
+
+#: actions/recoverpassword.php:299
+msgid "No registered email address for that user."
+msgstr "ఈ వాడుకరికై నమోదైన ఈమెయిల్ చిరునామాలు ఏమీ లేవు."
+
+#: actions/recoverpassword.php:313
+msgid "Error saving address confirmation."
+msgstr "చిరునామా నిర్ధారణని భద్రపరచడంలో పొరపాటు."
+
+#: actions/recoverpassword.php:338
+msgid ""
+"Instructions for recovering your password have been sent to the email "
+"address registered to your account."
+msgstr "మీ సంకేతపదాన్ని తిరిగి పొందడానికై అవసరమైన సూచనలని మీ ఖాతాతో నమోదైన ఈమెయిల్ చిరునామాకి పంపించాం."
+
+#: actions/recoverpassword.php:357
+msgid "Unexpected password reset."
+msgstr ""
+
+#: actions/recoverpassword.php:365
+msgid "Password must be 6 chars or more."
+msgstr "సంకేతపదం 6 లేదా అంతకంటే ఎక్కవ అక్షరాలుండాలి."
+
+#: actions/recoverpassword.php:369
+msgid "Password and confirmation do not match."
+msgstr "సంకేతపదం మరియు నిర్ధారణ సరిపోలేదు."
+
+#: actions/recoverpassword.php:395
+msgid "New password successfully saved. You are now logged in."
+msgstr "మీ కొత్త సంకేతపదం భద్రమైంది. మీరు ఇప్పుడు లోనికి ప్రవేశించారు."
+
+#: actions/register.php:92 actions/register.php:196 actions/register.php:412
+msgid "Sorry, only invited people can register."
+msgstr "క్షమించండి, ఆహ్వానితులు మాత్రమే నమోదుకాగలరు."
+
+#: actions/register.php:99
+msgid "Sorry, invalid invitation code."
+msgstr "క్షమించండి, తప్పు ఆహ్వాన సంకేతం."
+
+#: actions/register.php:119
+msgid "Registration successful"
+msgstr "నమోదు విజయవంతం"
+
+#: actions/register.php:121 actions/register.php:506 lib/logingroupnav.php:85
+msgid "Register"
+msgstr "నమోదు"
+
+#: actions/register.php:142
+msgid "Registration not allowed."
+msgstr "నమోదు అనుమతించబడదు."
+
+#: actions/register.php:205
+msgid "You can't register if you don't agree to the license."
+msgstr "ఈ లైసెన్సుకి అంగీకరించకపోతే మీరు నమోదుచేసుకోలేరు."
+
+#: actions/register.php:219
+msgid "Email address already exists."
+msgstr "ఈమెయిల్ చిరునామా ఇప్పటికే ఉంది."
+
+#: actions/register.php:250 actions/register.php:272
+msgid "Invalid username or password."
+msgstr "వాడుకరిపేరు లేదా సంకేతపదం తప్పు."
+
+#: actions/register.php:350
+msgid ""
+"With this form you can create a new account. You can then post notices and "
+"link up to friends and colleagues. "
+msgstr ""
+
+#: actions/register.php:432
+msgid "1-64 lowercase letters or numbers, no punctuation or spaces. Required."
+msgstr "1-64 చిన్నబడి అక్షరాలు లేదా అంకెలు, విరామ చిహ్నాలు లేదా ఖాళీలు లేకుండా. తప్పనిసరి."
+
+#: actions/register.php:437
+msgid "6 or more characters. Required."
+msgstr "6 లేదా అంతకంటే ఎక్కువ అక్షరాలు. తప్పనిసరి."
+
+#: actions/register.php:441
+msgid "Same as password above. Required."
+msgstr "పై సంకేతపదం మరోసారి. తప్పనిసరి."
+
+#. TRANS: Link description in user account settings menu.
+#: actions/register.php:445 actions/register.php:449
+#: actions/siteadminpanel.php:238 lib/accountsettingsaction.php:132
+msgid "Email"
+msgstr "ఈమెయిల్"
+
+#: actions/register.php:446 actions/register.php:450
+msgid "Used only for updates, announcements, and password recovery"
+msgstr "తాజా విశేషాలు, ప్రకటనలు, మరియు సంకేతపదం పోయినప్పుడు మాత్రమే ఉపయోగిస్తాం."
+
+#: actions/register.php:457
+msgid "Longer name, preferably your \"real\" name"
+msgstr "పొడుగాటి పేరు, మీ \"అసలు\" పేరైతే మంచిది"
+
+#: actions/register.php:518
+#, php-format
+msgid ""
+"I understand that content and data of %1$s are private and confidential."
+msgstr ""
+
+#: actions/register.php:528
+#, php-format
+msgid "My text and files are copyright by %1$s."
+msgstr ""
+
+#. TRANS: Copyright checkbox label in registration dialog, for all rights reserved with ownership left to contributors.
+#: actions/register.php:532
+msgid "My text and files remain under my own copyright."
+msgstr ""
+
+#. TRANS: Copyright checkbox label in registration dialog, for all rights reserved.
+#: actions/register.php:535
+msgid "All rights reserved."
+msgstr ""
+
+#. TRANS: Copyright checkbox label in registration dialog, for Creative Commons-style licenses.
+#: actions/register.php:540
+#, php-format
+msgid ""
+"My text and files are available under %s except this private data: password, "
+"email address, IM address, and phone number."
+msgstr ""
+"నా పాఠ్యం మరియు దస్త్రాలు %s క్రింద లభ్యం, ఈ అంతరంగిక భోగట్టా తప్ప: సంకేతపదం, ఈమెయిల్ చిరునామా, IM "
+"చిరునామా, మరియు ఫోన్ నంబర్."
+
+#: actions/register.php:583
+#, php-format
+msgid ""
+"Congratulations, %1$s! And welcome to %%%%site.name%%%%. From here, you may "
+"want to...\n"
+"\n"
+"* Go to [your profile](%2$s) and post your first message.\n"
+"* Add a [Jabber/GTalk address](%%%%action.imsettings%%%%) so you can send "
+"notices through instant messages.\n"
+"* [Search for people](%%%%action.peoplesearch%%%%) that you may know or that "
+"share your interests. \n"
+"* Update your [profile settings](%%%%action.profilesettings%%%%) to tell "
+"others more about you. \n"
+"* Read over the [online docs](%%%%doc.help%%%%) for features you may have "
+"missed. \n"
+"\n"
+"Thanks for signing up and we hope you enjoy using this service."
+msgstr ""
+"%1$s, అభినందనలు! %%%%site.name%%%%కి స్వాగతం. ఇక్కడ నుండి, మీరు...\n"
+"\n"
+"* [మీ ప్రొఫైలు](%2$s)కి వెళ్ళి మీ మొదటి సందేశాన్ని వ్రాయండి.\n"
+"* [జాబర్/జీటాక్ చిరునామాని](%%%%action.imsettings%%%%) చేర్చుకోండి అప్పుడు తక్షణ సందేశాల ద్వారా "
+"మీరు నోటీసులని పంపగలుగుతారు.\n"
+"* మీకు తెలిసిన లేదా మీ ఆసక్తులను పంచుకునే [వ్యక్తుల కోసం వెతకండి](%%%%action.peoplesearch%%"
+"%%).\n"
+"* మీ గురించి ఇతరులకు మరింత చెప్పడానికి మీ [ప్రొఫైలు అమరికలని](%%%%action.profilesettings%%%"
+"%) తాజాకరించుకోండి.  \n"
+"* సౌలభ్యాలను తెలుసుకోడానికి [ఆన్&zwnj;లైన్ పత్రావళి](%%%%doc.help%%%%)ని చూడండి.  \n"
+"\n"
+"నమోదుచేసుకున్నందుకు కృతజ్ఞతలు మరియు ఈ సేవని ఉపయోగిస్తూ మీరు ఆనందిస్తారని మేం ఆశిస్తున్నాం."
+
+#: actions/register.php:607
+msgid ""
+"(You should receive a message by email momentarily, with instructions on how "
+"to confirm your email address.)"
+msgstr ""
+"(మీ ఈమెయిలు చిరునామాని ఎలా నిర్ధారించాలో తెలిపే సూచనలతో ఒక సందేశం మీరు ఈమెయిలు ద్వారా మరి కొద్దిసేపట్లోనే "
+"అందుతుంది.)"
+
+#: actions/remotesubscribe.php:98
+#, php-format
+msgid ""
+"To subscribe, you can [login](%%action.login%%), or [register](%%action."
+"register%%) a new  account. If you already have an account  on a [compatible "
+"microblogging site](%%doc.openmublog%%),  enter your profile URL below."
+msgstr ""
+"చందా చేరడానికి, మీరు [ప్రవేశించవచ్చు](%%action.login%%), లేదా కొత్త ఖాతాని [నమోదుచేసుకోవచ్చు](%%"
+"action.register%%). ఒకవేళ మీకు ఇప్పటికే ఏదైనా [పొసగే మైక్రోబ్లాగింగు సైటులో](%%doc.openmublog%"
+"%) ఖాతా ఉంటే, మీ ప్రొఫైలు చిరునామాని క్రింద ఇవ్వండి."
+
+#: actions/remotesubscribe.php:112
+msgid "Remote subscribe"
+msgstr "సుదూర చందా"
+
+#: actions/remotesubscribe.php:124
+msgid "Subscribe to a remote user"
+msgstr "ఈ వాడుకరికి చందాచేరు"
+
+#: actions/remotesubscribe.php:129
+msgid "User nickname"
+msgstr "వాడుకరి పేరు"
+
+#: actions/remotesubscribe.php:130
+msgid "Nickname of the user you want to follow"
+msgstr "మీరు అనుసరించాలనుకుంటున్న వాడుకరి యొక్క ముద్దుపేరు"
+
+#: actions/remotesubscribe.php:133
+msgid "Profile URL"
+msgstr "ప్రొఫైలు URL"
+
+#: actions/remotesubscribe.php:134
+msgid "URL of your profile on another compatible microblogging service"
+msgstr ""
+
+#: actions/remotesubscribe.php:137 lib/subscribeform.php:139
+#: lib/userprofile.php:406
+msgid "Subscribe"
+msgstr "చందాచేరు"
+
+#: actions/remotesubscribe.php:159
+msgid "Invalid profile URL (bad format)"
+msgstr "ప్రొపైల్ URL తప్పు (చెడు ఫార్మాట్)"
+
+#: actions/remotesubscribe.php:168
+msgid "Not a valid profile URL (no YADIS document or invalid XRDS defined)."
+msgstr ""
+
+#: actions/remotesubscribe.php:176
+msgid "That’s a local profile! Login to subscribe."
+msgstr "అది స్థానిక ప్రొఫైలు! చందాచేరడానికి ప్రవేశించండి."
+
+#: actions/remotesubscribe.php:183
+msgid "Couldn’t get a request token."
+msgstr ""
+
+#: actions/repeat.php:57
+msgid "Only logged-in users can repeat notices."
+msgstr "కేవలం ప్రవేశించిన వాడుకరులు మాత్రమే నోటీసులని పునరావృతించగలరు."
+
+#: actions/repeat.php:64 actions/repeat.php:71
+msgid "No notice specified."
+msgstr "గుంపు ఏమీ పేర్కొనలేదు."
+
+#: actions/repeat.php:76
+msgid "You can't repeat your own notice."
+msgstr "మీ నోటీసుని మీరే పునరావృతించలేరు."
+
+#: actions/repeat.php:90
+msgid "You already repeated that notice."
+msgstr "మీరు ఇప్పటికే ఆ నోటీసుని పునరావృతించారు."
+
+#: actions/replies.php:126 actions/repliesrss.php:68
+#: lib/personalgroupnav.php:105
+#, php-format
+msgid "Replies to %s"
+msgstr "%sకి స్పందనలు"
+
+#: actions/replies.php:128
+#, php-format
+msgid "Replies to %1$s, page %2$d"
+msgstr "%1$sకి స్పందనలు, %2$dవ పేజీ"
+
+#: actions/replies.php:145
+#, php-format
+msgid "Replies feed for %s (RSS 1.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 1.0)"
+
+#: actions/replies.php:152
+#, php-format
+msgid "Replies feed for %s (RSS 2.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 2.0)"
+
+#: actions/replies.php:159
+#, php-format
+msgid "Replies feed for %s (Atom)"
+msgstr "%s కొరకు స్పందనల ఫీడు (ఆటమ్)"
+
+#: actions/replies.php:199
+#, php-format
+msgid ""
+"This is the timeline showing replies to %1$s but %2$s hasn't received a "
+"notice to them yet."
+msgstr "ఇది %1$s యొక్క కాలరేఖ కానీ %2$s ఇంకా ఏమీ రాయలేదు."
+
+#: actions/replies.php:204
+#, php-format
+msgid ""
+"You can engage other users in a conversation, subscribe to more people or "
+"[join groups](%%action.groups%%)."
+msgstr ""
+"మీరు ఇతర వాడుకరులతో సంభాషించవచ్చు, మరింత మంది వ్యక్తులకు చందాచేరవచ్చు లేదా [గుంపులలో చేరవచ్చు]"
+"(%%action.groups%%)."
+
+#: actions/repliesrss.php:72
+#, php-format
+msgid "Replies to %1$s on %2$s!"
+msgstr "%2$sలో %1$sకి స్పందనలు!"
+
+#: actions/revokerole.php:75
+msgid "You cannot revoke user roles on this site."
+msgstr "ఈ సైటులో మీరు వాడుకరలకి పాత్రలను ఇవ్వలేరు."
+
+#: actions/revokerole.php:82
+msgid "User doesn't have this role."
+msgstr "వాడుకరికి ఈ పాత్ర లేదు."
+
+#: actions/rsd.php:146 actions/version.php:159
+msgid "StatusNet"
+msgstr "స్టేటస్‌నెట్"
+
+#: actions/sandbox.php:65 actions/unsandbox.php:65
+msgid "You cannot sandbox users on this site."
+msgstr "ఈ సైటులో మీరు వాడుకరలకి పాత్రలను ఇవ్వలేరు."
+
+#: actions/sessionsadminpanel.php:175
+msgid "Handle sessions"
+msgstr ""
+
+#: actions/sessionsadminpanel.php:181
+msgid "Session debugging"
+msgstr ""
+
+#: actions/sessionsadminpanel.php:183
+msgid "Turn on debugging output for sessions."
+msgstr ""
+
+#: actions/sessionsadminpanel.php:199 actions/siteadminpanel.php:292
+#: actions/useradminpanel.php:294
+msgid "Save site settings"
+msgstr "సైటు అమరికలను భద్రపరచు"
+
+#: actions/showapplication.php:82
+msgid "You must be logged in to view an application."
+msgstr "ఉపకరణాలని చూడడానికి మీరు తప్పనిసరిగా ప్రవేశించి ఉండాలి."
+
+#: actions/showapplication.php:157
+msgid "Application profile"
+msgstr "ఉపకరణ ప్రవర"
+
+#. TRANS: Form input field label for application icon.
+#: actions/showapplication.php:159 lib/applicationeditform.php:182
+msgid "Icon"
+msgstr "ప్రతీకం"
+
+#. TRANS: Form input field label for application name.
+#: actions/showapplication.php:169 actions/version.php:197
+#: lib/applicationeditform.php:199
+msgid "Name"
+msgstr "పేరు"
+
+#. TRANS: Form input field label.
+#: actions/showapplication.php:178 lib/applicationeditform.php:235
+msgid "Organization"
+msgstr "సంస్ధ"
+
+#. TRANS: Form input field label.
+#: actions/showapplication.php:187 actions/version.php:200
+#: lib/applicationeditform.php:216 lib/groupeditform.php:172
+msgid "Description"
+msgstr "వివరణ"
+
+#: actions/showapplication.php:192 actions/showgroup.php:436
+#: lib/profileaction.php:187
+msgid "Statistics"
+msgstr "గణాంకాలు"
+
+#: actions/showapplication.php:203
+#, php-format
+msgid "Created by %1$s - %2$s access by default - %3$d users"
+msgstr "సృష్టించినది %1$s - అప్రమేయ అందుబాటు %2$s  - %3$d వాడుకరులు"
+
+#: actions/showapplication.php:213
+msgid "Application actions"
+msgstr "ఉపకరణ చర్యలు"
+
+#: actions/showapplication.php:236
+msgid "Reset key & secret"
+msgstr ""
+
+#: actions/showapplication.php:261
+msgid "Application info"
+msgstr "ఉపకరణ సమాచారం"
+
+#: actions/showapplication.php:263
+msgid "Consumer key"
+msgstr ""
+
+#: actions/showapplication.php:268
+msgid "Consumer secret"
+msgstr ""
+
+#: actions/showapplication.php:273
+msgid "Request token URL"
+msgstr ""
+
+#: actions/showapplication.php:278
+msgid "Access token URL"
+msgstr ""
+
+#: actions/showapplication.php:288
+msgid ""
+"Note: We support HMAC-SHA1 signatures. We do not support the plaintext "
+"signature method."
+msgstr ""
+
+#: actions/showfavorites.php:79
+#, php-format
+msgid "%1$s's favorite notices, page %2$d"
+msgstr "%1$sకి ఇష్టమైన నోటీసులు, పేజీ %2$d"
+
+#: actions/showfavorites.php:171
+#, php-format
+msgid "Feed for favorites of %s (RSS 1.0)"
+msgstr "%s యొక్క ఇష్టాంశాల ఫీడు (RSS 2.0)"
+
+#: actions/showfavorites.php:178
+#, php-format
+msgid "Feed for favorites of %s (RSS 2.0)"
+msgstr "%s యొక్క ఇష్టాంశాల ఫీడు (RSS 2.0)"
+
+#: actions/showfavorites.php:185
+#, php-format
+msgid "Feed for favorites of %s (Atom)"
+msgstr "%s యొక్క ఇష్టాంశాల ఫీడు (ఆటమ్)"
+
+#: actions/showfavorites.php:206
+msgid ""
+"You haven't chosen any favorite notices yet. Click the fave button on "
+"notices you like to bookmark them for later or shed a spotlight on them."
+msgstr ""
+
+#: actions/showfavorites.php:208
+#, php-format
+msgid ""
+"%s hasn't added any favorite notices yet. Post something interesting they "
+"would add to their favorites :)"
+msgstr ""
+
+#: actions/showfavorites.php:243
+msgid "This is a way to share what you like."
+msgstr "మీకు నచ్చినవి పంచుకోడానికి ఇదొక మార్గం."
+
+#: actions/showgroup.php:82 lib/groupnav.php:86
+#, php-format
+msgid "%s group"
+msgstr "%s గుంపు"
+
+#: actions/showgroup.php:84
+#, php-format
+msgid "%1$s group, page %2$d"
+msgstr "%1$s గుంపు , %2$dవ పేజీ"
+
+#: actions/showgroup.php:227
+msgid "Group profile"
+msgstr "గుంపు ప్రొఫైలు"
+
+#: actions/showgroup.php:272 actions/tagother.php:118
+#: actions/userauthorization.php:175 lib/userprofile.php:178
+msgid "URL"
+msgstr ""
+
+#: actions/showgroup.php:283 actions/tagother.php:128
+#: actions/userauthorization.php:187 lib/userprofile.php:195
+msgid "Note"
+msgstr "గమనిక"
+
+#: actions/showgroup.php:293 lib/groupeditform.php:184
+msgid "Aliases"
+msgstr "మారుపేర్లు"
+
+#: actions/showgroup.php:302
+msgid "Group actions"
+msgstr "గుంపు చర్యలు"
+
+#: actions/showgroup.php:338
+#, php-format
+msgid "Notice feed for %s group (RSS 1.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 1.0)"
+
+#: actions/showgroup.php:344
+#, php-format
+msgid "Notice feed for %s group (RSS 2.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 2.0)"
+
+#: actions/showgroup.php:350
+#, php-format
+msgid "Notice feed for %s group (Atom)"
+msgstr "%s కొరకు స్పందనల ఫీడు (ఆటమ్)"
+
+#: actions/showgroup.php:355
+#, php-format
+msgid "FOAF for %s group"
+msgstr "%s గుంపు"
+
+#: actions/showgroup.php:393 actions/showgroup.php:445 lib/groupnav.php:91
+msgid "Members"
+msgstr "సభ్యులు"
+
+#: actions/showgroup.php:398 lib/profileaction.php:117
+#: lib/profileaction.php:152 lib/profileaction.php:255 lib/section.php:95
+#: lib/subscriptionlist.php:127 lib/tagcloudsection.php:71
+msgid "(None)"
+msgstr "(ఏమీలేదు)"
+
+#: actions/showgroup.php:404
+msgid "All members"
+msgstr "అందరు సభ్యులూ"
+
+#: actions/showgroup.php:439
+msgid "Created"
+msgstr "సృష్టితం"
+
+#: actions/showgroup.php:455
+#, php-format
+msgid ""
+"**%s** is a user group on %%%%site.name%%%%, a [micro-blogging](http://en."
+"wikipedia.org/wiki/Micro-blogging) service based on the Free Software "
+"[StatusNet](http://status.net/) tool. Its members share short messages about "
+"their life and interests. [Join now](%%%%action.register%%%%) to become part "
+"of this group and many more! ([Read more](%%%%doc.help%%%%))"
+msgstr ""
+"**%s** అనేది [స్టేటస్‌నెట్](http://status.net/) అనే స్వేచ్ఛా ఉపకరణ అధారిత [సూక్ష్మ-బ్లాగింగు]"
+"(http://en.wikipedia.org/wiki/Micro-blogging) సేవ అయిన %%%%site.name%%%%లో ఒక "
+"వాడుకరి గుంపు.\n"
+"దీని సభ్యులు వారి జీవితం మరియు ఆసక్తుల గురించి చిన్న సందేశాలని పంచుకుంటారు. ఈ గుంపు మరియు ఇంకా "
+"చాల వాటిలో భాగస్తులవ్వడానికి [ఇప్పుడే చేరండి](%%%%action.register%%%%)! ([మరింత చదవండి](%%%%"
+"doc.help%%%%))"
+
+#: actions/showgroup.php:489
+msgid "Admins"
+msgstr "నిర్వాహకులు"
+
+#: actions/showmessage.php:81
+msgid "No such message."
+msgstr "అటువంటి సందేశం లేదు."
+
+#: actions/showmessage.php:98
+msgid "Only the sender and recipient may read this message."
+msgstr "పంపినవారు మరియు అందుకున్నవారు మాత్రమే ఈ సందేశాన్ని చదవవచ్చు."
+
+#: actions/shownotice.php:90
+msgid "Notice deleted."
+msgstr "నోటీసుని తొలగించాం."
+
+#: actions/showstream.php:73
+#, php-format
+msgid " tagged %s"
+msgstr ""
+
+#: actions/showstream.php:79
+#, php-format
+msgid "%1$s, page %2$d"
+msgstr "%1$s, %2$dవ పేజీ"
+
+#: actions/showstream.php:122
+#, php-format
+msgid "Notice feed for %1$s tagged %2$s (RSS 1.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 1.0)"
+
+#: actions/showstream.php:129
+#, php-format
+msgid "Notice feed for %s (RSS 1.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 1.0)"
+
+#: actions/showstream.php:136
+#, php-format
+msgid "Notice feed for %s (RSS 2.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 2.0)"
+
+#: actions/showstream.php:143
+#, php-format
+msgid "Notice feed for %s (Atom)"
+msgstr "%s కొరకు స్పందనల ఫీడు (ఆటమ్)"
+
+#: actions/showstream.php:200
+#, php-format
+msgid "This is the timeline for %1$s but %2$s hasn't posted anything yet."
+msgstr "ఇది %1$s యొక్క కాలరేఖ కానీ %2$s ఇంకా ఏమీ రాయలేదు."
+
+#: actions/showstream.php:205
+msgid ""
+"Seen anything interesting recently? You haven't posted any notices yet, now "
+"would be a good time to start :)"
+msgstr ""
+"ఈమధ్యే ఏదైనా ఆసక్తికరమైనది చూసారా? మీరు ఇంకా నోటీసులేమీ వ్రాయలేదు, మొదలుపెట్టడానికి ఇదే మంచి సమయం :)"
+
+#: actions/showstream.php:305
+#, php-format
+msgid "Repeat of %s"
+msgstr "%s యొక్క పునరావృతం"
+
+#: actions/siteadminpanel.php:69
+msgid "Basic settings for this StatusNet site"
+msgstr "ఈ స్టేటస్&zwnj;నెట్ సైటుకి ప్రాధమిక అమరికలు"
+
+#: actions/siteadminpanel.php:133
+msgid "Site name must have non-zero length."
+msgstr "సైటు పేరు తప్పనిసరిగా సున్నా కంటే ఎక్కువ పొడవుండాలి."
+
+#: actions/siteadminpanel.php:141
+msgid "You must have a valid contact email address."
+msgstr "మీకు సరైన సంప్రదింపు ఈమెయిలు చిరునామా ఉండాలి."
+
+#: actions/siteadminpanel.php:159
+#, php-format
+msgid "Unknown language \"%s\"."
+msgstr "గుర్తు తెలియని భాష \"%s\"."
+
+#: actions/siteadminpanel.php:165
+msgid "Minimum text limit is 0 (unlimited)."
+msgstr "కనిష్ఠ పాఠ్య పరిమితి 0 (అపరిమితం)."
+
+#: actions/siteadminpanel.php:171
+msgid "Dupe limit must be one or more seconds."
+msgstr ""
+
+#: actions/siteadminpanel.php:221
+msgid "General"
+msgstr "సాధారణ"
+
+#: actions/siteadminpanel.php:224
+msgid "Site name"
+msgstr "సైటు పేరు"
+
+#: actions/siteadminpanel.php:225
+msgid "The name of your site, like \"Yourcompany Microblog\""
+msgstr "మీ సైటు యొక్క పేరు, ఇలా \"మీకంపెనీ మైక్రోబ్లాగు\""
+
+#: actions/siteadminpanel.php:229
+msgid "Brought by"
+msgstr "అందిస్తున్నవారు"
+
+#: actions/siteadminpanel.php:230
+msgid "Text used for credits link in footer of each page"
+msgstr ""
+
+#: actions/siteadminpanel.php:234
+msgid "Brought by URL"
+msgstr "అందిస్తున్నవారి URL"
+
+#: actions/siteadminpanel.php:235
+msgid "URL used for credits link in footer of each page"
+msgstr ""
+
+#: actions/siteadminpanel.php:239
+msgid "Contact email address for your site"
+msgstr "మీ సైటుకి సంప్రదింపుల ఈమెయిల్ చిరునామా"
+
+#: actions/siteadminpanel.php:245
+msgid "Local"
+msgstr "స్థానిక"
+
+#: actions/siteadminpanel.php:256
+msgid "Default timezone"
+msgstr "అప్రమేయ కాలమండలం"
+
+#: actions/siteadminpanel.php:257
+msgid "Default timezone for the site; usually UTC."
+msgstr ""
+
+#: actions/siteadminpanel.php:262
+msgid "Default language"
+msgstr "అప్రమేయ భాష"
+
+#: actions/siteadminpanel.php:263
+msgid "Site language when autodetection from browser settings is not available"
+msgstr "విహారిణి అమరికల నుండి భాషని స్వయంచాలకంగా పొందలేకపోయినప్పుడు ఉపయోగించే సైటు భాష"
+
+#: actions/siteadminpanel.php:271
+msgid "Limits"
+msgstr "పరిమితులు"
+
+#: actions/siteadminpanel.php:274
+msgid "Text limit"
+msgstr "పాఠ్యపు పరిమితి"
+
+#: actions/siteadminpanel.php:274
+msgid "Maximum number of characters for notices."
+msgstr "సందేశాలలోని అక్షరాల గరిష్ఠ సంఖ్య."
+
+#: actions/siteadminpanel.php:278
+msgid "How long users must wait (in seconds) to post the same thing again."
+msgstr "అదే విషయాన్ని మళ్ళీ టపా చేయడానికి వాడుకరులు ఎంత సమయం (క్షణాల్లో) వేచివుండాలి."
+
+#: actions/sitenoticeadminpanel.php:56
+msgid "Site Notice"
+msgstr "సైటు గమనిక"
+
+#: actions/sitenoticeadminpanel.php:103
+msgid "Unable to save site notice."
+msgstr "సైటు గమనికని భద్రపరచు"
+
+#: actions/sitenoticeadminpanel.php:113
+msgid "Max length for the site-wide notice is 255 chars."
+msgstr "సైటు-వారీ నోటీసుకి గరిష్ఠ పొడవు 255 అక్షరాలు."
+
+#: actions/sitenoticeadminpanel.php:176
+msgid "Site notice text"
+msgstr "సైటు గమనిక పాఠ్యం"
+
+#: actions/sitenoticeadminpanel.php:178
+msgid "Site-wide notice text (255 chars max; HTML okay)"
+msgstr "సైటు-వారీ నోటీసు పాఠ్యం (255 అక్షరాలు గరిష్ఠం; HTML పర్లేదు)"
+
+#: actions/sitenoticeadminpanel.php:198
+msgid "Save site notice"
+msgstr "సైటు గమనికని భద్రపరచు"
+
+#. TRANS: Title for SMS settings.
+#: actions/smssettings.php:59
+msgid "SMS settings"
+msgstr "SMS అమరికలు"
+
+#. TRANS: Message given in the SMS settings if SMS is not enabled on the site.
+#: actions/smssettings.php:97
+msgid "SMS is not available."
+msgstr "IM అందుబాటులో లేదు."
+
+#. TRANS: Form legend for SMS settings form.
+#: actions/smssettings.php:111
+msgid "SMS address"
+msgstr "SMS చిరునామా"
+
+#. TRANS: Form guide in IM settings form.
+#: actions/smssettings.php:133
+msgid "Awaiting confirmation on this phone number."
+msgstr "ఈ ఫోను నంబరు యొక్క నిర్ధారణకై వేచివుంది."
+
+#. TRANS: Field label for SMS address input in SMS settings form.
+#: actions/smssettings.php:142
+msgid "Confirmation code"
+msgstr "నిర్ధారణ సంకేతం"
+
+#. TRANS: Form field instructions in SMS settings form.
+#: actions/smssettings.php:144
+msgid "Enter the code you received on your phone."
+msgstr ""
+
+#. TRANS: Button label to confirm SMS confirmation code in SMS settings.
+#: actions/smssettings.php:148
+msgctxt "BUTTON"
+msgid "Confirm"
+msgstr "నిర్థారించు"
+
+#. TRANS: Form legend for SMS preferences form.
+#: actions/smssettings.php:195
+msgid "SMS preferences"
+msgstr "SMS అభిరుచులు"
+
+#. TRANS: Checkbox label in SMS preferences form.
+#: actions/smssettings.php:201
+msgid ""
+"Send me notices through SMS; I understand I may incur exorbitant charges "
+"from my carrier."
+msgstr ""
+
+#. TRANS: Message given saving SMS phone number without having provided one.
+#: actions/smssettings.php:338
+msgid "No phone number."
+msgstr "ఫోను నెంబరు లేదు."
+
+#. TRANS: Message given saving SMS phone number that is already set.
+#: actions/smssettings.php:352
+msgid "That is already your phone number."
+msgstr "ఇది ఇప్పటికే మీ ఫోను నెంబరు."
+
+#. TRANS: Message given saving SMS phone number that is already set for another user.
+#: actions/smssettings.php:356
+msgid "That phone number already belongs to another user."
+msgstr "ఆ ఫోను నంబరు ఇప్పటికే వేరే వాడుకరికి చెందినది."
+
+#. TRANS: Message given saving valid SMS phone number that is to be confirmed.
+#: actions/smssettings.php:384
+msgid ""
+"A confirmation code was sent to the phone number you added. Check your phone "
+"for the code and instructions on how to use it."
+msgstr ""
+
+#. TRANS: Message given canceling SMS phone number confirmation for the wrong phone number.
+#: actions/smssettings.php:413
+msgid "That is the wrong confirmation number."
+msgstr "అది తప్పుడు నిర్ధారణ సంఖ్య."
+
+#. TRANS: Message given after successfully canceling SMS phone number confirmation.
+#: actions/smssettings.php:427
+msgid "SMS confirmation cancelled."
+msgstr "IM నిర్ధారణ రద్దయింది."
+
+#. TRANS: Message given trying to remove an SMS phone number that is not
+#. TRANS: registered for the active user.
+#: actions/smssettings.php:448
+msgid "That is not your phone number."
+msgstr "అది మీ ఫోను నంబర్ కాదు."
+
+#. TRANS: Message given after successfully removing a registered SMS phone number.
+#: actions/smssettings.php:470
+msgid "The SMS phone number was removed."
+msgstr "ఆ IM చిరునామాని తొలగించాం."
+
+#. TRANS: Label for mobile carrier dropdown menu in SMS settings.
+#: actions/smssettings.php:511
+msgid "Mobile carrier"
+msgstr ""
+
+#. TRANS: Default option for mobile carrier dropdown menu in SMS settings.
+#: actions/smssettings.php:516
+msgid "Select a carrier"
+msgstr ""
+
+#. TRANS: Form instructions for mobile carrier dropdown menu in SMS settings.
+#. TRANS: %s is an administrative contact's e-mail address.
+#: actions/smssettings.php:525
+#, php-format
+msgid ""
+"Mobile carrier for your phone. If you know a carrier that accepts SMS over "
+"email but isn't listed here, send email to let us know at %s."
+msgstr ""
+
+#. TRANS: Menu item for site administration
+#: actions/snapshotadminpanel.php:54 actions/snapshotadminpanel.php:196
+#: lib/adminpanelaction.php:408
+msgid "Snapshots"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:65
+msgid "Manage snapshot configuration"
+msgstr "సైటు స్వరూపణాన్ని మార్చండి"
+
+#: actions/snapshotadminpanel.php:133
+msgid "Snapshot frequency must be a number."
+msgstr ""
+
+#: actions/snapshotadminpanel.php:200
+msgid "Randomly during web hit"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:201
+msgid "In a scheduled job"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:206
+msgid "Data snapshots"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:208
+msgid "When to send statistical data to status.net servers"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:217
+msgid "Frequency"
+msgstr "తరచుదనం"
+
+#: actions/snapshotadminpanel.php:218
+msgid "Snapshots will be sent once every N web hits"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:226
+msgid "Report URL"
+msgstr ""
+
+#: actions/snapshotadminpanel.php:227
+msgid "Snapshots will be sent to this URL"
+msgstr ""
+
+#. TRANS: Exception thrown when a subscription could not be stored on the server.
+#: actions/subedit.php:83 classes/Subscription.php:136
+msgid "Could not save subscription."
+msgstr "కొత్త చందాని చేర్చలేకపోయాం."
+
+#: actions/subscribe.php:77
+msgid "This action only accepts POST requests."
+msgstr ""
+
+#: actions/subscribe.php:117
+msgid "You cannot subscribe to an OMB 0.1 remote profile with this action."
+msgstr ""
+
+#: actions/subscribe.php:145
+msgid "Subscribed"
+msgstr "చందాచేరారు"
+
+#: actions/subscribers.php:50
+#, php-format
+msgid "%s subscribers"
+msgstr "%s చందాదార్లు"
+
+#: actions/subscribers.php:52
+#, php-format
+msgid "%1$s subscribers, page %2$d"
+msgstr "%1$s చందాదార్లు, పేజీ %2$d"
+
+#: actions/subscribers.php:63
+msgid "These are the people who listen to your notices."
+msgstr "వీళ్ళు మీ నోటీసులని వినే ప్రజలు."
+
+#: actions/subscribers.php:67
+#, php-format
+msgid "These are the people who listen to %s's notices."
+msgstr "వీళ్ళు %s యొక్క నోటీసులని వినే ప్రజలు."
+
+#: actions/subscribers.php:108
+msgid ""
+"You have no subscribers. Try subscribing to people you know and they might "
+"return the favor"
+msgstr ""
+"మీకు చందాదార్లు ఎవరూ లేరు. మీకు తెలిసినవారికి చందాచేర ప్రయత్నించండి వాళ్ళు ప్రత్యుపకారం చేయవచ్చు."
+
+#: actions/subscribers.php:110
+#, php-format
+msgid "%s has no subscribers. Want to be the first?"
+msgstr "%sకి చందాదార్లు ఎవరూ లేరు. మీరే మొదటివారు కావాలనుకుంటున్నారా?"
+
+#: actions/subscribers.php:114
+#, php-format
+msgid ""
+"%s has no subscribers. Why not [register an account](%%%%action.register%%%"
+"%) and be the first?"
+msgstr ""
+"%sకి చందాదార్లు ఎవరూ లేరు. [ఒక ఖాతాని నమోదు చేసుకుని](%%%%action.register%%%%) మీరు "
+"ఎందుకు మొదటి చందాదారు కాకూడదు?"
+
+#: actions/subscriptions.php:52
+#, php-format
+msgid "%s subscriptions"
+msgstr "%s చందాలు"
+
+#: actions/subscriptions.php:54
+#, php-format
+msgid "%1$s subscriptions, page %2$d"
+msgstr "%1$s చందాలు, పేజీ %2$d"
+
+#: actions/subscriptions.php:65
+msgid "These are the people whose notices you listen to."
+msgstr "మీరు ఈ వ్యక్తుల నోటీసులని వింటున్నారు."
+
+#: actions/subscriptions.php:69
+#, php-format
+msgid "These are the people whose notices %s listens to."
+msgstr "%s వీరి నోటీసులని వింటున్నారు."
+
+#: actions/subscriptions.php:126
+#, php-format
+msgid ""
+"You're not listening to anyone's notices right now, try subscribing to "
+"people you know. Try [people search](%%action.peoplesearch%%), look for "
+"members in groups you're interested in and in our [featured users](%%action."
+"featured%%). If you're a [Twitter user](%%action.twittersettings%%), you can "
+"automatically subscribe to people you already follow there."
+msgstr ""
+
+#: actions/subscriptions.php:128 actions/subscriptions.php:132
+#, php-format
+msgid "%s is not listening to anyone."
+msgstr "%s ప్రస్తుతం ఎవరినీ వినడంలేదు."
+
+#: actions/subscriptions.php:208
+msgid "Jabber"
+msgstr "జాబర్"
+
+#: actions/subscriptions.php:222 lib/connectsettingsaction.php:115
+msgid "SMS"
+msgstr ""
+
+#: actions/tag.php:69
+#, php-format
+msgid "Notices tagged with %1$s, page %2$d"
+msgstr "%2$sలో %1$s అనే ట్యాగుతో ఉన్న నోటీసులు!"
+
+#: actions/tag.php:87
+#, php-format
+msgid "Notice feed for tag %s (RSS 1.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 1.0)"
+
+#: actions/tag.php:93
+#, php-format
+msgid "Notice feed for tag %s (RSS 2.0)"
+msgstr "%s కొరకు స్పందనల ఫీడు (RSS 2.0)"
+
+#: actions/tag.php:99
+#, php-format
+msgid "Notice feed for tag %s (Atom)"
+msgstr "%s కొరకు స్పందనల ఫీడు (ఆటమ్)"
+
+#: actions/tagother.php:39
+msgid "No ID argument."
+msgstr "జోడింపులు లేవు."
+
+#: actions/tagother.php:77 lib/userprofile.php:76
+msgid "User profile"
+msgstr "వాడుకరి ప్రొఫైలు"
+
+#: actions/tagother.php:81 actions/userauthorization.php:132
+#: lib/userprofile.php:103
+msgid "Photo"
+msgstr "ఫొటో"
+
+#: actions/tagother.php:151
+msgid ""
+"Tags for this user (letters, numbers, -, ., and _), comma- or space- "
+"separated"
+msgstr ""
+
+#: actions/tagother.php:193
+msgid ""
+"You can only tag people you are subscribed to or who are subscribed to you."
+msgstr ""
+
+#: actions/tagother.php:200
+msgid "Could not save tags."
+msgstr "ట్యాగులని భద్రపరచలేకపోయాం."
+
+#: actions/tagrss.php:35
+msgid "No such tag."
+msgstr "అటువంటి ట్యాగు లేదు."
+
+#: actions/unblock.php:59
+msgid "You haven't blocked that user."
+msgstr "మీరు ఆ వాడుకరిని నిరోధించలేదు."
+
+#: actions/unsandbox.php:72
+msgid "User is not sandboxed."
+msgstr "వాడుకరిని గుంపు నుండి నిరోధించలేదు."
+
+#: actions/unsubscribe.php:98
+msgid "Unsubscribed"
+msgstr "చందామాను"
+
+#: actions/updateprofile.php:64 actions/userauthorization.php:337
+#, php-format
+msgid ""
+"Listenee stream license ‘%1$s’ is not compatible with site license ‘%2$s’."
+msgstr ""
+
+#. TRANS: User admin panel title
+#: actions/useradminpanel.php:59
+msgctxt "TITLE"
+msgid "User"
+msgstr "వాడుకరి"
+
+#: actions/useradminpanel.php:70
+msgid "User settings for this StatusNet site."
+msgstr "ఈ స్టేటస్&zwnj;నెట్ సైటుకి వాడుకరి అమరికలు."
+
+#: actions/useradminpanel.php:149
+msgid "Invalid bio limit. Must be numeric."
+msgstr ""
+
+#: actions/useradminpanel.php:155
+msgid "Invalid welcome text. Max length is 255 characters."
+msgstr "చెల్లని స్వాగత పాఠ్యం. గరిష్ఠ పొడవు 255 అక్షరాలు."
+
+#: actions/useradminpanel.php:165
+#, php-format
+msgid "Invalid default subscripton: '%1$s' is not user."
+msgstr ""
+
+#. TRANS: Link description in user account settings menu.
+#: actions/useradminpanel.php:218 lib/accountsettingsaction.php:111
+#: lib/personalgroupnav.php:109
+msgid "Profile"
+msgstr "ప్రొఫైలు"
+
+#: actions/useradminpanel.php:222
+msgid "Bio Limit"
+msgstr "స్వపరిచయ పరిమితి"
+
+#: actions/useradminpanel.php:223
+msgid "Maximum length of a profile bio in characters."
+msgstr "స్వపరిచయం యొక్క గరిష్ఠ పొడవు, అక్షరాలలో."
+
+#: actions/useradminpanel.php:231
+msgid "New users"
+msgstr "కొత్త వాడుకరులు"
+
+#: actions/useradminpanel.php:235
+msgid "New user welcome"
+msgstr "కొత్త వాడుకరి స్వాగతం"
+
+#: actions/useradminpanel.php:236
+msgid "Welcome text for new users (Max 255 chars)."
+msgstr "కొత్త వాడుకరులకై స్వాగత సందేశం (255 అక్షరాలు గరిష్ఠం)."
+
+#: actions/useradminpanel.php:241
+msgid "Default subscription"
+msgstr "అప్రమేయ చందా"
+
+#: actions/useradminpanel.php:251
+msgid "Invitations"
+msgstr "ఆహ్వానాలు"
+
+#: actions/useradminpanel.php:256
+msgid "Invitations enabled"
+msgstr "ఆహ్వానాలని చేతనంచేసాం"
+
+#: actions/useradminpanel.php:258
+msgid "Whether to allow users to invite new users."
+msgstr "వాడుకరులను కొత్త వారిని ఆహ్వానించడానికి అనుమతించాలా వద్దా."
+
+#: actions/userauthorization.php:105
+msgid "Authorize subscription"
+msgstr "చందాని అధీకరించండి"
+
+#: actions/userauthorization.php:110
+msgid ""
+"Please check these details to make sure that you want to subscribe to this "
+"user’s notices. If you didn’t just ask to subscribe to someone’s notices, "
+"click “Reject”."
+msgstr ""
+
+#: actions/userauthorization.php:196 actions/version.php:167
+msgid "License"
+msgstr "లైసెన్సు"
+
+#: actions/userauthorization.php:217
+msgid "Accept"
+msgstr "అంగీకరించు"
+
+#: actions/userauthorization.php:218 lib/subscribeform.php:115
+#: lib/subscribeform.php:139
+msgid "Subscribe to this user"
+msgstr "ఈ వాడుకరికి చందాచేరు"
+
+#: actions/userauthorization.php:219
+msgid "Reject"
+msgstr "తిరస్కరించు"
+
+#: actions/userauthorization.php:220
+msgid "Reject this subscription"
+msgstr "ఈ చందాని తిరస్కరించు"
+
+#: actions/userauthorization.php:232
+msgid "No authorization request!"
+msgstr "అధీకరణ అభ్యర్థన లేదు!"
+
+#: actions/userauthorization.php:254
+msgid "Subscription authorized"
+msgstr "చందాని అధీకరించారు"
+
+#: actions/userauthorization.php:256
+msgid ""
+"The subscription has been authorized, but no callback URL was passed. Check "
+"with the site’s instructions for details on how to authorize the "
+"subscription. Your subscription token is:"
+msgstr ""
+
+#: actions/userauthorization.php:266
+msgid "Subscription rejected"
+msgstr "చందాని తిరస్కరించారు."
+
+#: actions/userauthorization.php:268
+msgid ""
+"The subscription has been rejected, but no callback URL was passed. Check "
+"with the site’s instructions for details on how to fully reject the "
+"subscription."
+msgstr ""
+
+#: actions/userauthorization.php:303
+#, php-format
+msgid "Listener URI ‘%s’ not found here."
+msgstr ""
+
+#: actions/userauthorization.php:308
+#, php-format
+msgid "Listenee URI ‘%s’ is too long."
+msgstr ""
+
+#: actions/userauthorization.php:314
+#, php-format
+msgid "Listenee URI ‘%s’ is a local user."
+msgstr ""
+
+#: actions/userauthorization.php:329
+#, php-format
+msgid "Profile URL ‘%s’ is for a local user."
+msgstr ""
+
+#: actions/userauthorization.php:345
+#, php-format
+msgid "Avatar URL ‘%s’ is not valid."
+msgstr ""
+
+#: actions/userauthorization.php:350
+#, php-format
+msgid "Can’t read avatar URL ‘%s’."
+msgstr ""
+
+#: actions/userauthorization.php:355
+#, php-format
+msgid "Wrong image type for avatar URL ‘%s’."
+msgstr ""
+
+#: actions/userdesignsettings.php:76 lib/designsettings.php:65
+msgid "Profile design"
+msgstr "ఫ్రొఫైలు రూపురేఖలు"
+
+#: actions/userdesignsettings.php:282
+msgid "Enjoy your hotdog!"
+msgstr ""
+
+#. TRANS: Message is used as a page title. %1$s is a nick name, %2$d is a page number.
+#: actions/usergroups.php:66
+#, php-format
+msgid "%1$s groups, page %2$d"
+msgstr "%1$s గుంపులు, %2$dవ పేజీ"
+
+#: actions/usergroups.php:132
+msgid "Search for more groups"
+msgstr "మరిన్ని గుంపులకై వెతుకు"
+
+#: actions/usergroups.php:159
+#, php-format
+msgid "%s is not a member of any group."
+msgstr "%s ఏ గుంపు లోనూ సభ్యులు కాదు."
+
+#: actions/usergroups.php:164
+#, php-format
+msgid "Try [searching for groups](%%action.groupsearch%%) and joining them."
+msgstr "[గుంపులని వెతికి](%%action.groupsearch%%) వాటిలో చేరడానికి ప్రయత్నించండి."
+
+#: actions/version.php:75
+#, php-format
+msgid "StatusNet %s"
+msgstr "స్టేటస్‌నెట్ %s"
+
+#: actions/version.php:155
+#, php-format
+msgid ""
+"This site is powered by %1$s version %2$s, Copyright 2008-2010 StatusNet, "
+"Inc. and contributors."
+msgstr ""
+
+#: actions/version.php:170
+msgid ""
+"StatusNet is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU Affero General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. "
+msgstr ""
+
+#: actions/version.php:176
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License "
+"for more details. "
+msgstr ""
+
+#: actions/version.php:182
+#, php-format
+msgid ""
+"You should have received a copy of the GNU Affero General Public License "
+"along with this program.  If not, see %s."
+msgstr ""
+
+#: actions/version.php:191
+msgid "Plugins"
+msgstr "ప్లగిన్లు"
+
+#. TRANS: Secondary navigation menu option leading to version information on the StatusNet site.
+#: actions/version.php:198 lib/action.php:805
+msgid "Version"
+msgstr "సంచిక"
+
+#: actions/version.php:199
+msgid "Author(s)"
+msgstr "రచయిత(లు)"
+
+#. TRANS: Server exception thrown when a URL cannot be processed.
+#: classes/File.php:143
+#, php-format
+msgid "Cannot process URL '%s'"
+msgstr ""
+
+#. TRANS: Server exception thrown when... Robin thinks something is impossible!
+#: classes/File.php:175
+msgid "Robin thinks something is impossible."
+msgstr ""
+
+#. TRANS: Message given if an upload is larger than the configured maximum.
+#. TRANS: %1$d is the byte limit for uploads, %2$d is the byte count for the uploaded file.
+#: classes/File.php:190
+#, php-format
+msgid ""
+"No file may be larger than %1$d bytes and the file you sent was %2$d bytes. "
+"Try to upload a smaller version."
+msgstr ""
+
+#. TRANS: Message given if an upload would exceed user quota.
+#. TRANS: %d (number) is the user quota in bytes.
+#: classes/File.php:202
+#, php-format
+msgid "A file this large would exceed your user quota of %d bytes."
+msgstr ""
+
+#. TRANS: Message given id an upload would exceed a user's monthly quota.
+#. TRANS: $d (number) is the monthly user quota in bytes.
+#: classes/File.php:211
+#, php-format
+msgid "A file this large would exceed your monthly quota of %d bytes."
+msgstr ""
+
+#. TRANS: Client exception thrown if a file upload does not have a valid name.
+#: classes/File.php:248 classes/File.php:263
+msgid "Invalid filename."
+msgstr "తప్పుడు దస్త్రపుపేరు.."
+
+#. TRANS: Exception thrown when joining a group fails.
+#: classes/Group_member.php:42
+msgid "Group join failed."
+msgstr "గుంపులో చేరడం విఫలమైంది."
+
+#. TRANS: Exception thrown when trying to leave a group the user is not a member of.
+#: classes/Group_member.php:55
+msgid "Not part of group."
+msgstr "గుంపులో భాగం కాదు."
+
+#. TRANS: Exception thrown when trying to leave a group fails.
+#: classes/Group_member.php:63
+msgid "Group leave failed."
+msgstr "గుంపు నుండి వైదొలగడం విఫలమైంది."
+
+#. TRANS: Server exception thrown when updating a local group fails.
+#: classes/Local_group.php:42
+msgid "Could not update local group."
+msgstr "స్థానిక గుంపుని తాజాకరించలేకున్నాం."
+
+#. TRANS: Exception thrown when database name or Data Source Name could not be found.
+#: classes/Memcached_DataObject.php:533
+msgid "No database name or DSN found anywhere."
+msgstr ""
+
+#. TRANS: Client exception thrown when a user tries to send a direct message while being banned from sending them.
+#: classes/Message.php:46
+msgid "You are banned from sending direct messages."
+msgstr "నేరుగా సందేశాలు పంపడం నుండి మిమ్మల్ని నిషేధించారు."
+
+#. TRANS: Server exception thrown when a user profile for a notice cannot be found.
+#. TRANS: %1$d is a profile ID (number), %2$d is a notice ID (number).
+#: classes/Notice.php:98
+#, php-format
+msgid "No such profile (%1$d) for notice (%2$d)."
+msgstr ""
+
+#. TRANS: Client exception thrown if a notice contains too many characters.
+#: classes/Notice.php:265
+msgid "Problem saving notice. Too long."
+msgstr "నోటీసుని భద్రపరచడంలో పొరపాటు. చాలా పొడవుగా ఉంది."
+
+#. TRANS: Client exception thrown when trying to save a notice for an unknown user.
+#: classes/Notice.php:270
+msgid "Problem saving notice. Unknown user."
+msgstr "నోటీసుని భద్రపరచడంలో పొరపాటు. గుర్తుతెలియని వాడుకరి."
+
+#. TRANS: Client exception thrown when a user tries to post too many notices in a given time frame.
+#: classes/Notice.php:276
+msgid ""
+"Too many notices too fast; take a breather and post again in a few minutes."
+msgstr "చాలా ఎక్కువ నోటీసులు అంత వేగంగా; కాస్త ఊపిరి తీసుకుని మళ్ళీ కొన్ని నిమిషాల తర్వాత వ్రాయండి."
+
+#. TRANS: Client exception thrown when a user tries to post while being banned.
+#: classes/Notice.php:291
+msgid "You are banned from posting notices on this site."
+msgstr "ఈ సైటులో నోటీసులు రాయడం నుండి మిమ్మల్ని నిషేధించారు."
+
+#. TRANS: Server exception thrown when a notice cannot be saved.
+#. TRANS: Server exception thrown when a notice cannot be updated.
+#: classes/Notice.php:358 classes/Notice.php:385
+msgid "Problem saving notice."
+msgstr "సందేశాన్ని భద్రపరచడంలో పొరపాటు."
+
+#. TRANS: Server exception thrown when no array is provided to the method saveKnownGroups().
+#: classes/Notice.php:897
+msgid "Bad type provided to saveKnownGroups"
+msgstr ""
+
+#. TRANS: Message used to repeat a notice. RT is the abbreviation of 'retweet'.
+#. TRANS: %1$s is the repeated user's name, %2$s is the repeated notice.
+#: classes/Notice.php:1757
+#, php-format
+msgid "RT @%1$s %2$s"
+msgstr "RT @%1$s %2$s"
+
+#. TRANS: Exception thrown when trying to revoke an existing role for a user that does not exist.
+#. TRANS: %1$s is the role name, %2$s is the user ID (number).
+#: classes/Profile.php:737
+#, php-format
+msgid "Cannot revoke role \"%1$s\" for user #%2$d; does not exist."
+msgstr ""
+
+#. TRANS: Exception thrown when trying to revoke a role for a user with a failing database query.
+#. TRANS: %1$s is the role name, %2$s is the user ID (number).
+#: classes/Profile.php:746
+#, php-format
+msgid "Cannot revoke role \"%1$s\" for user #%2$d; database error."
+msgstr ""
+
+#. TRANS: Exception thrown when a tag cannot be saved.
+#: classes/Status_network.php:339
+msgid "Unable to save tag."
+msgstr "ట్యాగులని భద్రపరచలేకపోయాం."
+
+#. TRANS: Exception thrown when trying to subscribe while being banned from subscribing.
+#: classes/Subscription.php:75 lib/oauthstore.php:465
+msgid "You have been banned from subscribing."
+msgstr "చందాచేరడం నుండి మిమ్మల్ని నిషేధించారు."
+
+#. TRANS: Exception thrown when trying to subscribe while already subscribed.
+#: classes/Subscription.php:80
+msgid "Already subscribed!"
+msgstr "ఇప్పటికే చందాచేరారు!"
+
+#. TRANS: Exception thrown when trying to subscribe to a user who has blocked the subscribing user.
+#: classes/Subscription.php:85
+msgid "User has blocked you."
+msgstr "వాడుకరి మిమ్మల్ని నిరోధించారు."
+
+#. TRANS: Exception thrown when trying to unsubscribe a user from themselves.
+#: classes/Subscription.php:178
+msgid "Could not delete self-subscription."
+msgstr "కొత్త చందాని చేర్చలేకపోయాం."
+
+#. TRANS: Exception thrown when the OMB token for a subscription could not deleted on the server.
+#: classes/Subscription.php:206
+msgid "Could not delete subscription OMB token."
+msgstr "కొత్త చందాని చేర్చలేకపోయాం."
+
+#. TRANS: Exception thrown when a subscription could not be deleted on the server.
+#: classes/Subscription.php:218
+msgid "Could not delete subscription."
+msgstr "కొత్త చందాని చేర్చలేకపోయాం."
+
+#. TRANS: Notice given on user registration.
+#. TRANS: %1$s is the sitename, $2$s is the registering user's nickname.
+#: classes/User.php:365
+#, php-format
+msgid "Welcome to %1$s, @%2$s!"
+msgstr "@%2$s, %1$sకి స్వాగతం!"
+
+#. TRANS: Server exception thrown when creating a group failed.
+#: classes/User_group.php:496
+msgid "Could not create group."
+msgstr "గుంపుని సృష్టించలేకపోయాం."
+
+#. TRANS: Server exception thrown when updating a group URI failed.
+#: classes/User_group.php:506
+msgid "Could not set group URI."
+msgstr "గుంపుని సృష్టించలేకపోయాం."
+
+#. TRANS: Server exception thrown when setting group membership failed.
+#: classes/User_group.php:529
+msgid "Could not set group membership."
+msgstr "గుంపు సభ్యత్వాన్ని అమర్చలేకపోయాం."
+
+#. TRANS: Server exception thrown when saving local group information failed.
+#: classes/User_group.php:544
+msgid "Could not save local group info."
+msgstr "స్థానిక గుంపుని తాజాకరించలేకున్నాం."
+
+#. TRANS: Link title attribute in user account settings menu.
+#: lib/accountsettingsaction.php:116
+msgid "Upload an avatar"
+msgstr "ఒక అవతారాన్ని ఎక్కించండి"
+
+#. TRANS: Link title attribute in user account settings menu.
+#: lib/accountsettingsaction.php:123
+msgid "Change your password"
+msgstr "మీ సంకేతపదాన్ని మార్చుకోండి"
+
+#. TRANS: Link title attribute in user account settings menu.
+#: lib/accountsettingsaction.php:130
+msgid "Change email handling"
+msgstr ""
+
+#. TRANS: Link title attribute in user account settings menu.
+#: lib/accountsettingsaction.php:137
+msgid "Design your profile"
+msgstr "వాడుకరి ప్రొఫైలు"
+
+#. TRANS: Link title attribute in user account settings menu.
+#: lib/accountsettingsaction.php:144
+msgid "Other options"
+msgstr "ఇతర ఎంపికలు"
+
+#. TRANS: Link description in user account settings menu.
+#: lib/accountsettingsaction.php:146
+msgid "Other"
+msgstr "ఇతర"
+
+#. TRANS: Page title. %1$s is the title, %2$s is the site name.
+#: lib/action.php:148
+#, php-format
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+#. TRANS: Page title for a page without a title set.
+#: lib/action.php:164
+msgid "Untitled page"
+msgstr "శీర్షికలేని పేజీ"
+
+#. TRANS: DT element for primary navigation menu. String is hidden in default CSS.
+#: lib/action.php:449
+msgid "Primary site navigation"
+msgstr "ప్రాధమిక సైటు మార్గదర్శిని"
+
+#. TRANS: Tooltip for main menu option "Personal"
+#: lib/action.php:455
+msgctxt "TOOLTIP"
+msgid "Personal profile and friends timeline"
+msgstr ""
+
+#. TRANS: Main menu option when logged in for access to personal profile and friends timeline
+#: lib/action.php:458
+msgctxt "MENU"
+msgid "Personal"
+msgstr "వ్యక్తిగత"
+
+#. TRANS: Tooltip for main menu option "Account"
+#: lib/action.php:460
+msgctxt "TOOLTIP"
+msgid "Change your email, avatar, password, profile"
+msgstr "మీ ఈమెయిలు, అవతారం, సంకేతపదం మరియు ప్రౌఫైళ్ళను మార్చుకోండి"
+
+#. TRANS: Main menu option when logged in and connection are possible for access to options to connect to other services
+#: lib/action.php:468
+msgid "Connect"
+msgstr "అనుసంధానించు"
+
+#. TRANS: Tooltip for menu option "Admin"
+#: lib/action.php:471
+msgctxt "TOOLTIP"
+msgid "Change site configuration"
+msgstr "సైటు స్వరూపణాన్ని మార్చండి"
+
+#. TRANS: Main menu option when logged in and site admin for access to site configuration
+#: lib/action.php:474
+msgctxt "MENU"
+msgid "Admin"
+msgstr "నిర్వాహకులు"
+
+#. TRANS: Tooltip for main menu option "Invite"
+#: lib/action.php:478
+#, php-format
+msgctxt "TOOLTIP"
+msgid "Invite friends and colleagues to join you on %s"
+msgstr "%sలో తోడుకై మీ స్నేహితులని మరియు సహోద్యోగులని ఆహ్వానించండి"
+
+#. TRANS: Main menu option when logged in and invitations are allowed for inviting new users
+#: lib/action.php:481
+msgctxt "MENU"
+msgid "Invite"
+msgstr "ఆహ్వానించు"
+
+#. TRANS: Tooltip for main menu option "Logout"
+#: lib/action.php:487
+msgctxt "TOOLTIP"
+msgid "Logout from the site"
+msgstr "సైటు నుండి నిష్క్రమించు"
+
+#. TRANS: Main menu option when logged in to log out the current user
+#: lib/action.php:490
+msgctxt "MENU"
+msgid "Logout"
+msgstr "నిష్క్రమించు"
+
+#. TRANS: Tooltip for main menu option "Register"
+#: lib/action.php:495
+msgctxt "TOOLTIP"
+msgid "Create an account"
+msgstr "ఖాతాని సృష్టించుకోండి"
+
+#. TRANS: Main menu option when not logged in to register a new account
+#: lib/action.php:498
+msgctxt "MENU"
+msgid "Register"
+msgstr "నమోదు"
+
+#. TRANS: Tooltip for main menu option "Login"
+#: lib/action.php:501
+msgctxt "TOOLTIP"
+msgid "Login to the site"
+msgstr "సైటు లోనికి ప్రవేశించండి"
+
+#: lib/action.php:504
+msgctxt "MENU"
+msgid "Login"
+msgstr "ప్రవేశించు"
+
+#. TRANS: Tooltip for main menu option "Help"
+#: lib/action.php:507
+msgctxt "TOOLTIP"
+msgid "Help me!"
+msgstr "సహాయం కావాలి!"
+
+#: lib/action.php:510
+msgctxt "MENU"
+msgid "Help"
+msgstr "సహాయం"
+
+#. TRANS: Tooltip for main menu option "Search"
+#: lib/action.php:513
+msgctxt "TOOLTIP"
+msgid "Search for people or text"
+msgstr "ప్రజలు లేదా పాఠ్యం కొరకు వెతకండి"
+
+#: lib/action.php:516
+msgctxt "MENU"
+msgid "Search"
+msgstr "వెతుకు"
+
+#. TRANS: DT element for site notice. String is hidden in default CSS.
+#. TRANS: Menu item for site administration
+#: lib/action.php:538 lib/adminpanelaction.php:400
+msgid "Site notice"
+msgstr "సైటు గమనిక"
+
+#. TRANS: DT element for local views block. String is hidden in default CSS.
+#: lib/action.php:605
+msgid "Local views"
+msgstr "స్థానిక వీక్షణలు"
+
+#. TRANS: DT element for page notice. String is hidden in default CSS.
+#: lib/action.php:675
+msgid "Page notice"
+msgstr "పేజీ గమనిక"
+
+#. TRANS: DT element for secondary navigation menu. String is hidden in default CSS.
+#: lib/action.php:778
+msgid "Secondary site navigation"
+msgstr "ద్వితీయ సైటు మార్గదర్శిని"
+
+#. TRANS: Secondary navigation menu option leading to help on StatusNet.
+#: lib/action.php:784
+msgid "Help"
+msgstr "సహాయం"
+
+#. TRANS: Secondary navigation menu option leading to text about StatusNet site.
+#: lib/action.php:787
+msgid "About"
+msgstr "గురించి"
+
+#. TRANS: Secondary navigation menu option leading to Frequently Asked Questions.
+#: lib/action.php:790
+msgid "FAQ"
+msgstr "ప్రశ్నలు"
+
+#. TRANS: Secondary navigation menu option leading to Terms of Service.
+#: lib/action.php:795
+msgid "TOS"
+msgstr "సేవా నియమాలు"
+
+#. TRANS: Secondary navigation menu option leading to privacy policy.
+#: lib/action.php:799
+msgid "Privacy"
+msgstr "అంతరంగికత"
+
+#. TRANS: Secondary navigation menu option.
+#: lib/action.php:802
+msgid "Source"
+msgstr "మూలము"
+
+#. TRANS: Secondary navigation menu option leading to contact information on the StatusNet site.
+#: lib/action.php:808
+msgid "Contact"
+msgstr "సంప్రదించు"
+
+#: lib/action.php:810
+msgid "Badge"
+msgstr "బాడ్జి"
+
+#. TRANS: DT element for StatusNet software license.
+#: lib/action.php:839
+msgid "StatusNet software license"
+msgstr "స్టేటస్‌నెట్ మృదూపకరణ లైసెన్సు"
+
+#. TRANS: First sentence of the StatusNet site license. Used if 'broughtby' is set.
+#: lib/action.php:843
+#, php-format
+msgid ""
+"**%%site.name%%** is a microblogging service brought to you by [%%site."
+"broughtby%%](%%site.broughtbyurl%%)."
+msgstr ""
+"**%%site.name%%** అనేది [%%site.broughtby%%](%%site.broughtbyurl%%) వారు "
+"అందిస్తున్న సూక్ష్మ బ్లాగింగు సేవ."
+
+#. TRANS: First sentence of the StatusNet site license. Used if 'broughtby' is not set.
+#: lib/action.php:846
+#, php-format
+msgid "**%%site.name%%** is a microblogging service."
+msgstr "**%%site.name%%** అనేది మైక్రో బ్లాగింగు సదుపాయం."
+
+#. TRANS: Second sentence of the StatusNet site license. Mentions the StatusNet source code license.
+#: lib/action.php:850
+#, php-format
+msgid ""
+"It runs the [StatusNet](http://status.net/) microblogging software, version %"
+"s, available under the [GNU Affero General Public License](http://www.fsf."
+"org/licensing/licenses/agpl-3.0.html)."
+msgstr ""
+"ఇది [గ్నూ ఆఫెరో జెనరల్ పబ్లిక్ లైసెన్సు](http://www.fsf.org/licensing/licenses/agpl-3.0."
+"html) కింద లభ్యమయ్యే [స్టేటస్&zwnj;నెట్](http://status.net/) మైక్రోబ్లాగింగ్ ఉపకరణం సంచిక %s "
+"పై నడుస్తుంది."
+
+#. TRANS: DT element for StatusNet site content license.
+#: lib/action.php:866
+msgid "Site content license"
+msgstr "స్టేటస్‌నెట్ మృదూపకరణ లైసెన్సు"
+
+#. TRANS: Content license displayed when license is set to 'private'.
+#. TRANS: %1$s is the site name.
+#: lib/action.php:873
+#, php-format
+msgid "Content and data of %1$s are private and confidential."
+msgstr ""
+
+#. TRANS: Content license displayed when license is set to 'allrightsreserved'.
+#. TRANS: %1$s is the copyright owner.
+#: lib/action.php:880
+#, php-format
+msgid "Content and data copyright by %1$s. All rights reserved."
+msgstr ""
+
+#. TRANS: Content license displayed when license is set to 'allrightsreserved' and no owner is set.
+#: lib/action.php:884
+msgid "Content and data copyright by contributors. All rights reserved."
+msgstr ""
+
+#. TRANS: license message in footer. %1$s is the site name, %2$s is a link to the license URL, with a licence name set in configuration.
+#: lib/action.php:897
+#, php-format
+msgid "All %1$s content and data are available under the %2$s license."
+msgstr ""
+
+#. TRANS: DT element for pagination (previous/next, etc.).
+#: lib/action.php:1236
+msgid "Pagination"
+msgstr "పేజీకరణ"
+
+#. TRANS: Pagination message to go to a page displaying information more in the
+#. TRANS: present than the currently displayed information.
+#: lib/action.php:1247
+msgid "After"
+msgstr "తర్వాత"
+
+#. TRANS: Pagination message to go to a page displaying information more in the
+#. TRANS: past than the currently displayed information.
+#: lib/action.php:1257
+msgid "Before"
+msgstr "ఇంతక్రితం"
+
+#. TRANS: Client exception thrown when a feed instance is a DOMDocument.
+#: lib/activity.php:122
+msgid "Expecting a root feed element but got a whole XML document."
+msgstr ""
+
+#: lib/activityutils.php:208
+msgid "Can't handle remote content yet."
+msgstr ""
+
+#: lib/activityutils.php:244
+msgid "Can't handle embedded XML content yet."
+msgstr ""
+
+#: lib/activityutils.php:248
+msgid "Can't handle embedded Base64 content yet."
+msgstr ""
+
+#. TRANS: Client error message thrown when a user tries to change admin settings but has no access rights.
+#: lib/adminpanelaction.php:98
+msgid "You cannot make changes to this site."
+msgstr "ఈ సైటుకి మీరు మార్పులు చేయలేరు."
+
+#. TRANS: Client error message.
+#: lib/adminpanelaction.php:229
+msgid "showForm() not implemented."
+msgstr ""
+
+#. TRANS: Client error message
+#: lib/adminpanelaction.php:259
+msgid "saveSettings() not implemented."
+msgstr ""
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:350
+msgid "Basic site configuration"
+msgstr "ప్రాథమిక సైటు స్వరూపణం"
+
+#. TRANS: Menu item for site administration
+#: lib/adminpanelaction.php:352
+msgctxt "MENU"
+msgid "Site"
+msgstr "సైటు"
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:358
+msgid "Design configuration"
+msgstr "రూపకల్పన స్వరూపణం"
+
+#. TRANS: Menu item for site administration
+#: lib/adminpanelaction.php:360
+msgctxt "MENU"
+msgid "Design"
+msgstr "రూపురేఖలు"
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:366
+msgid "User configuration"
+msgstr "వాడుకరి స్వరూపణం"
+
+#. TRANS: Menu item for site administration
+#: lib/adminpanelaction.php:368 lib/personalgroupnav.php:115
+msgid "User"
+msgstr "వాడుకరి"
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:374
+msgid "Access configuration"
+msgstr "రూపకల్పన స్వరూపణం"
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:382
+msgid "Paths configuration"
+msgstr "వాడుకరి స్వరూపణం"
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:398
+msgid "Edit site notice"
+msgstr "సైటు గమనికని భద్రపరచు"
+
+#. TRANS: Menu item title/tooltip
+#: lib/adminpanelaction.php:406
+msgid "Snapshots configuration"
+msgstr "వాడుకరి స్వరూపణం"
+
+#. TRANS: Client error 401.
+#: lib/apiauth.php:113
+msgid "API resource requires read-write access, but you only have read access."
+msgstr ""
+
+#. TRANS: Form legend.
+#: lib/applicationeditform.php:137
+msgid "Edit application"
+msgstr "ఉపకరణాన్ని మార్చు"
+
+#. TRANS: Form guide.
+#: lib/applicationeditform.php:187
+msgid "Icon for this application"
+msgstr "ఈ ఉపకరణానికి ప్రతీకం"
+
+#. TRANS: Form input field instructions.
+#: lib/applicationeditform.php:209
+#, php-format
+msgid "Describe your application in %d characters"
+msgstr "మీ ఉపకరణం గురించి %d అక్షరాల్లో వివరించండి"
+
+#. TRANS: Form input field instructions.
+#: lib/applicationeditform.php:213
+msgid "Describe your application"
+msgstr "మీ ఉపకరణాన్ని వివరించండి"
+
+#. TRANS: Form input field instructions.
+#: lib/applicationeditform.php:224
+msgid "URL of the homepage of this application"
+msgstr "ఈ ఉపకరణం యొక్క హోమ్&zwnj;పేజీ చిరునామా"
+
+#. TRANS: Form input field instructions.
+#: lib/applicationeditform.php:233
+msgid "Organization responsible for this application"
+msgstr "ఈ ఉపకరణానికి బాధ్యతాయుతమైన సంస్థ"
+
+#. TRANS: Form input field instructions.
+#: lib/applicationeditform.php:242
+msgid "URL for the homepage of the organization"
+msgstr "ఈ ఉపకరణం యొక్క హోమ్&zwnj;పేజీ చిరునామా"
+
+#. TRANS: Form input field instructions.
+#: lib/applicationeditform.php:251
+msgid "URL to redirect to after authentication"
+msgstr ""
+
+#. TRANS: Radio button label for application type
+#: lib/applicationeditform.php:278
+msgid "Browser"
+msgstr "విహారిణి"
+
+#. TRANS: Radio button label for application type
+#: lib/applicationeditform.php:295
+msgid "Desktop"
+msgstr "మేజోపరి"
+
+#. TRANS: Form guide.
+#: lib/applicationeditform.php:297
+msgid "Type of application, browser or desktop"
+msgstr "ఉపకరణ రకం, విహారిణి లేదా మేజోపరి"
+
+#. TRANS: Radio button label for access type.
+#: lib/applicationeditform.php:320
+msgid "Read-only"
+msgstr "చదవడం-మాత్రమే"
+
+#. TRANS: Radio button label for access type.
+#: lib/applicationeditform.php:339
+msgid "Read-write"
+msgstr "చదవడం-వ్రాయడం"
+
+#. TRANS: Form guide.
+#: lib/applicationeditform.php:341
+msgid "Default access for this application: read-only, or read-write"
+msgstr ""
+
+#. TRANS: Submit button title
+#: lib/applicationeditform.php:359
+msgid "Cancel"
+msgstr "రద్దుచేయి"
+
+#. TRANS: Application access type
+#: lib/applicationlist.php:136
+msgid "read-write"
+msgstr "చదవడం-వ్రాయడం"
+
+#. TRANS: Application access type
+#: lib/applicationlist.php:138
+msgid "read-only"
+msgstr "చదవడం-మాత్రమే"
+
+#. TRANS: Used in application list. %1$s is a modified date, %2$s is access type (read-write or read-only)
+#: lib/applicationlist.php:144
+#, php-format
+msgid "Approved %1$s - \"%2$s\" access."
+msgstr ""
+
+#. TRANS: DT element label in attachment list.
+#: lib/attachmentlist.php:88
+msgid "Attachments"
+msgstr "జోడింపులు"
+
+#. TRANS: DT element label in attachment list item.
+#: lib/attachmentlist.php:265
+msgid "Author"
+msgstr "రచయిత"
+
+#. TRANS: DT element label in attachment list item.
+#: lib/attachmentlist.php:279
+msgid "Provider"
+msgstr "మునుజూపు"
+
+#: lib/attachmentnoticesection.php:67
+msgid "Notices where this attachment appears"
+msgstr ""
+
+#: lib/channel.php:157 lib/channel.php:177
+msgid "Command results"
+msgstr "ఆదేశ ఫలితాలు"
+
+#: lib/channel.php:229 lib/mailhandler.php:142
+msgid "Command complete"
+msgstr "ఆదేశం పూర్తయ్యింది"
+
+#: lib/channel.php:240
+msgid "Command failed"
+msgstr "ఆదేశం విఫలమైంది"
+
+#. TRANS: Error text shown when an unimplemented command is given.
+#: lib/command.php:185
+msgid "Sorry, this command is not yet implemented."
+msgstr "క్షమించండి, ఈ ఆదేశం ఇంకా అమలుపరచబడలేదు."
+
+#. TRANS: Command exception text shown when a user tries to nudge themselves.
+#: lib/command.php:231
+msgid "It does not make a lot of sense to nudge yourself!"
+msgstr ""
+
+#. TRANS: Message given having nudged another user.
+#. TRANS: %s is the nickname of the user that was nudged.
+#: lib/command.php:240
+#, php-format
+msgid "Nudge sent to %s."
+msgstr ""
+
+#. TRANS: User statistics text.
+#. TRANS: %1$s is the number of other user the user is subscribed to.
+#. TRANS: %2$s is the number of users that are subscribed to the user.
+#. TRANS: %3$s is the number of notices the user has sent.
+#: lib/command.php:270
+#, php-format
+msgid ""
+"Subscriptions: %1$s\n"
+"Subscribers: %2$s\n"
+"Notices: %3$s"
+msgstr ""
+"చందాలు: %1$s\n"
+"చందాదార్లు: %2$s\n"
+"నోటీసులు: %3$s"
+
+#. TRANS: Text shown when a notice has been marked as favourite successfully.
+#: lib/command.php:314
+msgid "Notice marked as fave."
+msgstr "నోటీసుని ఇష్టాంశంగా గుర్తించాం."
+
+#. TRANS: Whois output. %s is the full name of the queried user.
+#: lib/command.php:434
+#, php-format
+msgid "Fullname: %s"
+msgstr "పూర్తిపేరు: %s"
+
+#. TRANS: Whois output. %s is the location of the queried user.
+#. TRANS: Profile info line in new-subscriber notification e-mail
+#: lib/command.php:438 lib/mail.php:268
+#, php-format
+msgid "Location: %s"
+msgstr "ప్రాంతం: %s"
+
+#. TRANS: Whois output. %s is the homepage of the queried user.
+#. TRANS: Profile info line in new-subscriber notification e-mail
+#: lib/command.php:442 lib/mail.php:271
+#, php-format
+msgid "Homepage: %s"
+msgstr "హోంపేజీ: %s"
+
+#. TRANS: Whois output. %s is the bio information of the queried user.
+#: lib/command.php:446
+#, php-format
+msgid "About: %s"
+msgstr "గురించి: %s"
+
+#. TRANS: Command exception text shown when trying to send a direct message to a remote user (a user not registered at the current server).
+#: lib/command.php:474
+#, php-format
+msgid ""
+"%s is a remote profile; you can only send direct messages to users on the "
+"same server."
+msgstr ""
+
+#. TRANS: Message given if content is too long.
+#. TRANS: %1$d is the maximum number of characters, %2$d is the number of submitted characters.
+#: lib/command.php:491 lib/xmppmanager.php:403
+#, php-format
+msgid "Message too long - maximum is %1$d characters, you sent %2$d."
+msgstr "నోటిసు చాలా పొడవుగా ఉంది - %1$d అక్షరాలు గరిష్ఠం, మీరు %2$d పంపించారు."
+
+#. TRANS: Error text shown when repeating a notice fails with an unknown reason.
+#: lib/command.php:557
+msgid "Error repeating notice."
+msgstr "నోటీసుని పునరావృతించడంలో పొరపాటు."
+
+#. TRANS: Error text shown when a reply to a notice fails with an unknown reason.
+#: lib/command.php:606
+msgid "Error saving notice."
+msgstr "నోటీసుని భద్రపరచడంలో పొరపాటు."
+
+#. TRANS: Error text shown when no username was provided when issuing a subscribe command.
+#: lib/command.php:655
+msgid "Specify the name of the user to subscribe to."
+msgstr ""
+
+#. TRANS: Command exception text shown when trying to subscribe to an OMB profile using the subscribe command.
+#: lib/command.php:664
+msgid "Can't subscribe to OMB profiles by command."
+msgstr ""
+
+#. TRANS: Error text shown when no username was provided when issuing an unsubscribe command.
+#. TRANS: Error text shown when no username was provided when issuing the command.
+#: lib/command.php:694 lib/command.php:804
+msgid "Specify the name of the user to unsubscribe from."
+msgstr ""
+
+#. TRANS: Error text shown when the command "off" fails for an unknown reason.
+#: lib/command.php:731
+msgid "Can't turn off notification."
+msgstr ""
+
+#. TRANS: Error text shown when issuing the login command while login is disabled.
+#: lib/command.php:771
+msgid "Login command is disabled."
+msgstr ""
+
+#. TRANS: Text shown after issuing the login command successfully.
+#. TRANS: %s is a logon link..
+#: lib/command.php:784
+#, php-format
+msgid "This link is useable only once and is valid for only 2 minutes: %s."
+msgstr ""
+
+#. TRANS: Text shown after requesting other users a user is subscribed to without having any subscriptions.
+#: lib/command.php:831
+msgid "You are not subscribed to anyone."
+msgstr "మీరు ఎవరికీ చందాచేరలేదు."
+
+#. TRANS: Text shown after requesting other users a user is subscribed to.
+#. TRANS: This message support plural forms. This message is followed by a
+#. TRANS: hard coded space and a comma separated list of subscribed users.
+#: lib/command.php:836
+msgid "You are subscribed to this person:"
+msgid_plural "You are subscribed to these people:"
+msgstr[0] "%sకి స్పందనలు"
+msgstr[1] "%sకి స్పందనలు"
+
+#. TRANS: Text shown after requesting other users that are subscribed to a user
+#. TRANS: (followers) without having any subscribers.
+#: lib/command.php:858
+msgid "No one is subscribed to you."
+msgstr "మీకు చందాదార్లు ఎవరూ లేరు."
+
+#. TRANS: Text shown after requesting other users that are subscribed to a user (followers).
+#. TRANS: This message support plural forms. This message is followed by a
+#. TRANS: hard coded space and a comma separated list of subscribing users.
+#: lib/command.php:863
+msgid "This person is subscribed to you:"
+msgid_plural "These people are subscribed to you:"
+msgstr[0] "%sకి స్పందనలు"
+msgstr[1] "%sకి స్పందనలు"
+
+#. TRANS: Text shown after requesting groups a user is subscribed to without having
+#. TRANS: any group subscriptions.
+#: lib/command.php:885
+msgid "You are not a member of any groups."
+msgstr "మీరు ఏ గుంపులోనూ సభ్యులు కాదు."
+
+#. TRANS: Text shown after requesting groups a user is subscribed to.
+#. TRANS: This message support plural forms. This message is followed by a
+#. TRANS: hard coded space and a comma separated list of subscribed groups.
+#: lib/command.php:890
+msgid "You are a member of this group:"
+msgid_plural "You are a member of these groups:"
+msgstr[0] "మీరు ఇప్పటికే లోనికి ప్రవేశించారు!"
+msgstr[1] "మీరు ఇప్పటికే లోనికి ప్రవేశించారు!"
+
+#: lib/command.php:905
+msgid ""
+"Commands:\n"
+"on - turn on notifications\n"
+"off - turn off notifications\n"
+"help - show this help\n"
+"follow <nickname> - subscribe to user\n"
+"groups - lists the groups you have joined\n"
+"subscriptions - list the people you follow\n"
+"subscribers - list the people that follow you\n"
+"leave <nickname> - unsubscribe from user\n"
+"d <nickname> <text> - direct message to user\n"
+"get <nickname> - get last notice from user\n"
+"whois <nickname> - get profile info on user\n"
+"lose <nickname> - force user to stop following you\n"
+"fav <nickname> - add user's last notice as a 'fave'\n"
+"fav #<notice_id> - add notice with the given id as a 'fave'\n"
+"repeat #<notice_id> - repeat a notice with a given id\n"
+"repeat <nickname> - repeat the last notice from user\n"
+"reply #<notice_id> - reply to notice with a given id\n"
+"reply <nickname> - reply to the last notice from user\n"
+"join <group> - join group\n"
+"login - Get a link to login to the web interface\n"
+"drop <group> - leave group\n"
+"stats - get your stats\n"
+"stop - same as 'off'\n"
+"quit - same as 'off'\n"
+"sub <nickname> - same as 'follow'\n"
+"unsub <nickname> - same as 'leave'\n"
+"last <nickname> - same as 'get'\n"
+"on <nickname> - not yet implemented.\n"
+"off <nickname> - not yet implemented.\n"
+"nudge <nickname> - remind a user to update.\n"
+"invite <phone number> - not yet implemented.\n"
+"track <word> - not yet implemented.\n"
+"untrack <word> - not yet implemented.\n"
+"track off - not yet implemented.\n"
+"untrack all - not yet implemented.\n"
+"tracks - not yet implemented.\n"
+"tracking - not yet implemented.\n"
+msgstr ""
+
+#: lib/common.php:135
+msgid "No configuration file found. "
+msgstr "స్వరూపణపు దస్త్రమేమీ కనబడలేదు. "
+
+#: lib/common.php:136
+msgid "I looked for configuration files in the following places: "
+msgstr "స్వరూపణపు దస్త్రాల కొరకు ఈ ప్రదేశాలతో చూసాం: "
+
+#: lib/common.php:138
+msgid "You may wish to run the installer to fix this."
+msgstr ""
+
+#: lib/connectsettingsaction.php:110
+msgid "IM"
+msgstr ""
+
+#: lib/connectsettingsaction.php:111
+msgid "Updates by instant messenger (IM)"
+msgstr ""
+
+#: lib/connectsettingsaction.php:116
+msgid "Updates by SMS"
+msgstr ""
+
+#: lib/connectsettingsaction.php:120
+msgid "Connections"
+msgstr "అనుసంధానాలు"
+
+#: lib/connectsettingsaction.php:121
+msgid "Authorized connected applications"
+msgstr "అధీకృత అనుసంధాన ఉపకరణాలు"
+
+#: lib/dberroraction.php:60
+msgid "Database error"
+msgstr ""
+
+#: lib/designsettings.php:105
+msgid "Upload file"
+msgstr "ఫైలుని ఎక్కించు"
+
+#: lib/designsettings.php:109
+msgid ""
+"You can upload your personal background image. The maximum file size is 2MB."
+msgstr "మీ వ్యక్తిగత నేపథ్యపు చిత్రాన్ని మీరు ఎక్కించవచ్చు. గరిష్ఠ ఫైలు పరిమాణం 2మెబై."
+
+#: lib/favorform.php:114 lib/favorform.php:140
+msgid "Favor this notice"
+msgstr "ఈ నోటీసుని పునరావృతించు"
+
+#: lib/favorform.php:140
+msgid "Favor"
+msgstr "ఇష్టపడు"
+
+#: lib/feed.php:85
+msgid "RSS 1.0"
+msgstr ""
+
+#: lib/feed.php:87
+msgid "RSS 2.0"
+msgstr ""
+
+#: lib/feed.php:89
+msgid "Atom"
+msgstr "ఆటమ్"
+
+#: lib/feed.php:91
+msgid "FOAF"
+msgstr ""
+
+#: lib/feedlist.php:64
+msgid "Export data"
+msgstr ""
+
+#: lib/galleryaction.php:121
+msgid "Filter tags"
+msgstr ""
+
+#: lib/galleryaction.php:131
+msgid "All"
+msgstr "అన్నీ"
+
+#: lib/galleryaction.php:139
+msgid "Select tag to filter"
+msgstr ""
+
+#: lib/galleryaction.php:141
+msgid "Choose a tag to narrow list"
+msgstr ""
+
+#: lib/galleryaction.php:143
+msgid "Go"
+msgstr "వెళ్ళు"
+
+#: lib/grantroleform.php:91
+#, php-format
+msgid "Grant this user the \"%s\" role"
+msgstr ""
+
+#: lib/groupeditform.php:163
+msgid "URL of the homepage or blog of the group or topic"
+msgstr "ఈ ఉపకరణం యొక్క హోమ్&zwnj;పేజీ చిరునామా"
+
+#: lib/groupeditform.php:168
+msgid "Describe the group or topic"
+msgstr "గుంపుని లేదా విషయాన్ని వివరించండి"
+
+#: lib/groupeditform.php:170
+#, php-format
+msgid "Describe the group or topic in %d characters"
+msgstr "గుంపు లేదా విషయాన్ని గురించి %d అక్షరాల్లో వివరించండి"
+
+#: lib/groupeditform.php:179
+msgid ""
+"Location for the group, if any, like \"City, State (or Region), Country\""
+msgstr "గుంపు యొక్క ప్రాంతం, ఉంటే, \"నగరం, రాష్ట్రం (లేదా ప్రాంతం), దేశం\""
+
+#: lib/groupeditform.php:187
+#, php-format
+msgid "Extra nicknames for the group, comma- or space- separated, max %d"
+msgstr ""
+
+#: lib/groupnav.php:85
+msgid "Group"
+msgstr "గుంపు"
+
+#: lib/groupnav.php:101
+msgid "Blocked"
+msgstr "నిరోధించారు"
+
+#: lib/groupnav.php:102
+#, php-format
+msgid "%s blocked users"
+msgstr "%s నిరోధిత వాడుకరులు"
+
+#: lib/groupnav.php:108
+#, php-format
+msgid "Edit %s group properties"
+msgstr "%s గుంపు లక్షణాలను మార్చు"
+
+#: lib/groupnav.php:113
+msgid "Logo"
+msgstr "చిహ్నం"
+
+#: lib/groupnav.php:114
+#, php-format
+msgid "Add or edit %s logo"
+msgstr ""
+
+#: lib/groupnav.php:120
+#, php-format
+msgid "Add or edit %s design"
+msgstr ""
+
+#: lib/groupsbymemberssection.php:71
+msgid "Groups with most members"
+msgstr "ఎక్కువమంది సభ్యులున్న గుంపులు"
+
+#: lib/groupsbypostssection.php:71
+msgid "Groups with most posts"
+msgstr "ఎక్కువ టపాలున్న గుంపులు"
+
+#. TRANS: Client exception 406
+#: lib/htmloutputter.php:104
+msgid "This page is not available in a media type you accept"
+msgstr ""
+
+#: lib/imagefile.php:72
+msgid "Unsupported image file format."
+msgstr ""
+
+#: lib/imagefile.php:93
+msgid "Partial upload."
+msgstr "పాక్షిక ఎగుమతి."
+
+#: lib/imagefile.php:101 lib/mediafile.php:170
+msgid "System error uploading file."
+msgstr ""
+
+#: lib/imagefile.php:109
+msgid "Not an image or corrupt file."
+msgstr "బొమ్మ కాదు లేదా పాడైపోయిన ఫైలు."
+
+#: lib/imagefile.php:122
+msgid "Lost our file."
+msgstr "అటువంటి ఫైలు లేదు."
+
+#: lib/imagefile.php:163 lib/imagefile.php:224
+msgid "Unknown file type"
+msgstr "తెలియని ఫైలు రకం"
+
+#: lib/imagefile.php:244
+msgid "MB"
+msgstr "మెబై"
+
+#: lib/imagefile.php:246
+msgid "kB"
+msgstr "కిబై"
+
+#: lib/jabber.php:387
+#, php-format
+msgid "[%s]"
+msgstr "[%s]"
+
+#: lib/jabber.php:567
+#, php-format
+msgid "Unknown inbox source %d."
+msgstr "గుర్తు తెలియని భాష \"%s\"."
+
+#: lib/joinform.php:114
+msgid "Join"
+msgstr "చేరు"
+
+#: lib/leaveform.php:114
+msgid "Leave"
+msgstr "వైదొలగు"
+
+#: lib/logingroupnav.php:80
+msgid "Login with a username and password"
+msgstr "వాడుకరిపేరు మరియు సంకేతపదాలతో ప్రవేశించండి"
+
+#: lib/logingroupnav.php:86
+msgid "Sign up for a new account"
+msgstr "కొత్త ఖాతా కొరకై నమోదుచేసుకోండి"
+
+#. TRANS: Subject for address confirmation email
+#: lib/mail.php:174
+msgid "Email address confirmation"
+msgstr "ఈమెయిల్ చిరునామా నిర్ధారణ"
+
+#. TRANS: Body for address confirmation email.
+#: lib/mail.php:177
+#, php-format
+msgid ""
+"Hey, %s.\n"
+"\n"
+"Someone just entered this email address on %s.\n"
+"\n"
+"If it was you, and you want to confirm your entry, use the URL below:\n"
+"\n"
+"\t%s\n"
+"\n"
+"If not, just ignore this message.\n"
+"\n"
+"Thanks for your time, \n"
+"%s\n"
+msgstr ""
+"హోయి, %s.\n"
+"\n"
+"%sలో ఎవరో మీ ఈమెయిలు చిరునామాని ఇచ్చారు.\n"
+"\n"
+"అది మీరే అయితే, మరియు మీ పద్దుని మీరు నిర్ధారించాలనుకుంటే, క్రింది చిరునామాపై నొక్కండి:\n"
+"\n"
+"%s\n"
+"\n"
+"మీరు కాకపోతే, ఈ సందేశాన్ని పట్టించుకోకండి.\n"
+"\n"
+"మీ సమయానికి కృతజ్ఞతలు, \n"
+"%s\n"
+
+#. TRANS: Subject of new-subscriber notification e-mail
+#: lib/mail.php:243
+#, php-format
+msgid "%1$s is now listening to your notices on %2$s."
+msgstr "%1$s ఇప్పుడు %2$sలో మీ నోటీసులని వింటున్నారు."
+
+#: lib/mail.php:248
+#, php-format
+msgid ""
+"If you believe this account is being used abusively, you can block them from "
+"your subscribers list and report as spam to site administrators at %s"
+msgstr ""
+
+#. TRANS: Main body of new-subscriber notification e-mail
+#: lib/mail.php:254
+#, php-format
+msgid ""
+"%1$s is now listening to your notices on %2$s.\n"
+"\n"
+"\t%3$s\n"
+"\n"
+"%4$s%5$s%6$s\n"
+"Faithfully yours,\n"
+"%7$s.\n"
+"\n"
+"----\n"
+"Change your email address or notification options at %8$s\n"
+msgstr ""
+"%1$s ఇప్పుడు %2$sలో మీ నోటీసులని వింటున్నారు.\n"
+"\n"
+"%3$s\n"
+"\n"
+"%4$s%5$s%6$s\n"
+"మీ విధేయులు,\n"
+"%7$s.\n"
+"\n"
+"----\n"
+"మీ ఈమెయిలు చిరునామాని లేదా గమనింపుల ఎంపికలను %8$s వద్ద మార్చుకోండి\n"
+
+#. TRANS: Profile info line in new-subscriber notification e-mail
+#: lib/mail.php:274
+#, php-format
+msgid "Bio: %s"
+msgstr "స్వపరిచయం: %s"
+
+#. TRANS: Subject of notification mail for new posting email address
+#: lib/mail.php:304
+#, php-format
+msgid "New email address for posting to %s"
+msgstr "%sకి నోటీసులు పంపించడానికి కొత్త ఈమెయిలు చిరునామా"
+
+#. TRANS: Body of notification mail for new posting email address
+#: lib/mail.php:308
+#, php-format
+msgid ""
+"You have a new posting address on %1$s.\n"
+"\n"
+"Send email to %2$s to post new messages.\n"
+"\n"
+"More email instructions at %3$s.\n"
+"\n"
+"Faithfully yours,\n"
+"%4$s"
+msgstr ""
+
+#. TRANS: Subject line for SMS-by-email notification messages
+#: lib/mail.php:433
+#, php-format
+msgid "%s status"
+msgstr "%s స్థితి"
+
+#. TRANS: Subject line for SMS-by-email address confirmation message
+#: lib/mail.php:460
+msgid "SMS confirmation"
+msgstr "SMS నిర్ధారణ"
+
+#. TRANS: Subject for 'nudge' notification email
+#: lib/mail.php:484
+#, php-format
+msgid "You've been nudged by %s"
+msgstr ""
+
+#. TRANS: Body for 'nudge' notification email
+#: lib/mail.php:489
+#, php-format
+msgid ""
+"%1$s (%2$s) is wondering what you are up to these days and is inviting you "
+"to post some news.\n"
+"\n"
+"So let's hear from you :)\n"
+"\n"
+"%3$s\n"
+"\n"
+"Don't reply to this email; it won't get to them.\n"
+"\n"
+"With kind regards,\n"
+"%4$s\n"
+msgstr ""
+"%1$s (%2$s) మీరేం చేస్తున్నారో అని విస్మయం చెందుతున్నారు మరియు ఏవైనా విశేషాలని వ్రాయమని మిమ్మల్ని "
+"ఆహ్వానిస్తున్నారు.\n"
+"\n"
+"కాబట్టి మిమ్మల్ని విననివ్వండి :)\n"
+"\n"
+"%3$s\n"
+"\n"
+"ఈ ఈమెయిలుకే స్పందించకండి; ఇది వారికి వెళ్ళదు.\n"
+"\n"
+"శుభాశీస్సులతో,\n"
+"%4$s\n"
+
+#. TRANS: Subject for direct-message notification email
+#: lib/mail.php:536
+#, php-format
+msgid "New private message from %s"
+msgstr "%s నుండి కొత్త అంతరంగిక సందేశం"
+
+#. TRANS: Body for direct-message notification email
+#: lib/mail.php:541
+#, php-format
+msgid ""
+"%1$s (%2$s) sent you a private message:\n"
+"\n"
+"------------------------------------------------------\n"
+"%3$s\n"
+"------------------------------------------------------\n"
+"\n"
+"You can reply to their message here:\n"
+"\n"
+"%4$s\n"
+"\n"
+"Don't reply to this email; it won't get to them.\n"
+"\n"
+"With kind regards,\n"
+"%5$s\n"
+msgstr ""
+"%1$s (%2$s) మీకు ఒక అంతరంగిక సందేశాన్ని పంపించారు:\n"
+"\n"
+"------------------------------------------------------\n"
+"%3$s\n"
+"------------------------------------------------------\n"
+"\n"
+"వారి సందేశానికి మీరు ఇక్కడ జవాబివ్వవచ్చు:\n"
+"\n"
+"%4$s\n"
+"\n"
+"ఈ ఈమెయిలుకి స్పందించకండి; ఇది వారికి వెళ్ళదు.\n"
+"\n"
+"శుభాకాంక్షలతో,\n"
+"%5$s\n"
+
+#. TRANS: Subject for favorite notification email
+#: lib/mail.php:589
+#, php-format
+msgid "%s (@%s) added your notice as a favorite"
+msgstr "%s (@%s) మీ నోటీసుని ఇష్టపడ్డారు"
+
+#. TRANS: Body for favorite notification email
+#: lib/mail.php:592
+#, php-format
+msgid ""
+"%1$s (@%7$s) just added your notice from %2$s as one of their favorites.\n"
+"\n"
+"The URL of your notice is:\n"
+"\n"
+"%3$s\n"
+"\n"
+"The text of your notice is:\n"
+"\n"
+"%4$s\n"
+"\n"
+"You can see the list of %1$s's favorites here:\n"
+"\n"
+"%5$s\n"
+"\n"
+"Faithfully yours,\n"
+"%6$s\n"
+msgstr ""
+"%2$s లోని మీ నోటీసుని %1$s (@%7$s) తన ఇష్టాంశాలలో ఇప్పుడే చేర్చుకున్నారు.\n"
+"\n"
+"మీ నోటీసు యొక్క చిరునామా ఇదీ:\n"
+"\n"
+"%3$s\n"
+"\n"
+"మీ నోటీసు యొక్క పాఠ్యం ఇదీ:\n"
+"\n"
+"%4$s\n"
+"\n"
+"%1$s యొక్క ఇష్టాంశాల జాబితాని మీరు ఇక్కడ చూడవచ్చు:\n"
+"\n"
+"%5$s\n"
+"\n"
+"మీ విధేయులు,\n"
+"%6$s\n"
+
+#. TRANS: Line in @-reply notification e-mail. %s is conversation URL.
+#: lib/mail.php:651
+#, php-format
+msgid ""
+"The full conversation can be read here:\n"
+"\n"
+"\t%s"
+msgstr ""
+"పూర్తి సంభాషణని ఇక్కడ చదవవచ్చు:\n"
+"\n"
+"%s"
+
+#: lib/mail.php:657
+#, php-format
+msgid "%s (@%s) sent a notice to your attention"
+msgstr "%s (@%s) మీకు ఒక నోటీసుని పంపించారు"
+
+#. TRANS: Body of @-reply notification e-mail.
+#: lib/mail.php:660
+#, php-format
+msgid ""
+"%1$s (@%9$s) just sent a notice to your attention (an '@-reply') on %2$s.\n"
+"\n"
+"The notice is here:\n"
+"\n"
+"\t%3$s\n"
+"\n"
+"It reads:\n"
+"\n"
+"\t%4$s\n"
+"\n"
+"%5$sYou can reply back here:\n"
+"\n"
+"\t%6$s\n"
+"\n"
+"The list of all @-replies for you here:\n"
+"\n"
+"%7$s\n"
+"\n"
+"Faithfully yours,\n"
+"%2$s\n"
+"\n"
+"P.S. You can turn off these email notifications here: %8$s\n"
+msgstr ""
+"%2$sలో %1$s (@%9$s) ఒక నోటీసుని మీ దృష్టికి ('@-స్పందన') పంపించారు.\n"
+"\n"
+"ఈదీ నోటీసు:\n"
+"\n"
+"%3$s\n"
+"\n"
+"నోటీసు పాఠ్యం:\n"
+"\n"
+"%4$s\n"
+"\n"
+"%5$sమీరు ఇక్కడ ప్రతిస్పందించవచ్చు:\n"
+"\n"
+"%6$s\n"
+"\n"
+"మీకు వచ్చిన అన్ని @-స్పందనలని ఇక్కడ చూడవచ్చు:\n"
+"\n"
+"%7$s\n"
+"\n"
+"మీ విధేయులు,\n"
+"%2$s\n"
+"\n"
+"తా.క. ఈ ఈమెయిలు గమనింపులని మీరు ఇక్కడ నిలిపివేసుకోవచ్చు: %8$s\n"
+
+#: lib/mailbox.php:89
+msgid "Only the user can read their own mailboxes."
+msgstr "ఎవరి తపాలాపెట్టెలను ఆ వాడుకరి మాత్రమే చదవలగరు."
+
+#: lib/mailbox.php:139
+msgid ""
+"You have no private messages. You can send private message to engage other "
+"users in conversation. People can send you messages for your eyes only."
+msgstr ""
+"మీకు అంతరంగిక సందేశాలు లేవు. ఇతర వాడుకరులతో సంభాషణకై మీరు వారికి అంతరంగిక సందేశాలు "
+"పంపించవచ్చు. మీ కంటికి మాత్రమే కనబడేలా వారు మీకు సందేశాలు పంపవచ్చు."
+
+#: lib/mailbox.php:228 lib/noticelist.php:506
+msgid "from"
+msgstr "నుండి"
+
+#: lib/mailhandler.php:42
+msgid "Not a registered user."
+msgstr "నమోదైన వాడుకరి కాదు."
+
+#: lib/mailhandler.php:46
+msgid "Sorry, that is not your incoming email address."
+msgstr "క్షమించండి, అది మీ లోనికివచ్చు ఈమెయిలు చిరునామా కాదు."
+
+#: lib/mediafile.php:98 lib/mediafile.php:123
+msgid "There was a database error while saving your file. Please try again."
+msgstr ""
+
+#: lib/mediafile.php:142
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr ""
+
+#: lib/mediafile.php:147
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+
+#: lib/mediafile.php:152
+msgid "The uploaded file was only partially uploaded."
+msgstr "ఎక్కించిన ఫైలు కేవలం పాక్షికంగా మాత్రమే ఎక్కింది."
+
+#: lib/mediafile.php:159
+msgid "Missing a temporary folder."
+msgstr "తాత్కాలిక సంచయం కనబడటంలేదు."
+
+#: lib/mediafile.php:162
+msgid "Failed to write file to disk."
+msgstr ""
+
+#: lib/mediafile.php:165
+msgid "File upload stopped by extension."
+msgstr ""
+
+#: lib/mediafile.php:179 lib/mediafile.php:217
+msgid "File exceeds user's quota."
+msgstr ""
+
+#: lib/mediafile.php:197 lib/mediafile.php:234
+msgid "File could not be moved to destination directory."
+msgstr ""
+
+#: lib/mediafile.php:202 lib/mediafile.php:238
+msgid "Could not determine file's MIME type."
+msgstr "ఇష్టాంశాన్ని తొలగించలేకపోయాం."
+
+#: lib/mediafile.php:318
+#, php-format
+msgid " Try using another %s format."
+msgstr ""
+
+#: lib/mediafile.php:323
+#, php-format
+msgid "%s is not a supported file type on this server."
+msgstr ""
+
+#: lib/messageform.php:146
+msgid "To"
+msgstr ""
+
+#: lib/messageform.php:159 lib/noticeform.php:186
+msgid "Available characters"
+msgstr "అందుబాటులో ఉన్న అక్షరాలు"
+
+#: lib/messageform.php:178 lib/noticeform.php:237
+msgctxt "Send button for sending notice"
+msgid "Send"
+msgstr "పంపించు"
+
+#: lib/noticeform.php:160
+msgid "Send a notice"
+msgstr "సైటు గమనిక"
+
+#: lib/noticeform.php:174
+#, php-format
+msgid "What's up, %s?"
+msgstr "%s, సంగతులేమిటి?"
+
+#: lib/noticeform.php:193
+msgid "Attach"
+msgstr "జోడించు"
+
+#: lib/noticeform.php:197
+msgid "Attach a file"
+msgstr "ఒక ఫైలుని జోడించు"
+
+#: lib/noticeform.php:213
+msgid "Share my location"
+msgstr "నేనున్న ప్రాంతాన్ని బహిరంగపరచు"
+
+#: lib/noticeform.php:216
+msgid "Do not share my location"
+msgstr "నేనున్న ప్రాంతాన్ని బహిరంగపరచకు"
+
+#: lib/noticeform.php:217
+msgid ""
+"Sorry, retrieving your geo location is taking longer than expected, please "
+"try again later"
+msgstr ""
+"క్షమించండి, మీ భౌగోళిక ప్రాంతాన్ని తెలుసుకోవడం అనుకున్నదానికంటే ఎక్కవ సమయం తీసుకుంటూంది, దయచేసి "
+"కాసేపాగి ప్రయత్నించండి"
+
+#. TRANS: Used in coordinates as abbreviation of north
+#: lib/noticelist.php:436
+msgid "N"
+msgstr "ఉ"
+
+#. TRANS: Used in coordinates as abbreviation of south
+#: lib/noticelist.php:438
+msgid "S"
+msgstr "ద"
+
+#. TRANS: Used in coordinates as abbreviation of east
+#: lib/noticelist.php:440
+msgid "E"
+msgstr "తూ"
+
+#. TRANS: Used in coordinates as abbreviation of west
+#: lib/noticelist.php:442
+msgid "W"
+msgstr "ప"
+
+#: lib/noticelist.php:444
+#, php-format
+msgid "%1$u°%2$u'%3$u\"%4$s %5$u°%6$u'%7$u\"%8$s"
+msgstr "%1$u°%2$u'%3$u\"%4$s %5$u°%6$u'%7$u\"%8$s"
+
+#: lib/noticelist.php:453
+msgid "at"
+msgstr ""
+
+#: lib/noticelist.php:502
+msgid "web"
+msgstr ""
+
+#: lib/noticelist.php:568
+msgid "in context"
+msgstr "సందర్భంలో"
+
+#: lib/noticelist.php:603
+msgid "Repeated by"
+msgstr "%s యొక్క పునరావృతం"
+
+#: lib/noticelist.php:630
+msgid "Reply to this notice"
+msgstr "ఈ నోటీసుపై స్పందించండి"
+
+#: lib/noticelist.php:631
+msgid "Reply"
+msgstr "స్పందించండి"
+
+#: lib/noticelist.php:675
+msgid "Notice repeated"
+msgstr "నోటీసుని పునరావృతించారు"
+
+#: lib/oauthstore.php:283
+msgid "Error inserting new profile"
+msgstr "కొత్త ప్రొపైలుని చేర్చటంలో పొరపాటు"
+
+#: lib/oauthstore.php:291
+msgid "Error inserting avatar"
+msgstr "కొత్త ప్రొపైలుని చేర్చటంలో పొరపాటు"
+
+#: lib/oauthstore.php:306
+msgid "Error updating remote profile"
+msgstr "దూరపు ప్రొపైలుని తాజాకరించటంలో పొరపాటు"
+
+#: lib/oauthstore.php:311
+msgid "Error inserting remote profile"
+msgstr "దూరపు ప్రొపైలుని చేర్చటంలో పొరపాటు"
+
+#: lib/oauthstore.php:345
+msgid "Duplicate notice"
+msgstr "నోటీసుని తొలగించు"
+
+#: lib/oauthstore.php:490
+msgid "Couldn't insert new subscription."
+msgstr "కొత్త చందాని చేర్చలేకపోయాం."
+
+#: lib/personalgroupnav.php:99
+msgid "Personal"
+msgstr "వ్యక్తిగత"
+
+#: lib/personalgroupnav.php:104
+msgid "Replies"
+msgstr "స్పందనలు"
+
+#: lib/personalgroupnav.php:114
+msgid "Favorites"
+msgstr "ఇష్టాంశాలు"
+
+#: lib/personalgroupnav.php:125
+msgid "Inbox"
+msgstr "వచ్చినవి"
+
+#: lib/personalgroupnav.php:126
+msgid "Your incoming messages"
+msgstr "మీకు వచ్చిన సందేశాలు"
+
+#: lib/personalgroupnav.php:130
+msgid "Outbox"
+msgstr "పంపినవి"
+
+#: lib/personalgroupnav.php:131
+msgid "Your sent messages"
+msgstr "మీరు పంపిన సందేశాలు"
+
+#: lib/personaltagcloudsection.php:56
+#, php-format
+msgid "Tags in %s's notices"
+msgstr ""
+
+#: lib/profileaction.php:109 lib/profileaction.php:205 lib/subgroupnav.php:82
+msgid "Subscriptions"
+msgstr "చందాలు"
+
+#: lib/profileaction.php:126
+msgid "All subscriptions"
+msgstr "అన్ని చందాలు"
+
+#: lib/profileaction.php:144 lib/profileaction.php:214 lib/subgroupnav.php:90
+msgid "Subscribers"
+msgstr "చందాదార్లు"
+
+#: lib/profileaction.php:161
+msgid "All subscribers"
+msgstr "అందరు చందాదార్లు"
+
+#: lib/profileaction.php:191
+msgid "User ID"
+msgstr "వాడుకరి ID"
+
+#: lib/profileaction.php:196
+msgid "Member since"
+msgstr "సభ్యులైన తేదీ"
+
+#. TRANS: Average count of posts made per day since account registration
+#: lib/profileaction.php:235
+msgid "Daily average"
+msgstr "రోజువారీ సగటు"
+
+#: lib/profileaction.php:264
+msgid "All groups"
+msgstr "అన్ని గుంపులు"
+
+#: lib/profileformaction.php:123
+msgid "Unimplemented method."
+msgstr ""
+
+#: lib/publicgroupnav.php:78
+msgid "Public"
+msgstr "ప్రజా"
+
+#: lib/publicgroupnav.php:82
+msgid "User groups"
+msgstr "వాడుకరి గుంపులు"
+
+#: lib/publicgroupnav.php:84 lib/publicgroupnav.php:85
+msgid "Recent tags"
+msgstr "ఇటీవలి ట్యాగులు"
+
+#: lib/publicgroupnav.php:88
+msgid "Featured"
+msgstr "విశేషం"
+
+#: lib/publicgroupnav.php:92
+msgid "Popular"
+msgstr "ప్రాచుర్యం"
+
+#: lib/redirectingaction.php:95
+msgid "No return-to arguments."
+msgstr "జోడింపులు లేవు."
+
+#: lib/repeatform.php:107
+msgid "Repeat this notice?"
+msgstr "ఈ నోటీసుని పునరావృతించాలా?"
+
+#: lib/repeatform.php:132
+msgid "Yes"
+msgstr "అవును"
+
+#: lib/repeatform.php:132
+msgid "Repeat this notice"
+msgstr "ఈ నోటీసుని పునరావృతించు"
+
+#: lib/router.php:709
+msgid "No single user defined for single-user mode."
+msgstr ""
+
+#: lib/sandboxform.php:78
+msgid "Sandbox this user"
+msgstr "ఈ వాడుకరిని నిరోధించు"
+
+#: lib/searchaction.php:120
+msgid "Search site"
+msgstr "సైటుని వెతుకు"
+
+#: lib/searchaction.php:126
+msgid "Keyword(s)"
+msgstr "కీపదము(లు)"
+
+#: lib/searchaction.php:127
+msgid "Search"
+msgstr "వెతుకు"
+
+#: lib/searchaction.php:162
+msgid "Search help"
+msgstr "సహాయంలో వెతుకు"
+
+#: lib/searchgroupnav.php:80
+msgid "People"
+msgstr "ప్రజలు"
+
+#: lib/searchgroupnav.php:81
+msgid "Find people on this site"
+msgstr "ఈ సైటులోని వ్యక్తులని కనుగొనండి"
+
+#: lib/searchgroupnav.php:85
+msgid "Find groups on this site"
+msgstr "ఈ సైటులోని గుంపులని కనుగొనండి"
+
+#: lib/section.php:89
+msgid "Untitled section"
+msgstr "శీర్షికలేని విభాగం"
+
+#: lib/section.php:106
+msgid "More..."
+msgstr "మరింత..."
+
+#: lib/silenceform.php:67
+msgid "Silence"
+msgstr "సైటు గమనిక"
+
+#: lib/silenceform.php:78
+msgid "Silence this user"
+msgstr "ఈ వాడుకరిని తొలగించు"
+
+#: lib/subgroupnav.php:83
+#, php-format
+msgid "People %s subscribes to"
+msgstr "%s చందాచేరిన వ్యక్తులు"
+
+#: lib/subgroupnav.php:91
+#, php-format
+msgid "People subscribed to %s"
+msgstr "%sకి చందాచేరిన వ్యక్తులు"
+
+#: lib/subgroupnav.php:99
+#, php-format
+msgid "Groups %s is a member of"
+msgstr "%s సభ్యులుగా ఉన్న గుంపులు"
+
+#: lib/subgroupnav.php:105
+msgid "Invite"
+msgstr "ఆహ్వానించు"
+
+#: lib/subgroupnav.php:106
+#, php-format
+msgid "Invite friends and colleagues to join you on %s"
+msgstr "%sలో తోడుకై మీ స్నేహితులని మరియు సహోద్యోగులని ఆహ్వానించండి"
+
+#: lib/subscriberspeopleselftagcloudsection.php:48
+#: lib/subscriptionspeopleselftagcloudsection.php:48
+msgid "People Tagcloud as self-tagged"
+msgstr ""
+
+#: lib/subscriberspeopletagcloudsection.php:48
+#: lib/subscriptionspeopletagcloudsection.php:48
+msgid "People Tagcloud as tagged"
+msgstr ""
+
+#: lib/tagcloudsection.php:56
+msgid "None"
+msgstr "ఏమీలేదు"
+
+#: lib/themeuploader.php:50
+msgid "This server cannot handle theme uploads without ZIP support."
+msgstr ""
+
+#: lib/themeuploader.php:58 lib/themeuploader.php:61
+msgid "The theme file is missing or the upload failed."
+msgstr ""
+
+#: lib/themeuploader.php:147
+msgid "Invalid theme: bad directory structure."
+msgstr ""
+
+#: lib/themeuploader.php:166
+#, php-format
+msgid "Uploaded theme is too large; must be less than %d bytes uncompressed."
+msgstr ""
+
+#: lib/themeuploader.php:178
+msgid "Invalid theme archive: missing file css/display.css"
+msgstr ""
+
+#: lib/themeuploader.php:218
+msgid ""
+"Theme contains invalid file or folder name. Stick with ASCII letters, "
+"digits, underscore, and minus sign."
+msgstr ""
+
+#: lib/themeuploader.php:224
+msgid "Theme contains unsafe file extension names; may be unsafe."
+msgstr ""
+
+#: lib/themeuploader.php:241
+#, php-format
+msgid "Theme contains file of type '.%s', which is not allowed."
+msgstr ""
+
+#: lib/themeuploader.php:259
+msgid "Error opening theme archive."
+msgstr "నిరోధాన్ని తొలగించడంలో పొరపాటు."
+
+#: lib/topposterssection.php:74
+msgid "Top posters"
+msgstr ""
+
+#: lib/unsandboxform.php:80
+msgid "Unsandbox this user"
+msgstr "ఈ వాడుకరి నుండి చందామాను"
+
+#: lib/unsilenceform.php:78
+msgid "Unsilence this user"
+msgstr "ఈ వాడుకరిని తొలగించు"
+
+#: lib/unsubscribeform.php:113 lib/unsubscribeform.php:137
+msgid "Unsubscribe from this user"
+msgstr "ఈ వాడుకరి నుండి చందామాను"
+
+#: lib/unsubscribeform.php:137
+msgid "Unsubscribe"
+msgstr "చందామాను"
+
+#: lib/userprofile.php:117
+msgid "Edit Avatar"
+msgstr "అవతారాన్ని మార్చు"
+
+#: lib/userprofile.php:234 lib/userprofile.php:248
+msgid "User actions"
+msgstr "వాడుకరి చర్యలు"
+
+#: lib/userprofile.php:237
+msgid "User deletion in progress..."
+msgstr "వాడుకరి తొలగింపు కొనసాగుతూంది..."
+
+#: lib/userprofile.php:263
+msgid "Edit profile settings"
+msgstr "ఫ్రొఫైలు అమరికలని మార్చు"
+
+#: lib/userprofile.php:264
+msgid "Edit"
+msgstr "మార్చు"
+
+#: lib/userprofile.php:287
+msgid "Send a direct message to this user"
+msgstr "ఈ వాడుకరికి ఒక నేరు సందేశాన్ని పంపించండి"
+
+#: lib/userprofile.php:288
+msgid "Message"
+msgstr "సందేశం"
+
+#: lib/userprofile.php:364
+msgid "User role"
+msgstr "వాడుకరి పాత్ర"
+
+#: lib/userprofile.php:366
+msgctxt "role"
+msgid "Administrator"
+msgstr "నిర్వాహకులు"
+
+#: lib/userprofile.php:367
+msgctxt "role"
+msgid "Moderator"
+msgstr "సమన్వయకర్త"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1102
+msgid "a few seconds ago"
+msgstr "కొన్ని క్షణాల క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1105
+msgid "about a minute ago"
+msgstr "ఓ నిమిషం క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1109
+#, php-format
+msgid "about %d minutes ago"
+msgstr "%d నిమిషాల క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1112
+msgid "about an hour ago"
+msgstr "ఒక గంట క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1116
+#, php-format
+msgid "about %d hours ago"
+msgstr "%d గంటల క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1119
+msgid "about a day ago"
+msgstr "ఓ రోజు క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1123
+#, php-format
+msgid "about %d days ago"
+msgstr "%d రోజుల క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1126
+msgid "about a month ago"
+msgstr "ఓ నెల క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1130
+#, php-format
+msgid "about %d months ago"
+msgstr "%d నెలల క్రితం"
+
+#. TRANS: Used in notices to indicate when the notice was made compared to now.
+#: lib/util.php:1133
+msgid "about a year ago"
+msgstr "ఒక సంవత్సరం క్రితం"
+
+#: lib/webcolor.php:82
+#, php-format
+msgid "%s is not a valid color!"
+msgstr "%s అనేది సరైన రంగు కాదు!"
+
+#: lib/webcolor.php:123
+#, php-format
+msgid "%s is not a valid color! Use 3 or 6 hex chars."
+msgstr "%s అనేది సరైన రంగు కాదు! 3 లేదా 6 హెక్స్ అక్షరాలను వాడండి."

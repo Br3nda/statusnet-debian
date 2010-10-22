@@ -1,0 +1,50 @@
+<!-- Copyright 2008-2010 StatusNet Inc. and contributors. -->
+<!-- Document licensed under Creative Commons Attribution 3.0 Unported. See -->
+<!-- http://creativecommons.org/licenses/by/3.0/ for details. -->
+
+You can post messages to %%site.name%% using a [Jabber](http://jabber.org/) client
+on your computer, mobile phone, or other platform. ([GTalk](http://talk.google.com/),
+Google's Jabber program, will also work.) This can be a convenient way to keep
+up with your friends on %%site.name%%.
+
+If you don't already have a Jabber account, you can use GTalk or one of the other
+[public Jabber services](http://www.jabber.org/im-services). You'll probably also
+need an IM client like [Pidgin](http://www.pidgin.im/).
+
+Managing your IM settings
+-------------------------
+
+Use the [IM settings](%%action.imsettings%%) page to set your IM preferences. You can add or change your Jabber address and set the flags for Jabber update.
+
+When you add or change your address, you'll receive a message from **%%xmpp.user%%@%%xmpp.server%%** asking you to confirm the change. (You may need to
+add %%xmpp.user%%@%%xmpp.server%% to your buddy list *before* changing your IM
+settings; this is definitely true for GTalk.)
+
+Sending updates
+---------------
+
+You send updates by sending messages to %%xmpp.user%%@%%xmpp.server%%. Messages
+should be less than %%site.textlimit%% characters; longer messages will be truncated.
+
+Commands
+--------
+
+You can do some minor management of your account through Jabber. These are the
+currently-implemented commands:
+
+* **on**: Turn on notifications. You'll receive copies of messages by people
+  you subscribe to.
+* **off**: Turn off notifications. You'll no longer receive Jabber
+  notifications.
+* **stop**: Same as 'off'
+* **quit**: Same as 'off'
+* **help**: Show this help. List available Jabber/XMPP commands
+* **follow &lt;nickname&gt;**: Subscribe to &lt;nickname&gt;
+* **sub &lt;nickname&gt;**: Same as follow
+* **leave &lt;nickname&gt;**: Unsubscribe from &lt;nickname&gt;
+* **unsub &lt;nickname&gt;**: Same as leave
+* **d &lt;nickname&gt; &lt;text&gt;**: Send direct message to &lt;nickname&gt; with message body &lt;text&gt;
+* **get &lt;nickname&gt;**: Get last notice from &lt;nickname&gt;
+* **last &lt;nickname&gt;**: Same as 'get'
+* **whois &lt;nickname&gt;**: Get Profile info on &lt;nickname&gt;
+* **fav &lt;nickname&gt;**: Add user's last notice as a favorite

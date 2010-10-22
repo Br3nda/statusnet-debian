@@ -1,0 +1,79 @@
+/**
+ * @package   StatusNet
+ * @author    Sarven Capadisli <csarven@status.net>
+ * @copyright 2009-2010 StatusNet, Inc.
+ * @license   http://creativecommons.org/licenses/by/3.0/ Creative Commons Attribution 3.0 Unported
+ * @link      http://status.net/
+ */
+/* IE specific styles */
+
+.notice-options input.submit {
+color:#fff;
+}
+
+#site_nav_local_views a {
+background-color:#ddffcc;
+}
+
+#form_notice {
+width:525px;
+}
+#form_notice .form_note {
+top:-5px;
+right:0;
+}
+#form_notice textarea {
+width:97.75%;
+}
+#form_notice .form_note + label {
+position:absolute;
+top:87px;
+left:77%;
+text-indent:-9999px;
+height:16px;
+width:16px;
+display:block;
+}
+#form_notice #notice_data-attach {
+filter: alpha(opacity = 0);
+left:33.5%;
+}
+
+#form_notice #notice_action-submit {
+right:0;
+}
+
+#aside_primary {
+width:181px;
+}
+
+#form_notice,
+#anon_notice {
+top:190px;
+}
+
+#public #content,
+#groups #content,
+#publictagcloud #content,
+#featured #content,
+#favorited #content,
+#all #content,
+#replies #content,
+#showstream #content,
+#showfavorites #content,
+#inbox #content,
+#outbox #content,
+#subscriptions #content,
+#subscribers #content {
+padding-top:138px;
+}
+
+.notice {
+z-index:1;
+}
+.notice:hover {
+z-index:9999;
+}
+.notice .thumbnail img {
+z-index:9999;
+}

@@ -1,0 +1,1088 @@
+InitializePlugin: a chance to initialize a plugin in a complete environment
+
+CleanupPlugin: a chance to cleanup a plugin at the end of a program
+
+StartPrimaryNav: Showing the primary nav menu
+- $action: the current action
+
+EndPrimaryNav: At the end of the primary nav menu
+- $action: the current action
+
+StartSecondaryNav: Showing the secondary nav menu
+- $action: the current action
+
+EndSecondaryNav: At the end of the secondary nav menu
+- $action: the current action
+
+StartShowStyles: Showing Style links; good place to add UA style resets
+- $action: the current action
+
+EndShowStyles: End showing Style links; good place to add custom styles
+- $action: the current action
+
+StartShowStatusNetStyles: Showing StatusNet Style links
+- $action: the current action
+
+EndShowStatusNetStyles: End showing StatusNet Style links;  good place to add handheld or JavaScript dependant styles
+- $action: the current action
+
+StartShowLaconicaStyles: backwards compatibility; deprecated
+- $action: the current action
+
+EndShowLaconicaStyles: backwards compatibility; deprecated
+- $action: the current action
+
+StartShowUAStyles: Showing custom User-Agent style links
+- $action: the current action
+
+EndShowUAStyles: End showing custom User-Agent links; good place to add user-agent (e.g., filter, -webkit, -moz) specific styles
+- $action: the current action
+
+StartShowScripts: Showing JavaScript links
+- $action: the current action
+
+EndShowScripts: End showing JavaScript links; good place to add custom
+		links like Google Analytics
+- $action: the current action
+
+StartShowJQueryScripts: Showing JQuery script links (use this to link to e.g. Google mirrors)
+- $action: the current action
+
+EndShowJQueryScripts: End showing JQuery script links
+- $action: the current action
+
+StartShowStatusNetScripts: Showing StatusNet script links (use this to link to a CDN or something)
+- $action: the current action
+
+EndShowStatusNetScripts: End showing StatusNet script links
+- $action: the current action
+
+StartShowLaconicaScripts: backwards compatibility; deprecated
+- $action: the current action
+
+EndShowLaconicaScripts: backwards compatibility; deprecated
+- $action: the current action
+
+StartShowSections: Start the list of sections in the sidebar
+- $action: the current action
+
+EndShowSections: End the list of sections in the sidebar
+- $action: the current action
+
+StartShowHeader: Showing before the header container
+- $action: the current action
+
+EndShowHeader: Showing after the header container
+- $action: the current action
+
+StartShowFooter: Showing before the footer container
+- $action: the current action
+
+EndShowFooter: Showing after the footer container
+- $action: the current action
+
+StartShowContentBlock: Showing before the content container
+- $action: the current action
+
+EndShowContentBlock: Showing after the content container
+- $action: the current action
+
+StartShowAside: Showing before the Aside container
+- $action: the current action
+
+EndShowAside: Showing after the Aside container
+- $action: the current action
+
+StartShowNoticeFormData: Showing before the notice form data
+- $action: the current action
+
+EndShowNoticeFormData: Showing after the notice form data
+- $action: the current action
+
+StartNoticeSave: before inserting a notice (good place for content filters)
+- $notice: notice being saved (no ID or URI)
+
+EndNoticeSave: after inserting a notice and related code
+- $notice: notice that was saved (with ID and URI)
+
+StartShowLocalNavBlock: Showing the local nav menu
+- $action: the current action
+
+EndShowLocalNavBlock: At the end of the local nav menu
+- $action: the current action
+
+StartShowHTML: Chance to set document headers (e.g., content type, charset, language), DOCTYPE and html element properties
+- $action: the current action
+
+EndShowHTML: Showing after the html element
+- $action: the current action
+
+StartPublicGroupNav: Showing the public group nav menu
+- $action: the current action
+
+EndPublicGroupNav: At the end of the public group nav menu
+- $action: the current action
+
+StartSubGroupNav: Showing the subscriptions group nav menu
+- $action: the current action
+
+EndSubGroupNav: At the end of the subscriptions group nav menu
+- $action: the current action
+
+StartInitializeRouter: Before the router instance has been initialized; good place to add routes
+- $m: the Net_URL_Mapper that has just been set up
+
+RouterInitialized: After the router instance has been initialized
+- $m: the Net_URL_Mapper that has just been set up
+
+StartLogout: Before logging out
+- $action: the logout action
+
+EndLogout: After logging out
+- $action: the logout action
+
+ArgsInitialize: After the argument array has been initialized
+- $args: associative array of arguments, can be modified
+
+StartAddressData: Allows the site owner to provide additional information about themselves for contact (e.g., tagline, email, location)
+- $action: the current action
+
+EndAddressData: At the end of <address>
+- $action: the current action
+
+StartShowSiteNotice: Before showing site notice
+- $action: the current action
+
+EndShowSiteNotice: After showing site notice
+- $action: the current action
+
+StartLoginGroupNav: Before showing the login and register navigation menu
+- $action: the current action
+
+EndLoginGroupNav: After showing the login and register navigation menu
+- $action: the current action
+
+StartAccountSettingsNav: Before showing the account settings menu
+- $action: the current action
+
+EndAccountSettingsNav: After showing the account settings menu
+- $action: the current action
+
+StartAccountSettingsProfileMenuItem: Before showing the Profile menu item
+- $widget: AccountSettingsNav instance being shown
+
+EndAccountSettingsProfileMenuItem: After showing the Profile menu item
+- $widget: AccountSettingsNav instance being shown
+
+StartAccountSettingsAvatarMenuItem: Before showing the Avatar menu item
+- $widget: AccountSettingsNav instance being shown
+
+EndAccountSettingsAvatarMenuItem: After showing the Avatar menu item
+- $widget: AccountSettingsNav instance being shown
+
+StartAccountSettingsPasswordMenuItem: Before showing the Password menu item
+- $widget: AccountSettingsNav instance being shown
+
+EndAccountSettingsPasswordMenuItem: After showing the Password menu item
+- $widget: AccountSettingsNav instance being shown
+
+StartAccountSettingsEmailMenuItem: Before showing the Email menu item
+- $widget: AccountSettingsNav instance being shown
+
+EndAccountSettingsEmailMenuItem: After showing the Email menu item
+- $widget: AccountSettingsNav instance being shown
+
+StartAccountSettingsDesignMenuItem: Before showing the Design menu item
+- $widget: AccountSettingsNav instance being shown
+
+EndAccountSettingsDesignMenuItem: After showing the Design menu item
+- $widget: AccountSettingsNav instance being shown
+
+StartAccountSettingsOtherMenuItem: Before showing the Other menu item
+- $widget: AccountSettingsNav instance being shown
+
+EndAccountSettingsOtherMenuItem: After showing the Other menu item
+- $widget: AccountSettingsNav instance being shown
+
+Autoload: When trying to autoload a class
+- $cls: the class being sought. A plugin might require_once the file for the class.
+
+SensitiveAction: determines if an action is 'sensitive' and should use SSL
+- $action: name of the action, like 'login'
+- $sensitive: flag for whether this is a sensitive action
+
+LoginAction: determines if an action is a 'login' action (OK for public view in private mode)
+- $action: name of the action, like 'register'
+- $login: flag for whether this is a login action
+
+StartShowHead: called before showing the <head> element and children
+- $action: action object being show
+
+EndShowHead: called after showing the <head> element (and </head>)
+- $action: action object being shown
+
+StartShowBody: called before showing the <body> element and children
+- $action: action object being shown
+
+EndShowBody: called after showing the <body> element (and </body>)
+- $action: action object being shown
+
+StartPersonalGroupNav: beginning of personal group nav menu
+- $action: action object being shown
+
+EndPersonalGroupNav: end of personal group nav menu (good place to add a menu item)
+- $action: action object being shown
+
+StartGroupGroupNav: Showing the group nav menu
+- $action: the current action
+
+EndGroupGroupNav: At the end of the group nav menu
+- $action: the current action
+
+StartEndHTML: just before the </html> tag
+- $action: action object being shown
+
+EndEndHTML: just after the </html> tag
+- $action: action object being shown
+
+StartShowDesign: just before showing a site, user, or group design
+- $action: action object being shown
+
+EndShowDesign: just after showing a site, user, or group design
+- $action: action object being shown
+
+StartShowExportData: just before showing the <div> with export data (feeds)
+- $action: action object being shown
+
+EndShowExportData: just after showing the <div> with export data (feeds)
+- $action: action object being shown
+
+StartShowNoticeItem: just before showing the notice item
+- $action: action object being shown
+
+EndShowNoticeItem: just after showing the notice item
+- $action: action object being shown
+
+StartShowPageNotice: just before showing the page notice (instructions or error)
+- $action: action object being shown
+
+EndShowPageNotice: just after showing the page notice (instructions or error)
+- $action: action object being shown
+
+StartShowPageTitle: just before showing the main h1 title of a page (only for registration)
+- $action: action object being shown
+
+StartProfileFormData: just before showing text entry fields on profile settings page
+- $action: action object being shown
+
+EndProfileFormData: just after showing text entry fields on profile settings page
+- $action: action object being shown
+
+StartProfileSaveForm: before starting to save a profile settings form
+- $action: action object being shown
+
+EndProfileSaveForm: after saving a profile settings form (after commit, no profile or user object!)
+- $action: action object being shown
+
+StartRegistrationFormData: just before showing text entry fields on registration page
+- $action: action object being shown
+
+EndRegistrationFormData: just after showing text entry fields on registration page
+- $action: action object being shown
+
+StartRegistrationTry: before validating and saving a new user
+- $action: action object being shown
+
+EndRegistrationTry: after saving a new user (note: no profile or user object!)
+- $action: action object being shown
+
+StartAvatarFormData: before displaying avatar form
+- $action: action object being shown
+
+EndAvatarFormData: after displaying avatar form
+- $action: action object being shown
+
+StartAvatarSaveForm: before saving the avatar
+- $action: action object being shown
+
+EndAvatarSaveForm: after saving the avatar
+- $action: action object being shown
+
+StartNewQueueManager: before trying to start a new queue manager; good for plugins implementing new queue manager classes
+- $qm: empty queue manager to set
+
+RedirectToLogin: event when we force a redirect to login (like when going to a settings page on a remembered login)
+- $action: action object being shown
+- $user: current user
+
+StartLoadDoc: before loading a help doc (hook this to show your own documentation)
+- $title: title of the document
+- $output: HTML output to show
+
+EndLoadDoc: after loading a help doc (hook this to modify other documentation)
+- $title: title of the document
+- $output: HTML output to show
+
+StartApiRss: after the rss <channel> element is started
+- $action: action object being shown
+
+StartApiAtom: after the <feed> element is started
+- $action: action object being shown
+
+StartEnqueueNotice: about to add a notice to the queues (good place to add a new transport)
+- $notice: the notice being added
+- &$transports: modifiable list of transports (as strings) to queue for
+
+EndEnqueueNotice: after adding a notice to the queues
+- $notice: the notice being added
+- $transports: modifiable list of transports to use
+
+UnqueueHandleNotice: Handle a notice when no queue manager is available
+- $notice: the notice to handle
+- $queue: the "queue" that is being executed
+
+GetValidDaemons: Just before determining which daemons to run
+- &$daemons: modifiable list of daemon scripts to run, filenames relative to scripts/
+
+HandleQueuedNotice: Handle a queued notice at queue time (or immediately if no queue)
+- &$notice: notice to handle
+
+StartShowHeadElements: Right after the <head> tag
+- $action: the current action
+
+EndShowHeadElements: Right before the </head> tag; put <script>s here if you need them in <head>
+- $action: the current action
+
+CheckSchema: chance to check the schema
+
+StartProfileRemoteSubscribe: Before showing the link to remote subscription
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfileRemoteSubscribe: After showing the link to remote subscription
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartGroupSubscribe: Before showing the link to remote subscription
+- $action: the current action
+- $group: the group being shown
+
+EndGroupSubscribe: After showing the link to remote subscription
+- $action: the current action
+- $group: the group being shown
+
+StartProfilePageProfileSection: Starting to show the section of the
+                              profile page with the actual profile data;
+                              hook to prevent showing the profile (e.g.)
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageProfileElements: inside the section, before the first
+                               element; prepend elements here
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageProfileElements: inside the section, after the last element;
+                             append elements here
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageProfileSection: After showing the section of the profile
+                            page with the profile elements
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageActionsSection: Starting to show the section of the
+                                    profile page with action links; hook
+                                    to hide them (for example)
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageActionsElements: inside the list, before the first
+                                     element; prepend elements here
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageActionsElements: inside the list, after the last element;
+                                   append elements here
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageActionsSection: After showing the section of the profile
+                                  page with the entity actions
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageAvatar: before showing the avatar on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageAvatar: after showing the avatar on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageNickname: before showing the nickname on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageNickname: after showing the nickname on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageFullName: before showing the fullname on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageFullName: after showing the fullname on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageLocation: before showing the location on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageLocation: after showing the location on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageHomepage: before showing the homepage link on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageHomepage: after showing the homepage on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageBio: before showing the bio on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageBio: after showing the bio on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfilePageProfileTags: before showing the tags on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+EndProfilePageProfileTags: after showing the tags on the profile page
+- $userprofile: UserProfile widget
+- &$profile: the profile being shown
+
+StartProfileList: when starting a list of profiles (before <ul>)
+- $profilelist: ProfileList widget, with $profile, $action, and $out
+
+EndProfileList: when ending a list of profiles (after </ul>)
+- $profilelist: ProfileList widget
+
+StartProfileListItem: when starting to show a profile list item
+- $item: ProfileListItem widget
+
+EndProfileListItem: after showing a profile list item
+- $item: ProfileListItem widget
+
+StartProfileListItemProfile: the profile data part of the item
+- $item: ProfileListItem widget
+
+EndProfileListItemProfile: the profile data part of the item
+- $item: ProfileListItem widget
+
+StartProfileListItemActions: the actions (buttons) for an item
+- $item: ProfileListItem widget
+
+EndProfileListItemActions: the actions (buttons) for an item
+- $item: ProfileListItem widget
+
+StartProfileListItemProfileElements: inside the <div>
+- $item: ProfileListItem widget
+
+EndProfileListItemProfileElements: inside the <div>
+- $item: ProfileListItem widget
+
+StartProfileListItemAvatar: Showing a profile list avatar
+- $item: ProfileListItem widget
+
+EndProfileListItemAvatar: Showing a profile list avatar
+- $item: ProfileListItem widget
+
+StartProfileListItemFullName: Showing the profile list full name
+- $item: ProfileListItem widget
+
+EndProfileListItemFullName: Showing the profile list full name
+- $item: ProfileListItem widget
+
+StartProfileListItemLocation: Showing the profile list location
+- $item: ProfileListItem widget
+
+EndProfileListItemLocation: Showing the profile list location
+- $item: ProfileListItem widget
+
+StartProfileListItemHomepage: Showing the profile list homepage
+- $item: ProfileListItem widget
+
+EndProfileListItemHomepage: Showing the profile list homepage
+- $item: ProfileListItem widget
+
+StartProfileListItemBio: Showing the profile list bio
+- $item: ProfileListItem widget
+
+EndProfileListItemBio: Showing the profile list bio
+- $item: ProfileListItem widget
+
+StartProfileListItemActionElements: Showing the profile list actions (prepend a button here, or replace all buttons)
+- $item: ProfileListItem widget
+
+EndProfileListItemActionElements: Showing profile list actions (append a button here)
+- $item: ProfileListItem widget
+
+StartUserXRDS: Start XRDS output (right after the opening XRDS tag)
+- $action: the current action
+- &$xrdsoutputter - XRDSOutputter object to write to
+
+EndUserXRDS: End XRDS output (right before the closing XRDS tag)
+- $action: the current action
+- &$xrdsoutputter - XRDSOutputter object to write to
+
+StartPublicXRDS: Start XRDS output (right after the opening XRDS tag)
+- $action: the current action
+- &$xrdsoutputter - XRDSOutputter object to write to
+
+EndPublicXRDS: End XRDS output (right before the closing XRDS tag)
+- $action: the current action
+- &$xrdsoutputter - XRDSOutputter object to write to
+
+StartCheckPassword: Check a username/password
+- $nickname: The nickname to check
+- $password: The password to check
+- &$authenticatedUser: set to User object if credentials match a user.
+
+EndCheckPassword: After checking a username/password pair
+- $nickname: The nickname that was checked
+- $password: The password that was checked
+- $authenticatedUser: User object if credentials match a user, else null.
+
+StartChangePassword: Before changing a password
+- $user: user
+- $oldpassword: the user's old password
+- $newpassword: the desired new password
+
+EndChangePassword: After changing a password
+- $user: user
+
+StartSetUser: Before setting the currently logged in user
+- $user: user
+
+EndSetUser: After setting the currently logged in user
+- $user: user
+
+StartSetApiUser: Before setting the current API user
+- $user: user
+
+EndSetApiUser: After setting the current API user
+- $user: user
+
+StartHasRole: Before determing if the a profile has a given role
+- $profile: profile in question
+- $name: name of the role in question
+- &$has_role: does this profile have the named role?
+
+EndHasRole: Before determing if the a profile has a given role
+- $profile: profile in question
+- $name: name of the role in question
+- $has_role: does this profile have the named role?
+
+UserDeleteRelated: Specify additional tables to delete entries from when deleting users
+- $user: User object
+- &$related: array of DB_DataObject class names to delete entries on matching user_id.
+
+GetUrlShorteners: Specify URL shorteners that are available for use
+- &$shorteners: append your shortener to this array like so: $shorteners[shortenerName]=array('display'=>display, 'freeService'=>boolean)
+
+StartShortenUrl: About to shorten a URL
+- $url: url to be shortened
+- $shortenerName: name of the requested shortener
+- &$shortenedUrl: short version of the url
+
+EndShortenUrl: After a URL has been shortened
+- $url: url to be shortened
+- $shortenerName: name of the requested shortener
+- $shortenedUrl: short version of the url
+
+StartCssLinkElement: Before a <link rel="stylesheet"..> element is written
+- $action
+- &$src
+- &$theme
+- &$media
+
+EndCssLinkElement: After a <link rel="stylesheet"..> element is written
+- $action
+- $src
+- $theme
+- $media
+
+StartStyleElement: Before a <style...> element is written
+- $action
+- &$code
+- &$type
+- &$media
+
+EndStyleElement: After a <style...> element is written
+- $action
+- $code
+- $type
+- $media
+
+StartScriptElement: Before a <script...> element is written
+- $action
+- &$src
+- &$type
+
+EndScriptElement: After a <script...> element is written
+- $action
+- $src
+- $type
+
+StartInlineScriptElement: Before a <script...> element is written
+- $action
+- &$code
+- &$type
+
+EndInlineScriptElement: After a <script...> element is written
+- $action
+- $code
+- $type
+
+StartLog: Before writing to the logs
+- &$priority
+- &$msg
+- &$filename
+
+EndLog: After writing to the logs
+- $priority
+- $msg
+- $filename
+
+StartBlockProfile: when we're about to block
+- $user: the person doing the block
+- $profile: the person getting blocked, can be remote
+
+EndBlockProfile: when a block has succeeded
+- $user: the person doing the block
+- $profile: the person blocked, can be remote
+
+StartUnblockProfile: when we're about to unblock
+- $user: the person doing the unblock
+- $profile: the person getting unblocked, can be remote
+
+EndUnblockProfile: when an unblock has succeeded
+- $user: the person doing the unblock
+- $profile: the person unblocked, can be remote
+
+StartSubscribe: when a subscription is starting
+- $user: the person subscribing
+- $other: the person being subscribed to
+
+EndSubscribe: when a subscription is finished
+- $user: the person subscribing
+- $other: the person being subscribed to
+
+StartUnsubscribe: when an unsubscribe is starting
+- $user: the person unsubscribing
+- $other: the person being unsubscribed from
+
+EndUnsubscribe: when an unsubscribe is done
+- $user: the person unsubscribing
+- $other: the person being unsubscribed to
+
+StartJoinGroup: when a user is joining a group
+- $group: the group being joined
+- $user: the user joining
+
+EndJoinGroup: when a user finishes joining a group
+- $group: the group being joined
+- $user: the user joining
+
+StartLeaveGroup: when a user is leaving a group
+- $group: the group being left
+- $user: the user leaving
+
+EndLeaveGroup: when a user has left a group
+- $group: the group being left
+- $user: the user leaving
+
+StartShowContentLicense: Showing the default license for content
+- $action: the current action
+
+EndShowContentLicense: Showing the default license for content
+- $action: the current action
+
+StartUserRegister: When a new user is being registered
+- &$profile: new profile data (no ID)
+- &$user: new user account (no ID or URI)
+
+EndUserRegister: When a new user has been registered
+- &$profile: new profile data
+- &$user: new user account
+
+StartRobotsTxt: Before outputting the robots.txt page
+- &$action: RobotstxtAction being shown
+
+EndRobotsTxt: After the default robots.txt page (good place for customization)
+- &$action: RobotstxtAction being shown
+
+StartGetProfileUri: When determining the canonical URI for a given profile
+- $profile: the current profile
+- &$uri: the URI
+
+EndGetProfileUri: After determining the canonical URI for a given profile
+- $profile: the current profile
+- &$uri: the URI
+
+StartFavorNotice: Saving a notice as a favorite
+- $profile: profile of the person faving (can be remote!)
+- $notice: notice being faved
+- &$fave: Favor object; null to start off with, but feel free to override.
+
+EndFavorNotice: After saving a notice as a favorite
+- $profile: profile of the person faving (can be remote!)
+- $notice: notice being faved
+
+StartDisfavorNotice: Saving a notice as a favorite
+- $profile: profile of the person faving (can be remote!)
+- $notice: notice being faved
+- &$result: result of the disfavoring (if you override)
+
+EndDisfavorNotice: After saving a notice as a favorite
+- $profile: profile of the person faving (can be remote!)
+- $notice: notice being faved
+
+StartFindMentions: start finding mentions in a block of text
+- $sender: sender profile
+- $text: plain text version of the notice
+- &$mentions: mentions found so far. Array of arrays; each array
+  has 'mentioned' (array of mentioned profiles), 'url' (url to link as),
+  'title' (title of the link), 'position' (position of the text to
+  replace), 'text' (text to replace)
+
+EndFindMentions: end finding mentions in a block of text
+- $sender: sender profile
+- $text: plain text version of the notice
+- &$mentions: mentions found so far. Array of arrays; each array
+  has 'mentioned' (array of mentioned profiles), 'url' (url to link as),
+  'title' (title of the link), 'position' (position of the text to
+  replace), 'text' (text to replace)
+
+StartShowSubscriptionsContent: before showing the subscriptions content
+- $action: the current action
+
+EndShowSubscriptionsContent: after showing the subscriptions content
+- $action: the current action
+
+StartShowUserGroupsContent: before showing the user groups content
+- $action: the current action
+
+EndShowUserGroupsContent: after showing the user groups content
+- $action: the current action
+
+StartShowAllContent: before showing the all (you and friends) content
+- $action: the current action
+
+EndShowAllContent: after showing the all (you and friends) content
+- $action: the current action
+
+StartShowSubscriptionsMiniList: at the start of subscriptions mini list
+- $action: the current action
+
+EndShowSubscriptionsMiniList: at the end of subscriptions mini list
+- $action: the current action
+
+StartShowGroupsMiniList: at the start of groups mini list
+- $action: the current action
+
+EndShowGroupsMiniList: at the end of groups mini list
+- $action: the current action
+
+StartDeleteUserForm: starting the data in the form for deleting a user
+- $action: action being shown
+- $user: user being deleted
+
+EndDeleteUserForm: Ending the data in the form for deleting a user
+- $action: action being shown
+- $user: user being deleted
+
+StartDeleteUser: handling the post for deleting a user
+- $action: action being shown
+- $user: user being deleted
+
+EndDeleteUser: handling the post for deleting a user
+- $action: action being shown
+- $user: user being deleted
+
+StartActivityStart: starting the output for a notice activity <event>
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$attrs: <entry> attributes (mostly namespace declarations, if any)
+
+EndActivityStart: end the opening tag for an activity <event>
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $attrs: <entry> attributes (mostly namespace declarations, if any)
+
+StartActivitySource: before outputting the <source> element for a notice activity
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+
+EndActivitySource: after outputting the <source> element for a notice activity
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+
+StartActivityTitle: before outputting notice activity title
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$title: title of the notice, mutable
+
+EndActivityTitle: after outputting notice activity title
+- $notice: notice being output
+- &$xs: XMLStringer for output
+- $title: title of the notice
+
+StartActivityAuthor: before outputting atom author
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$atomAuthor: string for XML representing atom author
+
+EndActivityAuthor: after outputting atom author
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$atomAuthor: string for XML representing atom author
+
+StartActivityActor: before outputting activity actor element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$actor: string for XML representing activity actor
+
+EndActivityActor: after outputting activity actor element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$actor: string for XML representing activity actor
+
+StartActivityLink: before outputting activity HTML link element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$url: URL for activity HTML link element for a notice activity entry
+
+EndActivityLink: before outputting activity HTML link element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $url:  URL for activity HTML link element for a notice activity entry
+
+StartActivityId: before outputting atom:id element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$id: atom:id (notice URI by default)
+
+EndActivityId: after outputting atom:id element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $id:  atom:id (notice URI by default)
+
+StartActivityPublished: before outputting atom:published element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$published: atom:published value (notice created by default)
+
+EndActivityPublished: before outputting atom:published element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $published:  atom:published value (notice created by default)
+
+StartActivityUpdated: before outputting atom:updated element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$updated: atom:updated value (same as atom:published by default)
+
+EndActivityUpdated: after outputting atom:updated element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $updated: atom:updated value (same as atom:published by default)
+
+StartActivityContent: before outputting atom:content element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$content: atom:content value (notice rendered HTML by default)
+
+EndActivityContent: after outputting atom:content element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $content: atom:content value (notice rendered HTML by default)
+
+StartActivityVerb: before outputting activity:verb element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$verb: activity:verb URI ('http://activitystrea.ms/schema/1.0/post' by default)
+
+EndActivityVerb: after outputting activity:verb element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $verb: activity:verb URI ('http://activitystrea.ms/schema/1.0/post' by default)
+
+StartActivityDefaultObjectType: before outputting activity:object-type element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$type: activity:object-type URI for default object ('http://activitystrea.ms/schema/1.0/note' by default)
+
+EndActivityDefaultObjectType: after outputting activity:verb element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $type: activity:object-type URI for default object ('http://activitystrea.ms/schema/1.0/note' by default)
+
+StartActivityObjects: before outputting activity:object elements for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$objects: array of ActivityObject objects to output (empty by default)
+
+EndActivityObjects: after outputting activity:object elements for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $objects: array of ActivityObject objects to output (empty by default)
+
+StartActivityNoticeInfo: before outputting statusnet:notice-info element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$noticeInfoAttr: array of attributes for notice info element
+
+EndActivityNoticeInfo: after outputting statusnet:notice-info element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $noticeInfoAttr: array of attributes for notice info element
+
+StartActivityInReplyTo: before outputting thr:in-reply-to element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$replyNotice: Notice object the main notice is in-reply-to
+
+EndActivityInReplyTo: after outputting thr:in-reply-to element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $replyNotice: Notice object the main notice is in-reply-to
+
+StartActivityConversation: before outputting ostatus:conversation link element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$conv: Conversation object
+
+EndActivityConversation: after outputting ostatus:conversation link element for a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $conv: Conversation object
+
+StartActivityAttentionProfiles: before outputting ostatus:attention link element for people in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$replyProfiles: array of profiles of people being replied to
+
+EndActivityAttentionProfiles: after outputting ostatus:attention link element for people in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $replyProfiles: array of Profile object of people being replied to
+
+StartActivityAttentionGroups: before outputting ostatus:attention link element for groups in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$groups: array of Group objects of groups being addressed
+
+EndActivityAttentionGroups: after outputting ostatus:attention link element for groups in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $groups: array of Group objects of groups being addressed
+
+StartActivityForward: before outputting ostatus:forward link element in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$repeat: Notice that was repeated
+
+EndActivityForward: after outputting ostatus:forward link element in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $repeat: Notice that was repeated
+
+StartActivityCategories: before outputting atom:category elements in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$tags: array of strings for tags on the notice (used for categories)
+
+EndActivityCategories: after outputting atom:category elements in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $tags: array of strings for tags on the notice (used for categories)
+
+StartActivityEnclosures: before outputting enclosure link elements in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$enclosures: array of enclosure objects (see File::getEnclosure() for details)
+
+EndActivityEnclosures: after outputting enclosure link elements in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $enclosures: array of enclosure objects (see File::getEnclosure() for details)
+
+StartActivityGeo: before outputting geo:rss element in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- &$lat: latitude
+- &$lon: longitude
+
+EndActivityGeo: after outputting geo:rss element in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+- $lat: latitude
+- $lon: longitude
+
+StartActivityEnd: before the closing </entry> in a notice activity entry (last chance for data!)
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+
+EndActivityEnd: after the closing </entry> in a notice activity entry
+- &$notice: notice being output
+- &$xs: XMLStringer for output
+
+StartNoticeSaveWeb: before saving a notice through the Web interface
+- $action: action being executed (instance of NewNoticeAction)
+- &$authorId: integer ID of the author
+- &$text: text of the notice
+- &$options: additional options (location, replies, etc.)
+
+EndNoticeSaveWeb: after saving a notice through the Web interface
+- $action: action being executed (instance of NewNoticeAction)
+- $notice: notice that was saved
+
+StartRssEntryArray: at the start of copying a notice to an array
+- $notice: the notice being copied
+- &$entry: the entry (empty at beginning)
+
+EndRssEntryArray: at the end of copying a notice to an array
+- $notice: the notice being copied
+- &$entry: the entry, with all the fields filled up
+
+NoticeDeleteRelated: at the beginning of deleting related fields to a notice
+- $notice: notice being deleted
+
+StartShowHeadTitle: when beginning to show the <title> element
+- $action: action being shown
+
+EndShowHeadTitle: when done showing the <title>
+- $action: action being shown
+
+StartShowPageTitle: when beginning to show the page title <h1>
+- $action: action being shown
+
+EndShowPageTitle: when done showing the page title <h1>
+- $action: action being shown
+
+StartDeleteOwnNotice: when a user starts to delete their own notice
+- $user: the user doing the delete
+- $notice: the notice being deleted
+
+EndDeleteOwnNotice: when a user has deleted their own notice
+- $user: the user doing the delete
+- $notice: the notice being deleted
