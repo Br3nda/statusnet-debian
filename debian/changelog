@@ -1,0 +1,5 @@
+statusnet (0.9.5-1) unstable; urgency=low
+
+  * first debian upload
+
+ -- Leo Costela <costela@debian.org>  Fri, 22 Oct 2010 23:05:23 +0200
