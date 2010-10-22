@@ -1,0 +1,54 @@
+Source: statusnet
+Section: web
+Priority: extra
+Maintainer: Brenda Wallace <shiny@cpan.org>
+Uploaders: Francois Mariear <francois@debian.org>,
+           Leo Costela <costela@debian.org>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.1
+Homepage: http://status.net
+Vcs-git: git://git.debian.org/git/collab-maint/statusnet.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/statusnet.git
+
+Package: statusnet
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, dbconfig-common
+         statusnet-pqsql (= ${binary:Version}) | statusnet-mysql (= ${binary:Version})
+         lighttpd | apache2 | httpd,
+         php5 (>= 5.2.3) | libapache2-mod-php4 (>= 5.2.3),
+         liboauth-php, php-db, php5-gd, php-openid, php-mail, 
+         libmarkdown-php, php-net-smtp, php-net-socket, libxmpp-php, 
+         php-http-request, php-net-url
+Suggests: php5-memcache, sphinxsearch, php5-gmp, php5-xcache | php-apc
+Description: distributed microblogging tool
+ StatusNet is an open source microblogging tool written in PHP. All data
+ is stored in a relational database. It was created as a direct response
+ to the need to create an open source, distributed alternative to 
+ Twitter. StatusNet implements the OpenMicroBlogging standard. 
+ .
+ It was originally developed as laconica and serves as the backend for
+ the identi.ca microblogging service.
+
+Package: statusnet-pgsql
+Architecture: all
+Depends: php5-pgsql, statusnet (= ${binary:Version})
+Description: distributed microblogging tool - PostgreSQL backend
+ StatusNet is an open source microblogging tool written in PHP. All data
+ is stored in a relational database. It was created as a direct response
+ to the need to create an open source, distributed alternative to
+ Twitter. StatusNet implements the OpenMicroBlogging standard.
+ .
+ This package contains the necessary scripts to use PostgreSQL as a 
+ database backend.
+
+Package: statusnet-mysql
+Architecture: all
+Depends: php5-mysql, statusnet (= ${binary:Version})
+Description: distributed microblogging tool - MySQL backend
+ StatusNet is an open source microblogging tool written in PHP. All data
+ is stored in a relational database. It was created as a direct response
+ to the need to create an open source, distributed alternative to
+ Twitter. StatusNet implements the OpenMicroBlogging standard.
+ .
+ This package contains the necessary scripts to use MySQL as a 
+ database backend.
