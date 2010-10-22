@@ -12,8 +12,8 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/statusnet.git
 
 Package: statusnet
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, dbconfig-common
-         statusnet-pqsql (= ${binary:Version}) | statusnet-mysql (= ${binary:Version})
+Depends: ${misc:Depends}, dbconfig-common,
+         statusnet-pqsql (= ${binary:Version}) | statusnet-mysql (= ${binary:Version}),
          lighttpd | apache2 | httpd,
          php5 (>= 5.2.3) | libapache2-mod-php4 (>= 5.2.3),
          liboauth-php, php-db, php5-gd, php-openid, php-mail, 
@@ -31,7 +31,7 @@ Description: distributed microblogging tool
 
 Package: statusnet-pgsql
 Architecture: all
-Depends: php5-pgsql, statusnet (= ${binary:Version})
+Depends: php5-pgsql, statusnet (= ${binary:Version}), ${misc:Depends}
 Description: distributed microblogging tool - PostgreSQL backend
  StatusNet is an open source microblogging tool written in PHP. All data
  is stored in a relational database. It was created as a direct response
@@ -43,7 +43,7 @@ Description: distributed microblogging tool - PostgreSQL backend
 
 Package: statusnet-mysql
 Architecture: all
-Depends: php5-mysql, statusnet (= ${binary:Version})
+Depends: php5-mysql, statusnet (= ${binary:Version}), ${misc:Depends}
 Description: distributed microblogging tool - MySQL backend
  StatusNet is an open source microblogging tool written in PHP. All data
  is stored in a relational database. It was created as a direct response
