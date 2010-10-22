@@ -1,2 +1,11 @@
-usr/share/statusnet/
+*.php         usr/share/statusnet/
+favicon.ico   usr/share/statusnet/
+apple-touch-icon.png usr/share/statusnet/
+actions/* usr/share/statusnet/actions/
+classes/*.php usr/share/statusnet/classes/
+doc-src/*     usr/share/statusnet/doc-src/
+js/*          usr/share/statusnet/js/
+lib/*         usr/share/statusnet/lib/
+plugins/*     usr/share/statusnet/plugins/
+theme/*       usr/share/statusnet/theme/
 
