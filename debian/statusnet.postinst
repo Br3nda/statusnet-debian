@@ -1,0 +1,12 @@
+#!/bin/sh 
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# source dbconfig-common stuff
+. /usr/share/dbconfig-common/dpkg/postinst 
+
+dbc_go statusnet $@
+
+#DEBHELPER#

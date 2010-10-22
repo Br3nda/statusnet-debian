@@ -13,8 +13,8 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/statusnet.git
 Package: statusnet
 Architecture: all
 Depends: ${misc:Depends}, dbconfig-common,
-         statusnet-pqsql (= ${binary:Version}) | statusnet-mysql (= ${binary:Version}),
-         lighttpd | apache2 | httpd,
+         php5-mysql | php5-pgsql,
+         apache2 | lighttpd | httpd,
          php5 (>= 5.2.3) | libapache2-mod-php4 (>= 5.2.3),
          liboauth-php, php-db, php5-gd, php-openid, php-mail, 
          libmarkdown-php, php-net-smtp, php-net-socket, libxmpp-php, 
@@ -28,27 +28,3 @@ Description: distributed microblogging tool
  .
  It was originally developed as laconica and serves as the backend for
  the identi.ca microblogging service.
-
-Package: statusnet-pgsql
-Architecture: all
-Depends: php5-pgsql, statusnet (= ${binary:Version}), ${misc:Depends}
-Description: distributed microblogging tool - PostgreSQL backend
- StatusNet is an open source microblogging tool written in PHP. All data
- is stored in a relational database. It was created as a direct response
- to the need to create an open source, distributed alternative to
- Twitter. StatusNet implements the OpenMicroBlogging standard.
- .
- This package contains the necessary scripts to use PostgreSQL as a 
- database backend.
-
-Package: statusnet-mysql
-Architecture: all
-Depends: php5-mysql, statusnet (= ${binary:Version}), ${misc:Depends}
-Description: distributed microblogging tool - MySQL backend
- StatusNet is an open source microblogging tool written in PHP. All data
- is stored in a relational database. It was created as a direct response
- to the need to create an open source, distributed alternative to
- Twitter. StatusNet implements the OpenMicroBlogging standard.
- .
- This package contains the necessary scripts to use MySQL as a 
- database backend.

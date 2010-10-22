@@ -8,4 +8,4 @@ js/*                    usr/share/statusnet/js/
 lib/*                   usr/share/statusnet/lib/
 plugins/*               usr/share/statusnet/plugins/
 theme/*                 usr/share/statusnet/theme/
-
+usr/share/dbconfig-common/data/statusnet/

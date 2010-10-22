@@ -11,3 +11,5 @@ override_dh_auto_clean:
 override_dh_auto_build:
 
 override_dh_auto_install:
+	install -m 644 -D $(CURDIR)/db/statusnet.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/mysql
+	install -m 644 -D $(CURDIR)/db/statusnet_pg.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/pgsql
