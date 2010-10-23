@@ -16,6 +16,7 @@ Depends: ${misc:Depends}, dbconfig-common,
          php5-mysql | php5-pgsql,
          apache2 | lighttpd | httpd,
          php5-cli, php5 (>= 5.2.3) | libapache2-mod-php4 (>= 5.2.3),
+         libjs-jquery, tinymce,
          liboauth-php, php-db, php5-gd, php-openid, php-mail, 
          libmarkdown-php, php-net-smtp, php-net-socket, libxmpp-php, 
          php-http-request, php-net-url

@@ -16,6 +16,10 @@ override_dh_auto_install:
 	install -m 644 -D $(CURDIR)/db/statusnet.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/mysql
 	install -m 644 -D $(CURDIR)/db/statusnet_pg.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/pgsql
 
+override_dh_install:
+	dh_install
+	rm -rf $(CURDIR)/debian/statusnet/usr/share/statusnet/plugins/TinyMCE/js
+
 override_dh_fixperms:
 	# correct permission (remove x bit from all non-scripts, add it to scripts)
 	find $(CURDIR)/debian/statusnet/usr/share/ -executable -type f ! -path '*/scripts/*' -print0 | xargs -0r chmod a-x

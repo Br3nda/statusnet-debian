@@ -1,1 +1,5 @@
 etc/statusnet/config.php usr/share/statusnet/config.php
+usr/share/javascript/jquery/jquery.js usr/share/statusnet/js/jquery.js
+usr/share/javascript/jquery/jquery.min.js usr/share/statusnet/js/jquery.min.js
+usr/share/javascript/jquery/jquery.js usr/share/statusnet/plugins/Autocomplete/jquery-autocomplete/lib/jquery.js
+usr/share/tinymce/www usr/share/statusnet/plugins/TinyMCE/js
