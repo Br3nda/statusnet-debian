@@ -3,6 +3,8 @@
 
 #export DH_VERBOSE=1
 
+export DH_ALWAYS_EXCLUDE=LICENSE
+
 %:
 	dh $@
 
@@ -13,3 +15,7 @@ override_dh_auto_build:
 override_dh_auto_install:
 	install -m 644 -D $(CURDIR)/db/statusnet.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/mysql
 	install -m 644 -D $(CURDIR)/db/statusnet_pg.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/pgsql
+
+override_dh_builddeb:
+	find $(CURDIR)/debian/tmp/usr/share/ -executable -type f -path '*/scripts/*' -prune -print0 | xargs -0r chmod a-x
+	dh_builddeb
