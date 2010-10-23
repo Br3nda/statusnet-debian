@@ -70,7 +70,12 @@ $config['site']['path'] = 'statusnet';
 // This is a PEAR DB DSN, see http://pear.php.net/manual/en/package.database.db.intro-dsn.php
 // Set it to match your actual database
 
+/*
+ Debian dbconfig automatically manages your DB settings
+*/
+#$config['db']['database'] = 'mysql://statusnet:microblog@localhost/statusnet';
 $config['db']['database'] = 'mysql://statusnet:microblog@localhost/statusnet';
+
 // $config['db']['ini_your_db_name'] = $config['db']['schema_location'].'/statusnet.ini';
 // *** WARNING *** WARNING *** WARNING *** WARNING ***
 // Setting debug to a non-zero value will expose your DATABASE PASSWORD to Web users.

@@ -5,7 +5,12 @@ set -e
 . /usr/share/debconf/confmodule
 
 # source dbconfig-common stuff
-. /usr/share/dbconfig-common/dpkg/postinst 
+. /usr/share/dbconfig-common/dpkg/postinst
+dbc_generate_include=php:/etc/statusnet/dbconfig-debian.php
+dbc_generate_include_owner="www-data:www-data"
+dbc_generate_include_perms="660"
+#dbc_dbuser=statusnet
+#dbc_dbname=statusnet
 
 dbc_go statusnet $@
 
