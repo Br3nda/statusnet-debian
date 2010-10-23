@@ -16,8 +16,9 @@ override_dh_auto_install:
 	install -m 644 -D $(CURDIR)/db/statusnet.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/mysql
 	install -m 644 -D $(CURDIR)/db/statusnet_pg.sql $(CURDIR)/debian/tmp/usr/share/dbconfig-common/data/statusnet/install/pgsql
 
-override_dh_builddeb:
+override_dh_fixperms:
 	# correct permission (remove x bit from all non-scripts, add it to scripts)
-	find $(CURDIR)/debian/tmp/usr/share/ -executable -type f ! -path '*/scripts/*' -print0 | xargs -0r chmod a-x
-	find $(CURDIR)/debian/tmp/usr/share/ ! -executable -type f -path '*/scripts/*' -print0 | xargs -0r chmod a+x
-	dh_builddeb
+	find $(CURDIR)/debian/statusnet/usr/share/ -executable -type f ! -path '*/scripts/*' -print0 | xargs -0r chmod a-x
+	find $(CURDIR)/debian/statusnet/usr/share/ ! -executable -type f -path '*/scripts/*' ! -name *-utils.php -print0 | xargs -0r chmod a+x
+	find $(CURDIR)/debian/statusnet/usr/share/ ! -executable -type f -path '*/daemons/*' -print0 | xargs -0r chmod a+x # twitter integration
+	dh_fixperms
