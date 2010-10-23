@@ -1,3 +1,3 @@
-* auto-generate config.php with dbconfig-common info
 * add default apache/lighttpd configs
 * install unavailable needed pear libs
+* move all READMEs in the plugins dir to /usr/share/doc/statusnet
