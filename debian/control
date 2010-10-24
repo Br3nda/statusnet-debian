@@ -3,6 +3,7 @@ Section: web
 Priority: extra
 Maintainer: Brenda Wallace <shiny@cpan.org>
 Uploaders: Francois Mariear <francois@debian.org>,
+           Evan Prodromou <evan@debian.org>,
            Leo Costela <costela@debian.org>
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.1
