@@ -10,3 +10,5 @@ plugins/*               usr/share/statusnet/plugins/
 theme/*                 usr/share/statusnet/theme/
 usr/share/dbconfig-common/data/statusnet/
 debian/config.php       etc/statusnet/
+debian/httpd/50-statusnet.conf etc/lighttpd/conf-available/
+debian/httpd/statusnet.conf etc/apache2/sites-available/
