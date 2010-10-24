@@ -2,6 +2,23 @@
 
 set -e
 
+chperms() {
+    # chperms <user> <group> <perms> <file>
+    if ! OVERRIDE=`dpkg-statoverride --list $4 2>&1`; then
+        if [ -e $4 ]; then
+            chown $1:$2 $4
+            chmod $3 $4
+        fi
+    else
+        # remove old stat-overrides if they're the ones set by the package
+        # this should be removed as soon as >=1.93-2 hits stable
+        if [ "$OVERRIDE" = "$1 $2 $3 $4" ]; then
+            dpkg-statoverride --quiet --remove $4
+        fi
+    fi
+}
+
+
 . /usr/share/debconf/confmodule
 
 # source dbconfig-common stuff
@@ -13,5 +30,13 @@ dbc_generate_include_perms="660"
 #dbc_dbname=statusnet
 
 dbc_go statusnet $@
+
+case "$1" in
+  configure|upgrade)
+    chperms root www-data 4775 /var/www/statusnet/avatar
+    chperms root www-data 4775 /var/www/statusnet/background
+    chperms root www-data 4775 /var/www/statusnet/file
+  ;;
+esac
 
 #DEBHELPER#
