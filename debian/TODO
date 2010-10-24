@@ -1,2 +1,3 @@
 * install unavailable needed pear libs
+* complete debian/copyright with plugin info
 * move all READMEs in the plugins dir to /usr/share/doc/statusnet
