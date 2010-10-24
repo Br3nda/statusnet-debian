@@ -2,7 +2,7 @@ index.php               usr/share/statusnet/
 favicon.ico             usr/share/statusnet/
 apple-touch-icon.png    usr/share/statusnet/
 actions/*               usr/share/statusnet/actions/
-classes/*.php           usr/share/statusnet/classes/
+classes/*               usr/share/statusnet/classes/
 doc-src/*               usr/share/statusnet/doc-src/
 js/*                    usr/share/statusnet/js/
 lib/*                   usr/share/statusnet/lib/
@@ -13,7 +13,7 @@ debian/config.php       etc/statusnet/
 debian/httpd/50-statusnet.conf etc/lighttpd/conf-available/
 debian/httpd/statusnet.conf etc/apache2/sites-available/
 
-# TODO: these libs aren't packaged independently
+# TODO: these libs could probably be packaged independently
 extlib/DB/DataObject*   usr/share/statusnet/extlib/DB/
 extlib/Validate.php     usr/share/statusnet/extlib/
 extlib/Net              usr/share/statusnet/extlib/
