@@ -12,3 +12,9 @@ usr/share/dbconfig-common/data/statusnet/
 debian/config.php       etc/statusnet/
 debian/httpd/50-statusnet.conf etc/lighttpd/conf-available/
 debian/httpd/statusnet.conf etc/apache2/sites-available/
+
+# TODO: these libs aren't packaged independently
+extlib/DB/DataObject*   usr/share/statusnet/extlib/DB/
+extlib/Validate.php     usr/share/statusnet/extlib/
+extlib/Net              usr/share/statusnet/extlib/
+extlib/libomb           usr/share/statusnet/extlib/

@@ -1,3 +1,4 @@
-* install unavailable needed pear libs
+* add ini files
+* create and link to writeable dirs /var/www/{avatar,background,file}
 * complete debian/copyright with plugin info
 * move all READMEs in the plugins dir to /usr/share/doc/statusnet
