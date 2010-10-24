@@ -74,7 +74,8 @@ $config['site']['path'] = 'statusnet';
  Debian dbconfig automatically manages your DB settings
 */
 #$config['db']['database'] = 'mysql://statusnet:microblog@localhost/statusnet';
-$config['db']['database'] = 'mysql://statusnet:microblog@localhost/statusnet';
+require_once('/etc/statusnet/dbconfig-debian.php');
+$config['db']['database'] = "$dbtype://$dbuser:$dbpass@$dbserver/$dbname";
 
 // $config['db']['ini_your_db_name'] = $config['db']['schema_location'].'/statusnet.ini';
 // *** WARNING *** WARNING *** WARNING *** WARNING ***
