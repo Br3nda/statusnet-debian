@@ -18,3 +18,4 @@ extlib/DB/DataObject*   usr/share/statusnet/extlib/DB/
 extlib/Validate.php     usr/share/statusnet/extlib/
 extlib/Net              usr/share/statusnet/extlib/
 extlib/libomb           usr/share/statusnet/extlib/
+extlib/HTTP/Request2*   usr/share/statusnet/extlib/HTTP/
